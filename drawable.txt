@@ -1,0 +1,76 @@
+http://blog.csdn.net/rhljiayou/article/details/7212620
+
+
+
+
+>>view.draw( Canvas )
+//draw的方式对整屏截取，但信息栏为黑色
+View cv = getWindow().getDecorView();   
+Bitmap b = Bitmap.createBitmap(200, 200, Bitmap.Config.RGB_565);   //ARGB_8888
+cv.draw(new Canvas(b));
+iv.setImageBitmap(b);
+
+//对隐藏的未画过的对象，截出的是黑色
+Bitmap image = Bitmap.createBitmap(200, 200, Bitmap.Config.RGB_565);
+bt3.draw(new Canvas(image));
+iv2.setImageBitmap(image);
+
+完整的
+//get drawable cache , bitmap to drawable
+bt4.setDrawingCacheEnabled(true);
+Bitmap bitmap = bt4.getDrawingCache();
+Drawable drawable = (Drawable) new BitmapDrawable(bitmap);
+iv3.setBackgroundDrawable(drawable)
+
+
+
+Drawable Mutations
+如果不调用mutate()，那么所有Drawable的透明度是一样的（file:///Users/wangliang/Downloads/android-sdk-macosx/docs/resources/articles/drawable-mutations.html）
+Drawable star = context.getResources().getDrawable(R.drawable.star);
+if (book.isFavorite()) {
+  star.mutate().setAlpha(255); // opaque
+} else {
+  star. mutate().setAlpha(70); // translucent
+}
+
+
+
+
+/**
+	 * 图片上画字
+	 * */
+	private Bitmap drawTextAtBitmap(Bitmap bitmap,String text){
+		
+		int x = bitmap.getWidth();
+		
+		int y = bitmap.getHeight();
+		
+		// 创建一个和原图同样大小的位图
+		Bitmap newbit = Bitmap.createBitmap(x, y, Bitmap.Config.ARGB_8888);
+		
+		Canvas canvas = new Canvas(newbit);
+		
+		Paint paint = new Paint();
+		
+		// 在原始位置0，0插入原图
+		canvas.drawBitmap(bitmap, 0, 0, paint);
+		
+		paint.setColor(Color.parseColor("#dedbde"));
+		
+		paint.setTextSize(20);
+		
+		// 在原图指定位置写上字
+		canvas.drawText(text, 53 , 30, paint);
+		
+		canvas.save(Canvas.ALL_SAVE_FLAG);
+		
+		// 存储
+		canvas.restore();
+		
+		return newbit;
+	}
+	
+	
+	
+	
+	FragmentActivity

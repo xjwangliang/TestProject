@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.wangliang.app.learn"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <supports-screens
+        android:largeScreens="false"
+        android:normalScreens="true"
+        android:smallScreens="false" />
+
+    <uses-sdk android:minSdkVersion="8" />
+    <!-- Webview的权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- Webview的权限 -->
+
+
+    <!-- 读取联系人信息 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light" >
+        <activity
+            android:name=".Main"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.wangliang.app.learn.contacts.Contacts"
+            android:label="@string/app_name" />
+        <activity
+            android:name="org.wangliang.app.learn.webview.Geo"
+            android:label="@string/app_name" />
+        <activity
+            android:name="org.wangliang.app.learn.email.Email"
+            android:label="@string/app_name" />
+        <activity
+            android:name="org.wangliang.app.learn.webview.Wangyi"
+            android:label="@string/app_name" />
+        <activity
+            android:name="org.wangliang.app.learn.span.Span"
+            android:label="@string/app_name" />
+        <activity
+            android:name="org.wangliang.app.learn.webview.Pic"
+            android:label="@string/app_name" />
+        <activity
+            android:name="org.wangliang.app.learn.switcher.ViewSwitcherTest"
+            android:label="@string/app_name" />
+        <activity
+            android:name="org.wangliang.app.learn.switcher2.Switcher2Main"
+            android:label="@string/app_name" />
+        <activity
+            android:name="org.wangliang.app.learn.switcher2.Activity1"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:screenOrientation="sensor" />
+        <activity
+            android:name="org.wangliang.app.learn.switcher2.Activity2"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:screenOrientation="sensor" />
+        <activity
+            android:name="org.wangliang.app.learn.switcher2.Activity3"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:screenOrientation="sensor" />
+        <activity
+            android:name="org.wangliang.app.learn.switcher2.Activity4"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:screenOrientation="sensor" />
+        <activity
+            android:name="org.wangliang.app.learn.switcher2.Activity5"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:screenOrientation="sensor"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name="org.wangliang.app.learn.indexer.ContactsIndexer" />
+        <activity android:name="org.wangliang.app.learn.service.ServiceActivity" />
+
+        <service android:name="org.wangliang.app.learn.service.BackService" />
+
+        <activity android:name="org.wangliang.app.learn.graph.ChartDemo" />
+        <activity android:name="org.wangliang.app.learn.graph.chart.XYChartBuilder" />
+        <activity android:name="org.wangliang.app.learn.graph.chart.PieChartBuilder" />
+        <activity android:name="org.achartengine.GraphicalActivity" />
+        <activity android:name="org.wangliang.app.learn.graph.GeneratedChartDemo" />
+    </application>
+
+</manifest>

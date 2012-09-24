@@ -1,0 +1,96 @@
+<html>
+<head></head>
+<script>
+	function getTitle() {
+		if (window.pic) {
+			var t = document.getElementById("title");
+			var title = window.pic.getTitle();
+			t.innerHTML = title;
+		}
+	}
+
+	function getContent() {
+		if (window.pic) {
+			var c = document.getElementById("content");
+			var content = document.getElementById("content");
+			var content = window.pic.getContent();
+			c.innerHTML = content;
+		}
+
+	}
+
+	function getImage() {
+		if (window.pic) {
+			var i = document.getElementById("img");
+			var img = window.pic.getImage();
+			i.src = img;
+		}
+		
+	}
+
+	window.onload = function() {
+		getTitle();
+		getContent();
+		getImage();
+	}
+</script>
+
+<body>
+	<div>
+		<IMG id="img" alt="loading..." style="float: left; margin: 5px;" /> 
+		<span id="title"style="font-size: 24px; padding: 20px;"></span><br /> 
+		<span id="content"></span>
+	</div>
+
+</body>
+</html>
+
+<!-- /////////////////////////////////////////////////////////////////
+ 
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>联系人列表</title>
+<script type="text/javascript">
+
+//我们传入的jsondata是一个数组如：
+//[{id:20,name:"王昌龙",phone:"18701445755"},......] 这样
+ function show(jsondata){
+  var jsonobjs = eval(jsondata);
+  var table = document.getElementById("personTable");
+  for(var y=0; y<jsonobjs.length; y++){
+         var tr = table.insertRow(table.rows.length); //添加一行
+         tr.onmouseover = function (){
+          this.style.backgroundColor= "red";
+         }
+
+         tr.onmouseout = function (){
+          	this.style.backgroundColor= "#000000";
+         }
+
+         //添加三列
+
+         var td1 = tr.insertCell(0);
+         var td2 = tr.insertCell(1);
+         td2.align = "center";
+         var td3 = tr.insertCell(2);
+         //设置列内容和属性
+         td1.innerHTML = jsonobjs[y].id; 
+         //转义
+         td2.innerHTML = "<a href='javascript:partner4java.call(/"5554/")'>"+ jsonobjs[y].name + "</a>"; 
+         td3.innerHTML = jsonobjs[y].phone;
+
+  }
+
+ }
+
+ function init(){
+  var jsondata  = "[{id:20,name:/"王昌龙/",phone:/"18701445755/"},{id:21,name:/"小妾/",phone:/"18701445755/"}]";
+  show(jsondata); 
+
+ }
+
+</script>
+
+</head> -->

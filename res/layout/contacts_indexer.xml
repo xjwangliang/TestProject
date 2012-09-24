@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent">
+  	<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="60dip"
+	android:gravity="top">
+		<!--  <TextView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:text="手动输入，多个号码用;隔开"
+		></TextView>-->
+		
+		<EditText 
+		android:id="@+id/manual" 
+		android:layout_width="fill_parent" 
+		android:layout_height="45dip"
+		android:layout_marginTop="5dip"
+		android:hint="请输入电话号码或者姓名">
+		</EditText>
+  	</LinearLayout>
+  	
+  	<ListView 
+  	android:layout_weight="1" 
+  	android:id="@+id/contactsList" 
+  	android:layout_height="wrap_content" 
+  	android:layout_width="fill_parent"
+  	android:fastScrollEnabled="true"></ListView>
+  	
+  	<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="50dip"
+	android:gravity="top">
+		<Button    
+	    android:id="@+id/recommendButton"  
+	    android:text="推荐给所选联系人"
+	    android:layout_width="fill_parent"  
+	    android:layout_height="wrap_content"  
+	    />   
+  	</LinearLayout>
+  	
+  	<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal"
+	android:layout_width="fill_parent"
+	android:layout_height="50dip"
+	android:gravity="top">
+		<Button    
+	    android:id="@+id/successButton"  
+	    android:text="已成功"
+	    android:layout_width="fill_parent"  
+	    android:layout_height="wrap_content"
+	    android:layout_weight="1"
+	    />
+	    <Button    
+	    android:id="@+id/failButton"  
+	    android:text="未成功"
+	    android:layout_width="fill_parent"  
+	    android:layout_height="wrap_content"  
+	    android:layout_weight="1"
+	    />  
+  	</LinearLayout>
+</LinearLayout>
