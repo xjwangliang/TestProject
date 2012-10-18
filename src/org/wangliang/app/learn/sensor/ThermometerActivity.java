@@ -4,7 +4,12 @@ import org.wangliang.app.learn.R ;
 
 import android.app.Activity ;
 import android.os.Bundle ;
-//https://developer.android.com/guide/topics/graphics/hardware-accel.html硬件加速
+import android.view.ContextMenu ;
+import android.view.Menu ;
+import android.view.MenuItem ;
+import android.view.View ;
+import android.view.ContextMenu.ContextMenuInfo ;
+
 
 //@Override public void onDraw(Canvas canvas) {
 //    canvas.save(Canvas.MATRIX_SAVE_FLAG);
@@ -14,7 +19,7 @@ import android.os.Bundle ;
 //}
 
 
-
+//https://developer.android.com/guide/topics/graphics/hardware-accel.html硬件加速
 
 //It works now, if you add a line to force the custom view to be software rendered.
 //http://stackoverflow.com/questions/11460958/canvas-not-displaying-all-drawn-parts-in-custom-view
@@ -72,7 +77,30 @@ public class ThermometerActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sensor_test);
     }
+	
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		switch (item.getItemId()) {
+			case 1:
+				 setContentView(R.layout.sensor_test2);
+				break ;
+
+			default:
+				 setContentView(R.layout.sensor_test);
+				break ;
+		}
+		return super.onOptionsItemSelected(item) ;
+	}
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		menu.add(0, 0, 0, "A");
+		menu.add(0, 1, 1, "B");
+		return super.onCreateOptionsMenu(menu) ;
+	}
 }
+
+
+
 //scratch
 //AnalogClock
 //vintage Coca-Cola thermometers,

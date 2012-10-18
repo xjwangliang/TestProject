@@ -17,9 +17,257 @@ public final class R {
         public static final int slide_right_out=0x7f040005;
     }
     public static final class attr {
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int incrementPerLargeNotch=0x7f010001;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int incrementPerLargeNotch2=0x7f01000a;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int incrementPerSmallNotch=0x7f010002;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int incrementPerSmallNotch2=0x7f01000b;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int lowerTitle=0x7f01001a;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int rangeErrorColor=0x7f010016;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int rangeErrorMaxValue=0x7f010018;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int rangeErrorMinValue=0x7f010017;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int rangeOkColor=0x7f010010;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int rangeOkMaxValue=0x7f010012;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int rangeOkMinValue=0x7f010011;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int rangeWarningColor=0x7f010013;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int rangeWarningMaxValue=0x7f010015;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int rangeWarningMinValue=0x7f010014;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int scaleCenterValue=0x7f010003;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int scaleCenterValue2=0x7f01000d;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int scaleColor=0x7f010006;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int scaleColor2=0x7f01000c;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int scaleLowerTitle=0x7f010008;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int scaleMaxValue=0x7f010005;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int scaleMaxValue2=0x7f01000f;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int scaleMinValue=0x7f010004;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int scaleMinValue2=0x7f01000e;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int scaleUpperTitle=0x7f010007;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int showGauge=0x7f01001e;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int showHand=0x7f01001d;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int showRange=0x7f01001c;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int totalNotches=0x7f010000;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int totalNotches2=0x7f010009;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int unitTitle=0x7f01001b;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int upperTitle=0x7f010019;
     }
     public static final class color {
-        public static final int qqmenu_text_color=0x7f070000;
+        public static final int qqmenu_text_color=0x7f080000;
     }
     public static final class drawable {
         public static final int back_comment_tab=0x7f020000;
@@ -58,161 +306,168 @@ public final class R {
         public static final int current_picture_tab=0x7f020021;
         public static final int current_topic_tab=0x7f020022;
         public static final int current_vote_tab=0x7f020023;
-        public static final int divider_horizontal_bright_opaque=0x7f020024;
-        public static final int duoyun2=0x7f020025;
-        public static final int exit_menu_icon=0x7f020026;
-        public static final int help_menu_icon=0x7f020027;
-        public static final int ic_action_search=0x7f020028;
-        public static final int ic_launcher=0x7f020029;
-        public static final int logo=0x7f02002a;
-        public static final int matrix_control=0x7f02002b;
-        public static final int menu_bg=0x7f02002c;
-        public static final int menu_home=0x7f02002d;
-        public static final int menu_logout=0x7f02002e;
-        public static final int menu_refresh=0x7f02002f;
-        public static final int menu_select=0x7f020030;
-        public static final int menu_select_down=0x7f020031;
-        public static final int menu_selectitem=0x7f020032;
-        public static final int menu_sys_opt=0x7f020033;
-        public static final int netease_top=0x7f020034;
-        public static final int picture1=0x7f020035;
-        public static final int plastic=0x7f020036;
-        public static final int slidebar=0x7f020037;
-        public static final int tab_front_bg=0x7f020038;
-        public static final int tab_selector_follow=0x7f020039;
-        public static final int tab_selector_news=0x7f02003a;
-        public static final int tab_selector_pic=0x7f02003b;
-        public static final int tab_selector_topic=0x7f02003c;
-        public static final int tab_selector_vote=0x7f02003d;
-        public static final int water_lilies=0x7f02003e;
+        public static final int dial_texture=0x7f020024;
+        public static final int divider_horizontal_bright_opaque=0x7f020025;
+        public static final int duoyun2=0x7f020026;
+        public static final int exit_menu_icon=0x7f020027;
+        public static final int help_menu_icon=0x7f020028;
+        public static final int ic_action_search=0x7f020029;
+        public static final int ic_launcher=0x7f02002a;
+        public static final int logo=0x7f02002b;
+        public static final int matrix_control=0x7f02002c;
+        public static final int menu_bg=0x7f02002d;
+        public static final int menu_home=0x7f02002e;
+        public static final int menu_logout=0x7f02002f;
+        public static final int menu_refresh=0x7f020030;
+        public static final int menu_select=0x7f020031;
+        public static final int menu_select_down=0x7f020032;
+        public static final int menu_selectitem=0x7f020033;
+        public static final int menu_sys_opt=0x7f020034;
+        public static final int netease_top=0x7f020035;
+        public static final int picture1=0x7f020036;
+        public static final int plastic=0x7f020037;
+        public static final int slidebar=0x7f020038;
+        public static final int tab_front_bg=0x7f020039;
+        public static final int tab_selector_follow=0x7f02003a;
+        public static final int tab_selector_news=0x7f02003b;
+        public static final int tab_selector_pic=0x7f02003c;
+        public static final int tab_selector_topic=0x7f02003d;
+        public static final int tab_selector_vote=0x7f02003e;
+        public static final int water_lilies=0x7f02003f;
     }
     public static final class id {
-        public static final int FrameLayout01=0x7f09000e;
-        public static final int ProgressBar01=0x7f090017;
-        public static final int RelativeLayout01=0x7f09000b;
-        public static final int RelativeLayout_Item=0x7f09005a;
-        public static final int ViewFlipper01=0x7f090048;
-        public static final int add=0x7f090074;
-        public static final int back=0x7f090014;
-        public static final int bindMusic=0x7f090062;
-        public static final int board=0x7f090011;
-        public static final int btn1=0x7f090069;
-        public static final int btn2=0x7f09006a;
-        public static final int btn3=0x7f09006b;
-        public static final int btn4=0x7f09006c;
-        public static final int btn5=0x7f09006d;
-        public static final int button2=0x7f090049;
-        public static final int button_next=0x7f090071;
-        public static final int button_prev=0x7f090070;
-        public static final int cb=0x7f090036;
-        public static final int chart=0x7f090075;
-        public static final int color01=0x7f09001b;
-        public static final int color02=0x7f09001c;
-        public static final int color03=0x7f09001d;
-        public static final int color04=0x7f09001e;
-        public static final int color05=0x7f09001f;
-        public static final int color06=0x7f090020;
-        public static final int color07=0x7f090021;
-        public static final int color08=0x7f090022;
-        public static final int color09=0x7f090023;
-        public static final int color10=0x7f090024;
-        public static final int color11=0x7f090025;
-        public static final int color12=0x7f090026;
-        public static final int color13=0x7f090027;
-        public static final int color14=0x7f090028;
-        public static final int color15=0x7f090029;
-        public static final int color16=0x7f09002a;
-        public static final int color17=0x7f09002b;
-        public static final int color18=0x7f09002c;
-        public static final int color19=0x7f09002d;
-        public static final int color20=0x7f09002e;
-        public static final int contactsList=0x7f090032;
-        public static final int container=0x7f090068;
-        public static final int content=0x7f090065;
-        public static final int content_fragment=0x7f090003;
-        public static final int content_fragment_top=0x7f090002;
-        public static final int coordinate01=0x7f09003a;
-        public static final int coordinate02=0x7f09003b;
-        public static final int coordinate03=0x7f09003c;
-        public static final int coordinate04=0x7f09003d;
-        public static final int coordinate05=0x7f09003e;
-        public static final int coordinate06=0x7f09003f;
-        public static final int coordinate07=0x7f090040;
-        public static final int coordinate08=0x7f090041;
-        public static final int coordinate09=0x7f090042;
-        public static final int coordinate_apply=0x7f09002f;
-        public static final int coordinate_cancle=0x7f090030;
-        public static final int coordinate_enlarge_simple=0x7f090044;
-        public static final int coordinate_ensmall_simple=0x7f090045;
-        public static final int coordinate_myimage=0x7f09001a;
-        public static final int coordinate_myimage_simple=0x7f090043;
-        public static final int coordinate_reset_simple=0x7f090046;
-        public static final int details=0x7f09004b;
-        public static final int document_icon=0x7f09000c;
-        public static final int document_title=0x7f09000d;
-        public static final int draw=0x7f090016;
-        public static final int failButton=0x7f090035;
-        public static final int forward=0x7f090015;
-        public static final int fragment_context_context=0x7f090050;
-        public static final int fragment_topbar_topic=0x7f090052;
-        public static final int gridView_layout=0x7f090057;
-        public static final int group_list_item_text=0x7f090039;
-        public static final int help=0x7f09007a;
-        public static final int home=0x7f090012;
-        public static final int imageview=0x7f09006e;
-        public static final int img_netease_top=0x7f09004f;
-        public static final int item_detail_webview=0x7f090059;
-        public static final int item_image=0x7f09005b;
-        public static final int item_text=0x7f09005c;
-        public static final int label=0x7f090018;
-        public static final int layout1=0x7f090066;
-        public static final int layout_bottom=0x7f090004;
-        public static final int layout_content=0x7f09004e;
-        public static final int layout_favor_grid=0x7f090047;
-        public static final int layout_top=0x7f090051;
-        public static final int linearlayout=0x7f090001;
-        public static final int logout=0x7f09007b;
-        public static final int manual=0x7f090031;
-        public static final int menu_home=0x7f09007c;
-        public static final int menu_refresh=0x7f09007d;
-        public static final int menu_settings=0x7f090077;
-        public static final int myimage=0x7f09005e;
-        public static final int new_series=0x7f090076;
-        public static final int parent=0x7f090019;
-        public static final int ph=0x7f090038;
-        public static final int radio_follow=0x7f090009;
-        public static final int radio_news=0x7f090006;
-        public static final int radio_pic=0x7f090008;
-        public static final int radio_topic=0x7f090007;
-        public static final int radio_vote=0x7f09000a;
-        public static final int radiogroup=0x7f090005;
-        public static final int rebindMusic=0x7f090064;
-        public static final int recommendButton=0x7f090033;
-        public static final int refresh=0x7f090013;
-        public static final int simple_fragment=0x7f09004d;
-        public static final int slide_view=0x7f09006f;
-        public static final int src_myimage=0x7f09005d;
-        public static final int startMusic=0x7f090060;
-        public static final int statusbar=0x7f090010;
-        public static final int stopMusic=0x7f090061;
-        public static final int successButton=0x7f090034;
-        public static final int switch_accout=0x7f090079;
-        public static final int system_opt=0x7f090078;
-        public static final int tab_front_bg=0x7f09004c;
-        public static final int tabhost=0x7f090000;
-        public static final int textview=0x7f090058;
-        public static final int thermometer=0x7f09005f;
-        public static final int titles=0x7f09004a;
-        public static final int tv=0x7f090037;
-        public static final int tv1=0x7f090067;
-        public static final int unbindMusic=0x7f090063;
-        public static final int webkit=0x7f090053;
-        public static final int webview=0x7f09000f;
-        public static final int xValue=0x7f090072;
-        public static final int yValue=0x7f090073;
-        public static final int zoom_bar=0x7f090054;
-        public static final int zoom_in=0x7f090055;
-        public static final int zoom_out=0x7f090056;
+        public static final int FrameLayout01=0x7f0a000e;
+        public static final int ProgressBar01=0x7f0a0017;
+        public static final int RelativeLayout01=0x7f0a000b;
+        public static final int RelativeLayout_Item=0x7f0a005c;
+        public static final int ViewFlipper01=0x7f0a004a;
+        public static final int add=0x7f0a007a;
+        public static final int back=0x7f0a0014;
+        public static final int bindMusic=0x7f0a0068;
+        public static final int board=0x7f0a0011;
+        public static final int btn1=0x7f0a006f;
+        public static final int btn2=0x7f0a0070;
+        public static final int btn3=0x7f0a0071;
+        public static final int btn4=0x7f0a0072;
+        public static final int btn5=0x7f0a0073;
+        public static final int btnColder=0x7f0a0065;
+        public static final int btnHotter=0x7f0a0064;
+        public static final int button2=0x7f0a004b;
+        public static final int button_next=0x7f0a0077;
+        public static final int button_prev=0x7f0a0076;
+        public static final int cb=0x7f0a0036;
+        public static final int chart=0x7f0a007b;
+        public static final int color01=0x7f0a001b;
+        public static final int color02=0x7f0a001c;
+        public static final int color03=0x7f0a001d;
+        public static final int color04=0x7f0a001e;
+        public static final int color05=0x7f0a001f;
+        public static final int color06=0x7f0a0020;
+        public static final int color07=0x7f0a0021;
+        public static final int color08=0x7f0a0022;
+        public static final int color09=0x7f0a0023;
+        public static final int color10=0x7f0a0024;
+        public static final int color11=0x7f0a0025;
+        public static final int color12=0x7f0a0026;
+        public static final int color13=0x7f0a0027;
+        public static final int color14=0x7f0a0028;
+        public static final int color15=0x7f0a0029;
+        public static final int color16=0x7f0a002a;
+        public static final int color17=0x7f0a002b;
+        public static final int color18=0x7f0a002c;
+        public static final int color19=0x7f0a002d;
+        public static final int color20=0x7f0a002e;
+        public static final int contactsList=0x7f0a0032;
+        public static final int container=0x7f0a006e;
+        public static final int content=0x7f0a006b;
+        public static final int content_fragment=0x7f0a0003;
+        public static final int content_fragment_top=0x7f0a0002;
+        public static final int coordinate01=0x7f0a003a;
+        public static final int coordinate02=0x7f0a003b;
+        public static final int coordinate03=0x7f0a003c;
+        public static final int coordinate04=0x7f0a003d;
+        public static final int coordinate05=0x7f0a003e;
+        public static final int coordinate06=0x7f0a003f;
+        public static final int coordinate07=0x7f0a0040;
+        public static final int coordinate08=0x7f0a0041;
+        public static final int coordinate09=0x7f0a0042;
+        public static final int coordinate_apply=0x7f0a002f;
+        public static final int coordinate_cancle=0x7f0a0030;
+        public static final int coordinate_enlarge_simple=0x7f0a0044;
+        public static final int coordinate_ensmall_simple=0x7f0a0045;
+        public static final int coordinate_myimage=0x7f0a001a;
+        public static final int coordinate_myimage_simple=0x7f0a0043;
+        public static final int coordinate_reset_simple=0x7f0a0046;
+        public static final int details=0x7f0a004d;
+        public static final int dial=0x7f0a0048;
+        public static final int document_icon=0x7f0a000c;
+        public static final int document_title=0x7f0a000d;
+        public static final int draw=0x7f0a0016;
+        public static final int failButton=0x7f0a0035;
+        public static final int forward=0x7f0a0015;
+        public static final int fragment_context_context=0x7f0a0052;
+        public static final int fragment_topbar_topic=0x7f0a0054;
+        public static final int gridView_layout=0x7f0a0059;
+        public static final int group_list_item_text=0x7f0a0039;
+        public static final int help=0x7f0a0080;
+        public static final int home=0x7f0a0012;
+        public static final int imageview=0x7f0a0074;
+        public static final int img_netease_top=0x7f0a0051;
+        public static final int item_detail_webview=0x7f0a005b;
+        public static final int item_image=0x7f0a005d;
+        public static final int item_text=0x7f0a005e;
+        public static final int label=0x7f0a0018;
+        public static final int layout1=0x7f0a006c;
+        public static final int layout_bottom=0x7f0a0004;
+        public static final int layout_content=0x7f0a0050;
+        public static final int layout_favor_grid=0x7f0a0049;
+        public static final int layout_top=0x7f0a0053;
+        public static final int linearlayout=0x7f0a0001;
+        public static final int logout=0x7f0a0081;
+        public static final int manual=0x7f0a0031;
+        public static final int menu_home=0x7f0a0082;
+        public static final int menu_refresh=0x7f0a0083;
+        public static final int menu_settings=0x7f0a007d;
+        public static final int meter1=0x7f0a0062;
+        public static final int meter2=0x7f0a0063;
+        public static final int myimage=0x7f0a0060;
+        public static final int new_series=0x7f0a007c;
+        public static final int parent=0x7f0a0019;
+        public static final int ph=0x7f0a0038;
+        public static final int radio_follow=0x7f0a0009;
+        public static final int radio_news=0x7f0a0006;
+        public static final int radio_pic=0x7f0a0008;
+        public static final int radio_topic=0x7f0a0007;
+        public static final int radio_vote=0x7f0a000a;
+        public static final int radiogroup=0x7f0a0005;
+        public static final int rebindMusic=0x7f0a006a;
+        public static final int recommendButton=0x7f0a0033;
+        public static final int refresh=0x7f0a0013;
+        public static final int simple_fragment=0x7f0a004f;
+        public static final int slide_view=0x7f0a0075;
+        public static final int src_myimage=0x7f0a005f;
+        public static final int startMusic=0x7f0a0066;
+        public static final int statusbar=0x7f0a0010;
+        public static final int stopMusic=0x7f0a0067;
+        public static final int successButton=0x7f0a0034;
+        public static final int switch_accout=0x7f0a007f;
+        public static final int system_opt=0x7f0a007e;
+        public static final int tab_front_bg=0x7f0a004e;
+        public static final int tabhost=0x7f0a0000;
+        public static final int text=0x7f0a0047;
+        public static final int textview=0x7f0a005a;
+        public static final int thermometer=0x7f0a0061;
+        public static final int titles=0x7f0a004c;
+        public static final int tv=0x7f0a0037;
+        public static final int tv1=0x7f0a006d;
+        public static final int unbindMusic=0x7f0a0069;
+        public static final int webkit=0x7f0a0055;
+        public static final int webview=0x7f0a000f;
+        public static final int xValue=0x7f0a0078;
+        public static final int yValue=0x7f0a0079;
+        public static final int zoom_bar=0x7f0a0056;
+        public static final int zoom_in=0x7f0a0057;
+        public static final int zoom_out=0x7f0a0058;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
@@ -224,75 +479,608 @@ public final class R {
         public static final int contacts_indexer_item_tag=0x7f030006;
         public static final int coordinate_matrix=0x7f030007;
         public static final int coordinate_matrix_simple=0x7f030008;
-        public static final int email=0x7f030009;
-        public static final int favour=0x7f03000a;
-        public static final int fliper=0x7f03000b;
-        public static final int fragment1=0x7f03000c;
-        public static final int fragment2=0x7f03000d;
-        public static final int fragment_acitivity=0x7f03000e;
-        public static final int fragment_acitivity_1=0x7f03000f;
-        public static final int fragment_content=0x7f030010;
-        public static final int fragment_topbar=0x7f030011;
-        public static final int geo=0x7f030012;
-        public static final int gridview=0x7f030013;
-        public static final int gridview_item=0x7f030014;
-        public static final int gridview_item2=0x7f030015;
-        public static final int item_detail_taobao=0x7f030016;
-        public static final int item_menu=0x7f030017;
-        public static final int main=0x7f030018;
-        public static final int matrix_test_sample=0x7f030019;
-        public static final int pic=0x7f03001a;
-        public static final int qqgridview_menu=0x7f03001b;
-        public static final int sensor_test=0x7f03001c;
-        public static final int service_layout=0x7f03001d;
-        public static final int span=0x7f03001e;
-        public static final int viewswitcher2_item=0x7f03001f;
-        public static final int viewswitcher2_main=0x7f030020;
-        public static final int viewswitcher_item=0x7f030021;
-        public static final int viewswitcher_main=0x7f030022;
-        public static final int xy_chart=0x7f030023;
+        public static final int dial_view=0x7f030009;
+        public static final int email=0x7f03000a;
+        public static final int favour=0x7f03000b;
+        public static final int fliper=0x7f03000c;
+        public static final int fragment1=0x7f03000d;
+        public static final int fragment2=0x7f03000e;
+        public static final int fragment_acitivity=0x7f03000f;
+        public static final int fragment_acitivity_1=0x7f030010;
+        public static final int fragment_content=0x7f030011;
+        public static final int fragment_topbar=0x7f030012;
+        public static final int geo=0x7f030013;
+        public static final int gridview=0x7f030014;
+        public static final int gridview_item=0x7f030015;
+        public static final int gridview_item2=0x7f030016;
+        public static final int item_detail_taobao=0x7f030017;
+        public static final int item_menu=0x7f030018;
+        public static final int main=0x7f030019;
+        public static final int matrix_test_sample=0x7f03001a;
+        public static final int pic=0x7f03001b;
+        public static final int qqgridview_menu=0x7f03001c;
+        public static final int sensor_test=0x7f03001d;
+        public static final int sensor_test2=0x7f03001e;
+        public static final int sensor_test3=0x7f03001f;
+        public static final int service_layout=0x7f030020;
+        public static final int span=0x7f030021;
+        public static final int viewswitcher2_item=0x7f030022;
+        public static final int viewswitcher2_main=0x7f030023;
+        public static final int viewswitcher_item=0x7f030024;
+        public static final int viewswitcher_main=0x7f030025;
+        public static final int xy_chart=0x7f030026;
     }
     public static final class menu {
-        public static final int activity_main=0x7f080000;
-        public static final int defaultmenu=0x7f080001;
-        public static final int webview_menu_list=0x7f080002;
+        public static final int activity_main=0x7f090000;
+        public static final int defaultmenu=0x7f090001;
+        public static final int webview_menu_list=0x7f090002;
+    }
+    public static final class raw {
+        public static final int click_sound=0x7f050000;
     }
     public static final class string {
-        public static final int app_name=0x7f050001;
-        public static final int des_img_netease_top=0x7f050010;
-        public static final int des_img_netease_weather=0x7f050011;
-        public static final int follow_top_left_text=0x7f05000e;
-        public static final int hello=0x7f050000;
-        public static final int hello_world=0x7f050002;
-        public static final int menu_settings=0x7f050003;
-        public static final int news_top_left_text=0x7f05000b;
-        public static final int picture_top_left_text=0x7f05000d;
-        public static final int title_activity_main=0x7f050004;
-        public static final int title_news_category_finance=0x7f050008;
-        public static final int title_news_category_more=0x7f05000a;
-        public static final int title_news_category_play=0x7f050007;
-        public static final int title_news_category_science=0x7f050009;
-        public static final int title_news_category_sport=0x7f050006;
-        public static final int title_news_category_tops=0x7f050005;
-        public static final int topic_top_left_text=0x7f05000c;
-        public static final int vote_top_left_text=0x7f05000f;
+        public static final int app_name=0x7f060001;
+        public static final int des_img_netease_top=0x7f060010;
+        public static final int des_img_netease_weather=0x7f060011;
+        public static final int follow_top_left_text=0x7f06000e;
+        public static final int hello=0x7f060000;
+        public static final int hello_world=0x7f060002;
+        public static final int menu_settings=0x7f060003;
+        public static final int news_top_left_text=0x7f06000b;
+        public static final int picture_top_left_text=0x7f06000d;
+        public static final int title_activity_main=0x7f060004;
+        public static final int title_news_category_finance=0x7f060008;
+        public static final int title_news_category_more=0x7f06000a;
+        public static final int title_news_category_play=0x7f060007;
+        public static final int title_news_category_science=0x7f060009;
+        public static final int title_news_category_sport=0x7f060006;
+        public static final int title_news_category_tops=0x7f060005;
+        public static final int topic_top_left_text=0x7f06000c;
+        public static final int vote_top_left_text=0x7f06000f;
     }
     public static final class style {
-        public static final int AppTheme=0x7f060004;
-        public static final int browser_document_title=0x7f060005;
-        public static final int browser_label=0x7f060006;
+        public static final int AppTheme=0x7f070004;
+        public static final int browser_document_title=0x7f070005;
+        public static final int browser_label=0x7f070006;
         /** 全屏幕拉伸
          */
-        public static final int layout_full=0x7f060000;
+        public static final int layout_full=0x7f070000;
         /**  横向分布
          */
-        public static final int layout_horizontal=0x7f060002;
+        public static final int layout_horizontal=0x7f070002;
         /**  纵向分布
          */
-        public static final int layout_vertical=0x7f060003;
+        public static final int layout_vertical=0x7f070003;
         /** 固定自身大小
          */
-        public static final int layout_wrap=0x7f060001;
-        public static final int menuTextStyle=0x7f060007;
+        public static final int layout_wrap=0x7f070001;
+        public static final int menuTextStyle=0x7f070007;
     }
+    public static final class styleable {
+        /** Attributes that can be used with a Dial.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #Dial_incrementPerLargeNotch2 org.wangliang.app.learn:incrementPerLargeNotch2}</code></td><td></td></tr>
+           <tr><td><code>{@link #Dial_incrementPerSmallNotch2 org.wangliang.app.learn:incrementPerSmallNotch2}</code></td><td></td></tr>
+           <tr><td><code>{@link #Dial_lowerTitle org.wangliang.app.learn:lowerTitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Dial_rangeErrorColor org.wangliang.app.learn:rangeErrorColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Dial_rangeErrorMaxValue org.wangliang.app.learn:rangeErrorMaxValue}</code></td><td></td></tr>
+           <tr><td><code>{@link #Dial_rangeErrorMinValue org.wangliang.app.learn:rangeErrorMinValue}</code></td><td></td></tr>
+           <tr><td><code>{@link #Dial_rangeOkColor org.wangliang.app.learn:rangeOkColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Dial_rangeOkMaxValue org.wangliang.app.learn:rangeOkMaxValue}</code></td><td></td></tr>
+           <tr><td><code>{@link #Dial_rangeOkMinValue org.wangliang.app.learn:rangeOkMinValue}</code></td><td></td></tr>
+           <tr><td><code>{@link #Dial_rangeWarningColor org.wangliang.app.learn:rangeWarningColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Dial_rangeWarningMaxValue org.wangliang.app.learn:rangeWarningMaxValue}</code></td><td></td></tr>
+           <tr><td><code>{@link #Dial_rangeWarningMinValue org.wangliang.app.learn:rangeWarningMinValue}</code></td><td></td></tr>
+           <tr><td><code>{@link #Dial_scaleCenterValue2 org.wangliang.app.learn:scaleCenterValue2}</code></td><td></td></tr>
+           <tr><td><code>{@link #Dial_scaleColor2 org.wangliang.app.learn:scaleColor2}</code></td><td></td></tr>
+           <tr><td><code>{@link #Dial_scaleMaxValue2 org.wangliang.app.learn:scaleMaxValue2}</code></td><td></td></tr>
+           <tr><td><code>{@link #Dial_scaleMinValue2 org.wangliang.app.learn:scaleMinValue2}</code></td><td></td></tr>
+           <tr><td><code>{@link #Dial_showGauge org.wangliang.app.learn:showGauge}</code></td><td></td></tr>
+           <tr><td><code>{@link #Dial_showHand org.wangliang.app.learn:showHand}</code></td><td></td></tr>
+           <tr><td><code>{@link #Dial_showRange org.wangliang.app.learn:showRange}</code></td><td></td></tr>
+           <tr><td><code>{@link #Dial_totalNotches2 org.wangliang.app.learn:totalNotches2}</code></td><td></td></tr>
+           <tr><td><code>{@link #Dial_unitTitle org.wangliang.app.learn:unitTitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Dial_upperTitle org.wangliang.app.learn:upperTitle}</code></td><td></td></tr>
+           </table>
+           @see #Dial_incrementPerLargeNotch2
+           @see #Dial_incrementPerSmallNotch2
+           @see #Dial_lowerTitle
+           @see #Dial_rangeErrorColor
+           @see #Dial_rangeErrorMaxValue
+           @see #Dial_rangeErrorMinValue
+           @see #Dial_rangeOkColor
+           @see #Dial_rangeOkMaxValue
+           @see #Dial_rangeOkMinValue
+           @see #Dial_rangeWarningColor
+           @see #Dial_rangeWarningMaxValue
+           @see #Dial_rangeWarningMinValue
+           @see #Dial_scaleCenterValue2
+           @see #Dial_scaleColor2
+           @see #Dial_scaleMaxValue2
+           @see #Dial_scaleMinValue2
+           @see #Dial_showGauge
+           @see #Dial_showHand
+           @see #Dial_showRange
+           @see #Dial_totalNotches2
+           @see #Dial_unitTitle
+           @see #Dial_upperTitle
+         */
+        public static final int[] Dial = {
+            0x7f010009, 0x7f01000a, 0x7f01000b, 0x7f01000c,
+            0x7f01000d, 0x7f01000e, 0x7f01000f, 0x7f010010,
+            0x7f010011, 0x7f010012, 0x7f010013, 0x7f010014,
+            0x7f010015, 0x7f010016, 0x7f010017, 0x7f010018,
+            0x7f010019, 0x7f01001a, 0x7f01001b, 0x7f01001c,
+            0x7f01001d, 0x7f01001e
+        };
+        /**
+          <p>This symbol is the offset where the {@link org.wangliang.app.learn.R.attr#incrementPerLargeNotch2}
+          attribute's value can be found in the {@link #Dial} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:incrementPerLargeNotch2
+        */
+        public static final int Dial_incrementPerLargeNotch2 = 1;
+        /**
+          <p>This symbol is the offset where the {@link org.wangliang.app.learn.R.attr#incrementPerSmallNotch2}
+          attribute's value can be found in the {@link #Dial} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:incrementPerSmallNotch2
+        */
+        public static final int Dial_incrementPerSmallNotch2 = 2;
+        /**
+          <p>This symbol is the offset where the {@link org.wangliang.app.learn.R.attr#lowerTitle}
+          attribute's value can be found in the {@link #Dial} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:lowerTitle
+        */
+        public static final int Dial_lowerTitle = 17;
+        /**
+          <p>This symbol is the offset where the {@link org.wangliang.app.learn.R.attr#rangeErrorColor}
+          attribute's value can be found in the {@link #Dial} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:rangeErrorColor
+        */
+        public static final int Dial_rangeErrorColor = 13;
+        /**
+          <p>This symbol is the offset where the {@link org.wangliang.app.learn.R.attr#rangeErrorMaxValue}
+          attribute's value can be found in the {@link #Dial} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:rangeErrorMaxValue
+        */
+        public static final int Dial_rangeErrorMaxValue = 15;
+        /**
+          <p>This symbol is the offset where the {@link org.wangliang.app.learn.R.attr#rangeErrorMinValue}
+          attribute's value can be found in the {@link #Dial} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:rangeErrorMinValue
+        */
+        public static final int Dial_rangeErrorMinValue = 14;
+        /**
+          <p>This symbol is the offset where the {@link org.wangliang.app.learn.R.attr#rangeOkColor}
+          attribute's value can be found in the {@link #Dial} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:rangeOkColor
+        */
+        public static final int Dial_rangeOkColor = 7;
+        /**
+          <p>This symbol is the offset where the {@link org.wangliang.app.learn.R.attr#rangeOkMaxValue}
+          attribute's value can be found in the {@link #Dial} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:rangeOkMaxValue
+        */
+        public static final int Dial_rangeOkMaxValue = 9;
+        /**
+          <p>This symbol is the offset where the {@link org.wangliang.app.learn.R.attr#rangeOkMinValue}
+          attribute's value can be found in the {@link #Dial} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:rangeOkMinValue
+        */
+        public static final int Dial_rangeOkMinValue = 8;
+        /**
+          <p>This symbol is the offset where the {@link org.wangliang.app.learn.R.attr#rangeWarningColor}
+          attribute's value can be found in the {@link #Dial} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:rangeWarningColor
+        */
+        public static final int Dial_rangeWarningColor = 10;
+        /**
+          <p>This symbol is the offset where the {@link org.wangliang.app.learn.R.attr#rangeWarningMaxValue}
+          attribute's value can be found in the {@link #Dial} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:rangeWarningMaxValue
+        */
+        public static final int Dial_rangeWarningMaxValue = 12;
+        /**
+          <p>This symbol is the offset where the {@link org.wangliang.app.learn.R.attr#rangeWarningMinValue}
+          attribute's value can be found in the {@link #Dial} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:rangeWarningMinValue
+        */
+        public static final int Dial_rangeWarningMinValue = 11;
+        /**
+          <p>This symbol is the offset where the {@link org.wangliang.app.learn.R.attr#scaleCenterValue2}
+          attribute's value can be found in the {@link #Dial} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:scaleCenterValue2
+        */
+        public static final int Dial_scaleCenterValue2 = 4;
+        /**
+          <p>This symbol is the offset where the {@link org.wangliang.app.learn.R.attr#scaleColor2}
+          attribute's value can be found in the {@link #Dial} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:scaleColor2
+        */
+        public static final int Dial_scaleColor2 = 3;
+        /**
+          <p>This symbol is the offset where the {@link org.wangliang.app.learn.R.attr#scaleMaxValue2}
+          attribute's value can be found in the {@link #Dial} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:scaleMaxValue2
+        */
+        public static final int Dial_scaleMaxValue2 = 6;
+        /**
+          <p>This symbol is the offset where the {@link org.wangliang.app.learn.R.attr#scaleMinValue2}
+          attribute's value can be found in the {@link #Dial} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:scaleMinValue2
+        */
+        public static final int Dial_scaleMinValue2 = 5;
+        /**
+          <p>This symbol is the offset where the {@link org.wangliang.app.learn.R.attr#showGauge}
+          attribute's value can be found in the {@link #Dial} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:showGauge
+        */
+        public static final int Dial_showGauge = 21;
+        /**
+          <p>This symbol is the offset where the {@link org.wangliang.app.learn.R.attr#showHand}
+          attribute's value can be found in the {@link #Dial} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:showHand
+        */
+        public static final int Dial_showHand = 20;
+        /**
+          <p>This symbol is the offset where the {@link org.wangliang.app.learn.R.attr#showRange}
+          attribute's value can be found in the {@link #Dial} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:showRange
+        */
+        public static final int Dial_showRange = 19;
+        /**
+          <p>This symbol is the offset where the {@link org.wangliang.app.learn.R.attr#totalNotches2}
+          attribute's value can be found in the {@link #Dial} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:totalNotches2
+        */
+        public static final int Dial_totalNotches2 = 0;
+        /**
+          <p>This symbol is the offset where the {@link org.wangliang.app.learn.R.attr#unitTitle}
+          attribute's value can be found in the {@link #Dial} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:unitTitle
+        */
+        public static final int Dial_unitTitle = 18;
+        /**
+          <p>This symbol is the offset where the {@link org.wangliang.app.learn.R.attr#upperTitle}
+          attribute's value can be found in the {@link #Dial} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:upperTitle
+        */
+        public static final int Dial_upperTitle = 16;
+        /** Attributes that can be used with a Temperature.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #Temperature_incrementPerLargeNotch org.wangliang.app.learn:incrementPerLargeNotch}</code></td><td></td></tr>
+           <tr><td><code>{@link #Temperature_incrementPerSmallNotch org.wangliang.app.learn:incrementPerSmallNotch}</code></td><td></td></tr>
+           <tr><td><code>{@link #Temperature_scaleCenterValue org.wangliang.app.learn:scaleCenterValue}</code></td><td></td></tr>
+           <tr><td><code>{@link #Temperature_scaleColor org.wangliang.app.learn:scaleColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Temperature_scaleLowerTitle org.wangliang.app.learn:scaleLowerTitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Temperature_scaleMaxValue org.wangliang.app.learn:scaleMaxValue}</code></td><td></td></tr>
+           <tr><td><code>{@link #Temperature_scaleMinValue org.wangliang.app.learn:scaleMinValue}</code></td><td></td></tr>
+           <tr><td><code>{@link #Temperature_scaleUpperTitle org.wangliang.app.learn:scaleUpperTitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Temperature_totalNotches org.wangliang.app.learn:totalNotches}</code></td><td></td></tr>
+           </table>
+           @see #Temperature_incrementPerLargeNotch
+           @see #Temperature_incrementPerSmallNotch
+           @see #Temperature_scaleCenterValue
+           @see #Temperature_scaleColor
+           @see #Temperature_scaleLowerTitle
+           @see #Temperature_scaleMaxValue
+           @see #Temperature_scaleMinValue
+           @see #Temperature_scaleUpperTitle
+           @see #Temperature_totalNotches
+         */
+        public static final int[] Temperature = {
+            0x7f010000, 0x7f010001, 0x7f010002, 0x7f010003,
+            0x7f010004, 0x7f010005, 0x7f010006, 0x7f010007,
+            0x7f010008
+        };
+        /**
+          <p>This symbol is the offset where the {@link org.wangliang.app.learn.R.attr#incrementPerLargeNotch}
+          attribute's value can be found in the {@link #Temperature} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:incrementPerLargeNotch
+        */
+        public static final int Temperature_incrementPerLargeNotch = 1;
+        /**
+          <p>This symbol is the offset where the {@link org.wangliang.app.learn.R.attr#incrementPerSmallNotch}
+          attribute's value can be found in the {@link #Temperature} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:incrementPerSmallNotch
+        */
+        public static final int Temperature_incrementPerSmallNotch = 2;
+        /**
+          <p>This symbol is the offset where the {@link org.wangliang.app.learn.R.attr#scaleCenterValue}
+          attribute's value can be found in the {@link #Temperature} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:scaleCenterValue
+        */
+        public static final int Temperature_scaleCenterValue = 3;
+        /**
+          <p>This symbol is the offset where the {@link org.wangliang.app.learn.R.attr#scaleColor}
+          attribute's value can be found in the {@link #Temperature} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:scaleColor
+        */
+        public static final int Temperature_scaleColor = 6;
+        /**
+          <p>This symbol is the offset where the {@link org.wangliang.app.learn.R.attr#scaleLowerTitle}
+          attribute's value can be found in the {@link #Temperature} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:scaleLowerTitle
+        */
+        public static final int Temperature_scaleLowerTitle = 8;
+        /**
+          <p>This symbol is the offset where the {@link org.wangliang.app.learn.R.attr#scaleMaxValue}
+          attribute's value can be found in the {@link #Temperature} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:scaleMaxValue
+        */
+        public static final int Temperature_scaleMaxValue = 5;
+        /**
+          <p>This symbol is the offset where the {@link org.wangliang.app.learn.R.attr#scaleMinValue}
+          attribute's value can be found in the {@link #Temperature} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:scaleMinValue
+        */
+        public static final int Temperature_scaleMinValue = 4;
+        /**
+          <p>This symbol is the offset where the {@link org.wangliang.app.learn.R.attr#scaleUpperTitle}
+          attribute's value can be found in the {@link #Temperature} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:scaleUpperTitle
+        */
+        public static final int Temperature_scaleUpperTitle = 7;
+        /**
+          <p>This symbol is the offset where the {@link org.wangliang.app.learn.R.attr#totalNotches}
+          attribute's value can be found in the {@link #Temperature} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:totalNotches
+        */
+        public static final int Temperature_totalNotches = 0;
+    };
 }
