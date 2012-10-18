@@ -1,29 +1,35 @@
 package org.wangliang.app.learn.email;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
+import java.io.ByteArrayOutputStream ;
+import java.io.File ;
+import java.io.FileNotFoundException ;
+import java.io.FileOutputStream ;
+import java.io.IOException ;
+import java.io.InputStream ;
+import java.net.URL ;
 
-import org.wangliang.app.learn.R;
+import org.wangliang.app.learn.R ;
 
-import android.app.Activity;
-import android.content.Context;
-import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.Rect;
-import android.graphics.drawable.Drawable;
-import android.net.Uri;
-import android.os.Bundle;
-import android.os.Environment;
-import android.os.StatFs;
-import android.text.Html;
-import android.text.Html.ImageGetter;
-import android.text.Spanned;
-import android.text.TextUtils;
-import android.view.View;
-import android.webkit.MimeTypeMap;
-import android.widget.Toast;
+import android.app.Activity ;
+import android.content.Context ;
+import android.content.Intent ;
+import android.graphics.Bitmap ;
+import android.graphics.Bitmap.CompressFormat ;
+import android.graphics.BitmapFactory ;
+import android.graphics.Rect ;
+import android.graphics.drawable.Drawable ;
+import android.net.Uri ;
+import android.os.Bundle ;
+import android.os.Environment ;
+import android.os.StatFs ;
+import android.text.Html ;
+import android.text.Html.ImageGetter ;
+import android.text.SpannableString ;
+import android.text.Spanned ;
+import android.util.Base64 ;
+import android.view.View ;
+import android.webkit.MimeTypeMap ;
+import android.widget.Toast ;
 
 public class Email extends Activity {
 	@Override
@@ -38,18 +44,23 @@ public class Email extends Activity {
 				Uri.parse("hello@126.com"));
 		intent.addCategory(Intent.CATEGORY_DEFAULT);
 		String type = getMimeTypeByName(this, "1.mp3");
-		intent.setType(type);
+		//intent.setType(type);
+		intent.setType("text/html");
 		// intent.putExtra(Intent.EXTRA_STREAM,
 		// Uri.parse("file:///sdcard/1.mp3"));
+		
+		intent.putExtra(android.content.Intent.EXTRA_TEXT, "<br/><font color=\"#0f00ff\">http://weibo.com/guoku </font><br/><br/> Hello world <br/>&lt;img src='http://www.baidu.com/img/baidu_sylogo1.gif'/>\\<img src='http://www.baidu.com/img/baidu_sylogo1.gif'\\><br/>wwww.guoku.com");
 		intent.putExtra(Intent.EXTRA_STREAM,
 				Uri.parse("file:///android_asset/ic_launcher.png"));
+		
+		new SpannableString("<img src='http://www.baidu.com/img/baidu_sylogo1.gif'>");
 		startActivity(intent);
+		
+		
 
 	}
 
 	public void way2(View v) {
-		
-		
 		 ScreenshotTools.takeScreenShotToEmail(this, this); 
 	}
 	public void way3(View v) {
@@ -86,40 +97,69 @@ public class Email extends Activity {
 	
 	private Spanned getContent() {
 		
-		 return Html.fromHtml("<br/><font color=\"#0f00ff\">http://weibo.com/guoku </font><br/><br/> Hello world <br/><img src='"+R.drawable.ic_launcher+"'/><br/>wwww.guoku.com", new MyImageGetter(), null);
+		 return Html.fromHtml("<br/><font color=\"#0f00ff\">http://weibo.com/guoku </font><br/><br/> Hello world <br/><img src='"+R.drawable.ic_launcher+"'></img><br/>wwww.guoku.com<img src='data:image/png;base64,"+Base64.encodeToString(loadBmpFromUrl(), Base64.DEFAULT)+"'>", new MyImageGetter(), null);
 	}
-	
+	private  byte[] loadBmpFromUrl() {
+		Bitmap bmp = BitmapFactory.decodeResource(getResources(), R.drawable.duoyun2) ;
+		ByteArrayOutputStream bos = new ByteArrayOutputStream() ;
+		bmp.compress(CompressFormat.PNG, 100, bos);
+		return bos.toByteArray();
+		
+	}
+
 	class MyImageGetter implements ImageGetter {
 
 
 		@Override
 		public Drawable getDrawable(String source) {
-			Drawable d = getResources().getDrawable(R.drawable.ic_launcher);
-			d.setBounds(0, 0, d.getIntrinsicWidth() / 2,
-					d.getIntrinsicHeight() / 2);
-
+//			Drawable d = getResources().getDrawable(R.drawable.duoyun2);
+//			d.setBounds(0, 0, d.getIntrinsicWidth() / 2,
+//					d.getIntrinsicHeight() / 2);
+			
+			Base64.encodeToString(loadBmpFromUrl(), Base64.DEFAULT);
+			Drawable d = loadImageFromUrl("http://www.baidu.com/img/baidu_sylogo1.gif") ;
+		
+			d.setBounds(0, 0, d.getIntrinsicWidth() ,d.getIntrinsicHeight() );
+			return d ;
+		}
+		
+		private  Drawable loadImageFromUrl(String url) {
+			URL m;
+			InputStream i = null;
+			try {
+				m = new URL(url);
+				i = (InputStream) m.getContent();
+			} catch (Exception e1) {
+				e1.printStackTrace();
+			} 
+			Drawable d = null;
+			if (i != null) {
+				d = Drawable.createFromStream(i, "src");
+			}
 			return d;
 		}
-
+		
 	}
 	
-	private String getMimeTypeByName(Context context, String name) {
-		if (null == name || 0 == name.length())
-			return null;
-		String extension = null;
-		int dot = name.lastIndexOf(".");
-		if (dot >= 0) {
-			extension = name.substring(dot + 1);
-		}
-		String sys = null;
-		if (extension != null) {
-			sys = MimeTypeMap.getSingleton()
-					.getMimeTypeFromExtension(extension);
-		}
-		return sys;
-
+	
+private String getMimeTypeByName(Context context, String name) {
+	if (null == name || 0 == name.length())
+		return null;
+	String extension = null;
+	int dot = name.lastIndexOf(".");
+	if (dot >= 0) {
+		extension = name.substring(dot + 1);
 	}
+	String sys = null;
+	if (extension != null) {
+		sys = MimeTypeMap.getSingleton()
+				.getMimeTypeFromExtension(extension);
+	}
+	return sys;
+
 }
+}
+
 
 class ScreenshotTools {
 
@@ -291,3 +331,6 @@ class ScreenshotTools {
 	}
 
 }
+
+
+

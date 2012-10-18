@@ -9,7 +9,8 @@
         android:normalScreens="true"
         android:smallScreens="false" />
 
-    <uses-sdk android:minSdkVersion="8" />
+    <uses-sdk android:minSdkVersion="10"
+        android:targetSdkVersion="10" />
     <!-- Webview的权限 -->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
@@ -18,11 +19,14 @@
 
     <!-- 读取联系人信息 -->
     <uses-permission android:name="android.permission.READ_CONTACTS" />
-
+ <instrumentation
+        android:name="android.test.InstrumentationTestRunner"
+        android:targetPackage="org.wangliang.app.learn" />
     <application
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@android:style/Theme.Light" >
+         <uses-library android:name="android.test.runner" />
         <activity
             android:name=".Main"
             android:label="@string/app_name" >
@@ -80,13 +84,28 @@
         <activity android:name="org.wangliang.app.learn.indexer.ContactsIndexer" />
         <activity android:name="org.wangliang.app.learn.service.ServiceActivity" />
 
-        <service android:name="org.wangliang.app.learn.service.BackService" />
+        <service android:name=".service.BackService" />
 
         <activity android:name="org.wangliang.app.learn.graph.ChartDemo" />
         <activity android:name="org.wangliang.app.learn.graph.chart.XYChartBuilder" />
         <activity android:name="org.wangliang.app.learn.graph.chart.PieChartBuilder" />
         <activity android:name="org.achartengine.GraphicalActivity" />
         <activity android:name="org.wangliang.app.learn.graph.GeneratedChartDemo" />
+        <activity android:name=".ui.grid.GridViewTest" />
+        <activity android:name="org.wangliang.app.learn.ui.grid.GridViewTest2" />
+        <activity android:name="org.wangliang.app.learn.ui.grid.GridViewTest3" />
+        <activity android:name="org.wangliang.app.learn.gt3.fragment.FragmentMainActivity" />
+        <activity android:name="org.wangliang.app.learn.gt3.fragment.FragmentDemo2" />
+        <activity android:name="org.wangliang.app.learn.animation.SlideLeftRightAnimationDemo" />
+        <activity android:name="org.wangliang.app.learn.animation.AnimHitTest" />
+        <activity android:name="org.wangliang.app.learn.gt3.fragment.MainFragmentTab" />
+        <activity android:name="org.wangliang.app.learn.gt3.fragment.Fragment1Activity" />
+        <activity android:name="org.wangliang.app.learn.gt3.fragment.Fragment2Activity" />
+        <activity android:name="org.wangliang.app.learn.matrix.MatrixDemo" />
+        <activity android:name="org.wangliang.app.learn.matrix.PositionMatrix" />
+        <activity android:name="org.wangliang.app.learn.matrix.ColorMatrix" />
+        <activity android:name="org.wangliang.app.learn.matrix.Position2MatrixSimple" />
+        <activity android:name="org.wangliang.app.learn.sensor.ThermometerActivity" />
     </application>
 
 </manifest>

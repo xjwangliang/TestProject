@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/system_opt"
+        android:icon="@drawable/menu_sys_opt"
+        android:menuCategory="system"
+        android:title="setting"/>
+
+    <item
+        android:id="@+id/switch_accout"
+        android:icon="@drawable/menu_logout"
+        android:menuCategory="system"
+        android:title="switch_accout"/>
+
+    <item
+        android:id="@+id/help"
+        android:icon="@drawable/help_menu_icon"
+        android:menuCategory="system"
+        android:title="help_and_update"/>
+
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/exit_menu_icon"
+        android:menuCategory="system"
+        android:title="logout_and_exit"/>
+
+</menu>

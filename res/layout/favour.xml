@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp" >
+
+    <com.guoku.custom.PullToRefreshGridView
+        android:id="@+id/layout_favor_grid"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="fill"
+        android:horizontalSpacing="3dp"
+        android:listSelector="#000000"
+        android:numColumns="3"
+        android:orientation="vertical"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="3dp" />
+
+</ScrollView>

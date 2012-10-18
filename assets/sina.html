@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>应用授权 - 新浪微博</title>
+<link type="text/css" href="/oauth2/css/oauth/oauth_web.css" rel="stylesheet" />
+</head>
+<body class="WB_UIbody WB_widgets">
+<div class="WB_xline1 oauth_xline" id="outer">
+ <div class="oauth_wrap">
+    <div class="oauth_header clearfix">
+      <h1 class="WB_logo" title="新浪微博"><a href="http://weibo.com">新浪微博</a></h1>
+      	<p class="login_account"><a href="http://service.weibo.com/reg/regindex.php?appsrc=2lDnar&backurl=">注册</a></p>
+		 </div>
+    <!-- 带头像  -->
+    <div class="WB_panel oauth_main">
+      <div class="oauth_content">
+        <p class="oauth_main_info">
+			授权  <a href="http://guoku.com/"  target="_blank">果库</a> 访问你的微博帐号
+		，将同时登录新浪微博，并允许应用进行以下操作：</p>
+        <div class="oauth_main_content clearfix">
+          <ul class="oauth_main_list">
+		  <li class="oauth_connect clearfix"><label class="oauth_txt" >获得你的个人信息，好友关系</label><input class="oauth_checkbox" type="checkbox" id="c1"  checked  disabled="true" ></li><li class="oauth_share clearfix"><label class="oauth_txt" >分享内容到你的微博</label> <input class="oauth_checkbox" type="checkbox" id="c3"  checked  disabled="true" ></li><li class="oauth_achieve clearfix"><label class="oauth_txt" >获得你的评论</label><input class="oauth_checkbox" type="checkbox" id="c1"  checked  disabled="true" ></li></ul>
+          <div class="oauth_main_show">
+            <div class="oauth_app">
+              <div class="oauth_app_logo">
+                <div class="mask"></div>
+                <img class="app_pic" src="https://upload.api.weibo.com/square/81eb609btw1djot261g5pj.jpg" alt="app"> </div>
+                <p class="oauth_app_caption">
+					
+							开发者：果库<br/>
+								共有 142871 人使用
+								</p>
+              <ul class="oauth_app_user">
+              </ul>
+            </div>
+          </div>
+        </div>
+        	
+        <!-- 登录 -->
+        <div class="oauth_login clearfix">
+        <form name="authZForm" action="authorize" method="post" node-type="form">
+				   <input type="hidden" name="action"  id="action" value="submit"/>
+				   <input type="hidden" name="withOfficalFlag"  id="withOfficalFlag" value="0"/>
+				   <input type="hidden" name="ticket" id="ticket" value=""/>
+				   <input type="hidden" name="isLoginSina"  id="isLoginSina" value=""/>
+				   <input type="submit" style="position:absolute; top:-9999px"/>
+				   <input type="hidden" name="response_type" value="code"/>
+				   <input type="hidden" name="regCallback" value=""/>	
+	       	       <input type="hidden" name="redirect_uri" value="http://www.guoku.com/sina/auth"/>
+	       	       <input type="hidden" name="client_id" value="1459383851"/>
+	       	       <input type="hidden" name="state" value=""/>
+	       	       <input type="hidden" name="from" value=""/>
+					<div class="oauth_login_form">
+				            <p class="oauth_login_01" >
+				              <label class="oauth_input_label">帐号</label>
+				              <input type="text" class="WB_iptxt oauth_form_input" id="userId" name="userId"  value="请用你的新浪微博帐号登录" node-type="userid" />
+				            </p>
+				            <p>
+				              <label class="oauth_input_label">密码</label>
+				              <input type="password" class="WB_iptxt oauth_form_input" id="passwd" name="passwd" node-type="passwd"/>
+				            </p>
+							<p class="oauth_code" node-type="validateBox" style="display:none">
+							  <label class="oauth_input_label">验证码</label>
+							  <input type="text" node-type="vcode" class="WB_iptxt oauth_form_input oauth_form_code"><span class="code_img"><img node-type="pincode"></span><a class="code_change" node-type="changeCode" href="#">换一换</a>
+							</p>
+							<p class="oauth_code" node-type="vdunBox" style="display:none">
+							  <label class="oauth_input_label">微盾动态码</label>
+							  <input type="text" class="WB_iptxt oauth_form_input oauth_form_wd" node-type="vdun" maxlength=6>
+							</p>
+							</div>
+					</form>
+            
+          <div class="oauth_login_submit">
+           <p class="oauth_formbtn oauth_btnA"><a node-type="submit" action-type="submit"   class="WB_btn_oauth formbtn_01"></a><a node-type="cancel" action-type="cancel" class="WB_btn_cancel"></a></p>
+            </div>
+        </div>
+        <!-- /登录 --> 
+      </div>
+    </div>
+    <!-- /带头像 -->
+    <p class="oauth_tiptxt">提示：为保障帐号安全，请认准本页URL地址必须以 api.weibo.com 开头</p>
+  </div>
+  </div>
+<script type="text/javascript" src="/oauth2/js/oauth2.js"></script>
+<script type="text/javascript">
+	(function() {
+	if(self !== top) {
+	var img = new Image();
+	var src = 'https://api.weibo.com/oauth2/images/bg_layerr.png?oauth=1&page=web&refer=' + document.referrer + '&rnd=' + (+new Date());
+	img.src = src
+	img = null; //释放局部变量
+	}
+	})();
+</script>
+</body>
+</html>
+

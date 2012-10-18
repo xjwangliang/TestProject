@@ -1,0 +1,19 @@
+<resources>
+
+    <style name="AppTheme" parent="android:Theme.Light" />
+
+    <style name="browser_document_title">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">#ff071727</item>
+        <item name="android:background">#ffe0e0e0</item>
+    </style>
+
+    <style name="browser_label">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+   <style name="menuTextStyle" parent="@android:style/TextAppearance.Small">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">@color/qqmenu_text_color</item>
+    </style>
+</resources>

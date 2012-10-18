@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <!--
+<RelativeLayout android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+                android:id="@+id/a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="hello" />
+    <ImageView
+                android:id="@+id/b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/tab_front_bg" />
+    
+</RelativeLayout>
+    -->
+
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingBottom="62.0px" >
+
+          <!--   新闻 
+
+            <LinearLayout
+                android:id="@+id/ll_tab_news"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <TextView
+                    android:id="@+id/iv_news"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:scaleType="fitXY"
+                    android:text="新闻" />
+            </LinearLayout>
+            话题
+
+            <LinearLayout
+                android:id="@+id/ll_tab_topic"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <TextView
+                    android:id="@+id/iv_topic"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:scaleType="fitXY"
+                    android:text="话题" />
+            </LinearLayout>
+            图片
+
+            <LinearLayout
+                android:id="@+id/ll_tab_photo"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <TextView
+                    android:id="@+id/iv_photo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:scaleType="fitXY"
+                    android:text="图片" />
+            </LinearLayout>
+            跟帖
+
+            <LinearLayout
+                android:id="@+id/ll_tab_comment"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <TextView
+                    android:id="@+id/iv_comment"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:scaleType="fitXY"
+                   android:text=" 跟帖" />
+            </LinearLayout>
+            投票
+
+            <LinearLayout
+                android:id="@+id/ll_tab_vote"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <TextView
+                    android:id="@+id/iv_vote"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:scaleType="fitXY"
+                     android:text=" 投票"/>
+            </LinearLayout> -->
+        </FrameLayout>
+        <!-- 底部Tab标签 -->
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="65.0px"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/bottombg" />
+
+            <ImageView
+                android:id="@+id/tab_front_bg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@android:id/tabs"
+                android:layout_alignLeft="@android:id/tabs"
+                android:src="@drawable/tab_front_bg" />
+
+            <!-- <ImageView
+                android:id="@+id/tab_bg_bg"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@android:id/tabs"
+                android:src="@drawable/bottom_weight_bg" /> -->
+        </RelativeLayout>
+    </TabHost>
+
+</LinearLayout><!--
+ <TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1" />
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:orientation="horizontal" />
+    </LinearLayout>
+
+</TabHost>
+-->

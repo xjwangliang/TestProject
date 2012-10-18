@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/document_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/document_title"
+            style="@style/browser_document_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/document_icon" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/FrameLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0" >
+
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical" >
+   <!-- <public type="id" name="statusbar" id="0x7f0d004f" /> -->
+            <LinearLayout
+                android:id="@+id/statusbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right" >
+
+                <LinearLayout
+                    android:id="@+id/board"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/btn_browser_board_bg"
+                    android:visibility="invisible" >
+
+                    <ImageView
+                        android:id="@+id/home"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:background="@null"
+                        android:src="@drawable/btn_browser_home" />
+
+                    <ImageView
+                        android:id="@+id/refresh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:background="@null"
+                        android:src="@drawable/btn_browser_refresh" />
+
+                    <ImageView
+                        android:id="@+id/back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:background="@null"
+                        android:enabled="false"
+                        android:src="@drawable/btn_browser_back" />
+
+                    <ImageView
+                        android:id="@+id/forward"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:background="@null"
+                        android:enabled="false"
+                        android:src="@drawable/btn_browser_forward" />
+                </LinearLayout>
+ <!-- <public type="id" name="draw" id="0x7f0d0054" /> -->
+                <ImageView
+                    android:id="@+id/draw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_browser_bg"
+                    android:src="@drawable/btn_browser_draw_collapse" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-2.0px" >
+
+                <ProgressBar
+                    android:id="@+id/ProgressBar01"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/statusbar"
+                    android:max="100"
+                    android:progress="0" />
+
+                <TextView
+                    android:id="@+id/label"
+                    style="@style/browser_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/statusbar"
+                    android:layout_centerHorizontal="true"
+                    android:text="正在载入网页" />
+            </RelativeLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>
+
+  <!-- <public type="layout" name="browser" id="0x7f03000f" /> -->
+  
+ <!--  <style name="loginpage_checkbox" parent="@style/MyCheckBox">
+        <item name="android:textColor">#7f828282</item>
+        <item name="android:button">@drawable/qq_btn_check</item>
+    </style>
+    
+   <style name="MyCheckBox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:paddingLeft">28.0dip</item>
+        <item name="android:button">@drawable/qq_btn_check</item>
+    </style>
+   <style name="QQThemeDefault" parent="@android:style/Theme">
+        <item name="android:buttonStyle">@style/QQButton</item>
+        <item name="android:windowBackground">@color/theme_background</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:alertDialogStyle">@style/qqAlertDialog</item>
+        <item name="android:scrollbarThumbVertical">@drawable/qq_scrollbar</item>
+        <item name="android:editTextStyle">@style/QQEditText</item>
+        <item name="android:expandableListViewStyle">@style/QQExpandableListView</item>
+        <item name="android:imageButtonStyle">@style/QQImageButton</item>
+        <item name="android:listViewStyle">@style/MyListView</item>
+        <item name="android:progressBarStyle">@style/QQProgressBar</item>
+        <item name="android:radioButtonStyle">@style/QQRadioButton</item>
+        <item name="android:textSize">18.0sp</item>
+        <item name="bottombar_send_pic">@drawable/send_pic_button_bar</item>
+        <item name="bottombar_send_photo">@drawable/send_photo_button_bar</item>
+        <item name="back_btn_bg">@drawable/back_btn</item>
+        <item name="bodylisttop_bg">@drawable/bodylisttop</item>
+        <item name="mainbodytop_bg">@drawable/mainbodytop</item>
+        <item name="bottom_bg">@drawable/bottom</item>
+        <item name="bottombar_2_bg">@drawable/bottombar_2</item>
+        <item name="qq_close_bg">@drawable/chat_lin_quit</item>
+        <item name="qq_checkbox_style">@style/MyCheckBox</item>
+        <item name="qq_radioButtonStyle">@style/QQRadioButton</item>
+        <item name="qq_cancel_bg">@drawable/cancel_btn</item>
+        <item name="qq_talk_select_bg">@drawable/chat_talkselect</item>
+        <item name="qq_history_button_bg">@drawable/chat_history_button</item>
+        <item name="qq_video_button_bg">@drawable/chat_video_button</item>
+        <item name="qq_option_bg">@drawable/option</item>
+        <item name="qq_prev_page_bg">@drawable/chat_prev_page</item>
+        <item name="qq_next_page_bg">@drawable/chat_next_page</item>
+        <item name="contextbtn_bg">@drawable/contextbtn</item>
+        <item name="expander_group_bg">@drawable/expander_group</item>
+        <item name="chating_title_bg">@drawable/chating_title</item>
+        <item name="more_select_bg">@drawable/more_select</item>
+        <item name="expand_group_bar_bg">@drawable/expand_group_bar</item>
+        <item name="highlight_item_bg">@drawable/highlight_item</item>
+        <item name="export_history_img">@drawable/export_history_button</item>
+        <item name="delete_history_img">@drawable/delete_history_button</item>
+        <item name="tab1_bg">@drawable/tab1</item>
+        <item name="tab2_bg">@drawable/tab2</item>
+        <item name="tab3_bg">@drawable/tab3</item>
+        <item name="chat_selectitem">@drawable/chat_selectitem</item>
+        <item name="chat_divider">@color/msg_divider</item>
+        <item name="item_divider">@drawable/divider_group</item>
+        <item name="emo_tab_button">@style/emo_table_button</item>
+    </style>
+             
+               if (!"stop".equals(this.i.getTag()))
+              {
+                if (!"collapse".equals(this.i.getTag()))
+                {
+                  this.i.setTag("collapse");
+                  this.i.setImageDrawable(getResources().getDrawable(2130837537));// <public type="drawable" name="btn_browser_draw" id="0x7f020021" />
+                  ((ViewGroup)this.j.getParent()).getLayoutParams().width = -1;//设置宽度为fill——parent
+                  this.j.setVisibility(0);
+                  this.j.startAnimation(this.r);
+                  a(3000);
+                }
+                else
+                {
+                  this.B.run();
+                  this.t.removeCallbacks(this.B);
+                }
+              }
+              else
+                a.stopLoading();
+                -->

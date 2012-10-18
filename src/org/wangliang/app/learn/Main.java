@@ -28,7 +28,7 @@ public class Main extends ListActivity {
 		initIntent();
 	}
 
-	private static final String[] Items = new String[] { "Contacts","Wangyi","Geo","Email","Span","Pic","Switcher","Switcher2","Contacts Indexer","Service","AChart"};
+	private static final String[] Items = new String[] { "Contacts","Wangyi","Geo","Email","Span","Pic","Switcher","Switcher2","Contacts Indexer","Service","AChart","Grid","Grid2","Grid3","Fragment","Fragment2","Animation","Animation Hit","Fragment Tab","Matrix","Sensor"};
 	HashMap<Integer, Intent> intents = null ;
 	private void initIntent(){
 		intents = new HashMap<Integer, Intent>();//Use new SparseArray<Intent>(...) instead for better performance
@@ -43,6 +43,16 @@ public class Main extends ListActivity {
 		intents.put(8, new Intent(this, org.wangliang.app.learn.indexer.ContactsIndexer.class));
 		intents.put(9, new Intent(this, org.wangliang.app.learn.service.ServiceActivity.class));
 		intents.put(10, new Intent(this, org.wangliang.app.learn.graph.ChartDemo.class));
+		intents.put(11, new Intent(this, org.wangliang.app.learn.ui.grid.GridViewTest.class));
+		intents.put(12, new Intent(this, org.wangliang.app.learn.ui.grid.GridViewTest2.class));
+		intents.put(13, new Intent(this, org.wangliang.app.learn.ui.grid.GridViewTest3.class));
+		intents.put(14, new Intent(this, org.wangliang.app.learn.gt3.fragment.FragmentMainActivity.class));
+		intents.put(15, new Intent(this, org.wangliang.app.learn.gt3.fragment.FragmentDemo2.class));
+		intents.put(16, new Intent(this, org.wangliang.app.learn.animation.SlideLeftRightAnimationDemo.class));
+		intents.put(17, new Intent(this, org.wangliang.app.learn.animation.AnimHitTest.class));
+		intents.put(18, new Intent(this, org.wangliang.app.learn.gt3.fragment.MainFragmentTab.class));
+		intents.put(19, new Intent(this,org.wangliang.app.learn.matrix.MatrixDemo.class));
+		intents.put(20, new Intent(this,org.wangliang.app.learn.sensor.ThermometerActivity.class));
 	}
 	
 
