@@ -9,8 +9,8 @@
         android:normalScreens="true"
         android:smallScreens="false" />
 
-    <uses-sdk android:minSdkVersion="10"
-        android:targetSdkVersion="10" />
+    <uses-sdk android:minSdkVersion="16"
+        android:targetSdkVersion="16" />
     <!-- Webview的权限 -->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
@@ -108,6 +108,7 @@
         <activity android:name="org.wangliang.app.learn.sensor.ThermometerActivity" />
         <activity android:name="org.wangliang.app.learn.sensor.dialview.DialViewActivity" />
         <activity android:name="org.wangliang.app.learn.sensor.GaugeActivity" />
+        <activity android:name="org.wangliang.app.learn.path.PathAnimationActivity" />
     </application>
 
 </manifest>

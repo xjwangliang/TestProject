@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="main_text">This is a sample application showing how to use an Ant build for your Android applications.</string>
+    <string name="app_name">Ant Build</string>
+</resources>

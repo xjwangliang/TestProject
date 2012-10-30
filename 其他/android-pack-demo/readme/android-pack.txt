@@ -1,0 +1,19 @@
+#!/bin/bash
+old='guoku'
+
+folder=guoku_1.1.1
+tar="$folder.tar"
+mkdir ../$folder
+
+rm -rf ../$folder/*
+
+for line in `cat guoku.txt`
+do
+sed -i "" "s/$old/$line/g" /Users/yanzhao/Workspace/adele/res/values/channel.xml
+ant release -buildfile ./adele/build.xml -Dguoku.release.name=$line -Dguoku.out.dir=../$folder
+old=$line
+done
+
+mv ../$folder/guoku_guoku.apk ../$folder/guoku.apk
+
+tar -zcvf ../$tar ../$folder/*

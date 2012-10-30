@@ -1,4 +1,5 @@
 // Copyright (c) 2010, Freddy Martens (http://atstechlab.wordpress.com), 
+//http://atstechlab.wordpress.com/2010/07/30/gauge-and-dial-widget-for-android/
 // MindTheRobot (http://mindtherobot.com/blog/)  and contributors
 // All rights reserved.
 //

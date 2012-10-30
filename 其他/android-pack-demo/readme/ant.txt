@@ -1,0 +1,33 @@
+配置
+	ANT_HOME/bin
+测试
+	ant -version
+	
+	
+	
+ant clean
+	Cleans the project. If you include the all target before clean (ant all clean), other projects are also cleaned. For instance if you clean a test project, the tested project is also cleaned.
+ant debug
+	Builds a debug package. Works on application, library, and test projects and compiles dependencies as needed.
+ant emma debug
+	Builds a test project while building the tested project with instrumentation turned on. This is used to run tests with code coverage enabled.
+ant release
+	Builds a release package.
+ant instrument
+	Builds an instrumented debug package. This is generally called automatically when building a test project with code coverage enabled (with the emma target)
+ant <build_target> install
+	Builds and installs a package. Using install by itself fails.
+ant installd
+	Installs an already compiled debug package. This fails if the .apk is not already built.
+ant installr
+	Installs an already compiled release package. This fails if the .apk is not already built.
+ant installt
+	Installs an already compiled test package. Also installs the .apk of the tested application. This fails if the .apk is not already built.
+ant installi
+	Installs an already compiled instrumented package. This is generally not used manually as it's called when installing a test package. This fails if the .apk is not already built.
+ant test
+	Runs the tests (for test projects). The tested and test .apk files must be previously installed.
+ant debug installt test
+	Builds a test project and the tested project, installs both .apk files, and runs the tests.
+ant emma debug install test
+	Builds a test project and the tested project, installs both .apk files, and runs the tests with code coverage enabled.

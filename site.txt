@@ -1,6 +1,4 @@
-
 Emerging UI Pattern - Side Navigation 
 
 http://www.androiduipatterns.com/2012/06/emerging-ui-pattern-side-navigation.html
-
 http://mindtherobot.com/blog/534/android-ui-making-an-analog-rotary-knob/

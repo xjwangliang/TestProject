@@ -28,7 +28,7 @@ public class Main extends ListActivity {
 		initIntent();
 	}
 
-	private static final String[] Items = new String[] { "Contacts","Wangyi","Geo","Email","Span","Pic","Switcher","Switcher2","Contacts Indexer","Service","AChart","Grid","Grid2","Grid3","Fragment","Fragment2","Animation","Animation Hit","Fragment Tab","Matrix","Sensor","DialView","Gauge"};
+	private static final String[] Items = new String[] { "Contacts","Wangyi","Geo","Email","Span","Pic","Switcher","Switcher2","Contacts Indexer","Service","AChart","Grid","Grid2","Grid3","Fragment","Fragment2","Animation","Animation Hit","Fragment Tab","Matrix","Sensor","DialView","Gauge","Path Animation"};
 	HashMap<Integer, Intent> intents = null ;
 	private void initIntent(){
 		intents = new HashMap<Integer, Intent>();//Use new SparseArray<Intent>(...) instead for better performance
@@ -55,6 +55,7 @@ public class Main extends ListActivity {
 		intents.put(20, new Intent(this,org.wangliang.app.learn.sensor.ThermometerActivity.class));
 		intents.put(21, new Intent(this,org.wangliang.app.learn.sensor.dialview.DialViewActivity.class));
 		intents.put(22, new Intent(this,org.wangliang.app.learn.sensor.GaugeActivity.class));
+		intents.put(23, new Intent(this,org.wangliang.app.learn.path.PathAnimationActivity.class));
 	}
 	
 
