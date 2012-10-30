@@ -1,0 +1,242 @@
+app_vercode:1
+device_model:mione_plus
+build_version:2.3.5i
+condition:1
+processName:com.guoku
+pid:25535
+uid:10082
+tag:null
+shortMsg:java.lang.NullPointerException
+longMsg:java.lang.NullPointerException
+stackTrace:java.lang.NullPointerException
+at com.guoku.activity.Favour$ShowMoreDataTask.onPostExecute(Favour.java:82)
+at com.guoku.activity.Favour$ShowMoreDataTask.onPostExecute(Favour.java:1)
+at android.os.AsyncTask.finish(AsyncTask.java:417)
+at android.os.AsyncTask.access$300(AsyncTask.java:127)
+at android.os.AsyncTask$InternalHandler.handleMessage(AsyncTask.java:429)
+at android.os.Handler.dispatchMessage(Handler.java:99)
+at android.os.Looper.loop(Looper.java:130)
+at android.app.ActivityThread.main(ActivityThread.java:3703)
+at java.lang.reflect.Method.invokeNative(Native Method)
+at java.lang.reflect.Method.invoke(Method.java:507)
+at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:866)
+at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:624)
+at dalvik.system.NativeStart.main(Native Method)
+
+Detail logs:
+--------- beginning of /dev/log/main
+--------- beginning of /dev/log/system
+W/System.err(25535): at java.lang.Thread.run(Thread.java:1019)
+I/helper  (25535): analyzeCard:
+E/MP-Decision(  394): DOWN Ns:2.100000 Ts:270 rq:1.240964 seq:1025.000000
+I/AlarmManager(  207): wakelock acquire, uid:1000 at elapsed real time: 1340982078
+I/AlarmManager(  207): wakelock release, uid:1000 at elapsed real time: 1340982114
+I/AlarmManager(  207): wakelock acquire, uid:1000 at elapsed real time: 1340988945
+E/MP-Decision(  394): UP Nw:2.700000 Tw:180 rq:3.393617 seq:188.000000
+I/AlarmManager(  207): wakelock release, uid:1000 at elapsed real time: 1340988994
+E/ThermalDaemon(  393): Maximum CPU[1] frequency 972000 KHz
+E/MP-Decision(  394): DOWN Ns:2.100000 Ts:270 rq:1.127119 seq:925.000000
+E/MP-Decision(  394): UP Nw:2.700000 Tw:180 rq:17.300000 seq:198.000000
+D/Gmail   (25202): Inserting message 1395785610462069313. synced=true
+E/ThermalDaemon(  393): Maximum CPU[1] frequency 972000 KHz
+E/MP-Decision(  394): DOWN Ns:2.100000 Ts:270 rq:1.100000 seq:326.000000
+I/Gmail   (25202): MainSyncRequestProto: lowestBkwdConvoId: 0, highestHandledServerOp: 13590, normalSync: true
+E/MP-Decision(  394): UP Nw:2.700000 Tw:180 rq:3.100000 seq:215.000000
+E/ThermalDaemon(  393): Maximum CPU[1] frequency 972000 KHz
+E/com.guoku.activity.CardShow(25535): null
+W/System.err(25535): java.lang.NullPointerException
+W/System.err(25535): at com.guoku.activity.CardShow.onPause(CardShow.java:192)
+W/System.err(25535): at android.app.Activity.performPause(Activity.java:3875)
+W/System.err(25535): at android.app.Instrumentation.callActivityOnPause(Instrumentation.java:1191)
+W/System.err(25535): at android.app.ActivityThread.performPauseActivity(ActivityThread.java:2358)
+W/System.err(25535): at android.app.ActivityThread.performPauseActivity(ActivityThread.java:2328)
+W/System.err(25535): at android.app.LocalActivityManager.performPause(LocalActivityManager.java:200)
+W/System.err(25535): at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:184)
+W/System.err(25535): at android.app.LocalActivityManager.startActivity(LocalActivityManager.java:288)
+W/System.err(25535): at android.widget.TabHost$IntentContentStrategy.getContentView(TabHost.java:692)
+W/System.err(25535): at android.widget.TabHost.setCurrentTab(TabHost.java:363)
+W/System.err(25535): at android.widget.TabHost.setCurrentTabByTag(TabHost.java:300)
+W/System.err(25535): at com.guoku.activity.GuokuActivity$5.onCheckedChanged(GuokuActivity.java:205)
+W/System.err(25535): at android.widget.CompoundButton.setChecked(CompoundButton.java:125)
+W/System.err(25535): at android.widget.CompoundButton.toggle(CompoundButton.java:87)
+W/System.err(25535): at android.widget.RadioButton.toggle(RadioButton.java:72)
+W/System.err(25535): at android.widget.CompoundButton.performClick(CompoundButton.java:99)
+W/System.err(25535): at android.view.View$PerformClick.run(View.java:9130)
+W/System.err(25535): at android.os.Handler.handleCallback(Handler.java:587)
+W/System.err(25535): at android.os.Handler.dispatchMessage(Handler.java:92)
+W/System.err(25535): at android.os.Looper.loop(Looper.java:130)
+W/System.err(25535): at android.app.ActivityThread.main(ActivityThread.java:3703)
+W/System.err(25535): at java.lang.reflect.Method.invokeNative(Native Method)
+W/System.err(25535): at java.lang.reflect.Method.invoke(Method.java:507)
+W/System.err(25535): at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:866)
+W/System.err(25535): at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:624)
+W/System.err(25535): at dalvik.system.NativeStart.main(Native Method)
+E/MP-Decision(  394): DOWN Ns:2.100000 Ts:270 rq:1.902527 seq:277.000000
+D/Gmail   (25202): Updating message 1395785610462069313. synced=true
+E/MP-Decision(  394): UP Nw:2.700000 Tw:180 rq:3.000000 seq:211.000000
+E/ThermalDaemon(  393): Maximum CPU[1] frequency 972000 KHz
+I/Gmail   (25202): MainSyncRequestProto: lowestBkwdConvoId: 0, highestHandledServerOp: 13605, normalSync: true
+I/Gmail   (25202): MainSyncRequestProto: lowestBkwdConvoId: 0, highestHandledServerOp: 13605, normalSync: true
+E/MP-Decision(  394): DOWN Ns:2.100000 Ts:270 rq:2.000000 seq:307.000000
+I/Gmail   (25202): getStartSyncRequest: handledServerOpId: 13608, upperFetchedConvoId: 1393317197106905088, lowerFetchedConvoId: 0, ackedClientOp: 27
+I/Gmail   (25202): checkLabelsSets changed the label sets to: included([^^out, ^r]), partial([^i, ^f, ^iim]), all([^imi, ^iim, [imap]-drafts, 工作邮件, 网站, ^all, ^io_im, ^sps, ^act, ^imn, ^urg_2, ^urg_1, 私人邮件, ^i, ^g, ^f, ^vm, [imap]-sent, ^k, ^rr, deleted-messages, ^b, ^ig, ^urg_5, 英语, ^urg_4, ^urg_3, ^p, 收据, ^o, ^t, ^u, ^r, ^punsub, ^s, ^unsub, 旅行相关])
+I/Gmail   (25202): MainSyncRequestProto: lowestBkwdConvoId: 0, highestHandledServerOp: 13608, normalSync: true
+E/MP-Decision(  394): UP Nw:2.700000 Tw:180 rq:3.300000 seq:235.000000
+E/ThermalDaemon(  393): Maximum CPU[1] frequency 972000 KHz
+I/Gmail   (25202): MainSyncRequestProto: lowestBkwdConvoId: 0, highestHandledServerOp: 13608, normalSync: true
+E/MP-Decision(  394): DOWN Ns:2.100000 Ts:270 rq:1.000000 seq:359.000000
+I/Gmail   (25202): MainSyncRequestProto: lowestBkwdConvoId: 0, highestHandledServerOp: 13614, normalSync: true
+I/GuokuService(25535): getLikeCards的响应码：200
+E/MP-Decision(  394): UP Nw:2.700000 Tw:180 rq:3.500000 seq:203.000000
+E/ThermalDaemon(  393): Maximum CPU[1] frequency 972000 KHz
+E/MP-Decision(  394): DOWN Ns:2.100000 Ts:270 rq:1.900000 seq:338.000000
+I/AlarmManager(  207): wakelock acquire, uid:10054 at elapsed real time: 1341019461
+I/AlarmManager(  207): wakelock release, uid:10054 at elapsed real time: 1341019521
+I/SMACK   (24050): 20:55:35 enter touch time
+E/MP-Decision(  394): UP Nw:2.700000 Tw:180 rq:2.826087 seq:216.000000
+E/ThermalDaemon(  393): Maximum CPU[1] frequency 972000 KHz
+E/MP-Decision(  394): DOWN Ns:2.100000 Ts:270 rq:1.594059 seq:336.000000
+I/GuokuService(25535): getLikeCards的结果：[{"pub_time": "2012-03-06 20:25:07", "title": "\u5de7\u5320\u5c4b\u9542\u7a7a\u661f\u661f\u5c0f\u53f0\u706f\u6b27\u6d32\u7687\u5ba4\u86cb\u96d5LED\u751f\u65e5 \u5a5a\u5e86 \u793c\u7269ART-122", "url": "http://s.click.taobao.com/t_8?e=7HZ6jHSTZPuw553N1oqk5pqWEK%2BLy%2BQ4NL1WQ2bdL240WhdAZNvb41OKLVU9CjfkSft7t%2FjcG02FHnM95qUTx%2FASxr4OLY1yggU4OagqNbL%2B%2BIfA&p=mm_28514026_0_0&n=19", "delist_time": "2012-03-11 13:33:30", "cat_id": 7, "liked_time": "2012-03-07 16:10:02", "num_iid": "9278617875", "card_id": 26687, "is_weight": 0, "height": "310.00", "share_url": "http://i.guoku.com/present/26687/", "width": "310.00", "liked_count": 50, "location": "\u5e7f\u4e1c \u4e1c\u839e", "is_pop": 0, "stuff_status": "\u5168\u65b0", "img_url": "http://img01.taobaocdn.com/bao/uploaded/i5/T1SjdaXk4vXXXuo.w._113642.jpg_310x310.jpg", "price": "359.00", "desc": "\u661f\u661f\u70b9\u706f\uff0c\u7167\u4eae\u6211\u7684\u5bb6\u95e8\uff0c\u55ef\uff01\u771f\u6b63\u9e45\u86cb\u58f3\u96d5\u523b\u7684 LED \u5c0f\u53f0\u706f\uff0c\u90c1\u91d1\u9999\u82b1\u72b6\uff0c\u5149\u7ebf\u7a7f\u900f\u529b\u5f88\u5f3a\u3002\u4e0a\u7d27\u97f3\u4e50\u94c3\u53d1\u6761\uff0c\u7ea2\u3001\u84dd\u3001\u7eff\u4e09\u8272\u706f\u5149\u4ea4\u66ff\u53d8\u8272\uff0c\u8ba9\u8ff7\u5931\u7684\u5b69\u5b50\u7ec8\u4e8e\u627e\u5230\u6765\u65f6\u7684\u8def\u3002"}, {"pub_time": "2012-03-06 20:30:42", "title": "\u7f8e\u56fd\u4ee3\u8d2d \u4e13\u67dc\u6b63\u54c1 Levi's 501-0537 \u6d45\u84dd\u6d17\u6c34 \u725b\u4ed4\u88e4", "url": "http://item.taobao.com/item.htm?id=5225332512", "delist_time": "2012-03-11 15:26:04", "cat_id": 2, "liked_time": "2012-03-07 15:04:15", "num_iid": "5225332512", "card_id": 26688, "is_weight": 0, "height": "310.00", "share_url": "http://i.guoku.com/present/26688/", "width": "310.00", "liked_count": 79, "location": "\u4e0a\u6d77", "is_pop": 0, "stuff_status": "\u5168\u65b0", "img_url": "http://img04.taobaocdn.com/bao/uploaded/i8/T1XJXBXhNnXXcABbk._081356.jpg_310x310.jpg", "price": "420.00", "desc": "\u7f8e\u56fd\u725b\u4ed4\u54c1\u724c Levi's \u7ecf\u5178 501-0537 \u6d45\u84dd\u6d17\u6c34\u725b\u4ed4\u88e4\u578b\uff0c\u7eaf\u68c9\u6750\u8d28\uff0c\u5e72\u51c0\u6e05\u723d\uff0c\u9002\u5408\u5b9e\u7528\u4e3b\u4e49\u8005\u7a7f\u7740\u3002"}, {"pub_time": "2012-03-07 12:20:35", "title": "\u3010\u82f1\u56fd\u4ee3\u8d2dtopshop\u30113.2\u6625\u5b63\u65b0\u6b3e\u751c\u7f8e\u788e\u82b1\u7530\u56ed\u98ce\u8fde\u8863\u88d9", "url": "http://item.taobao.com/item.htm?id=13997877071", "delist_time": "2012-03-09 18:50:09", "cat_id": 1, "liked_time": "2012-03-07 13:45:06", "num_iid": "13997877071", "card_id": 26757, "is_weight": 0, "height": "310.00", "share_url": "http://i.guoku.com/present/26757/", "width": "207.00", "liked_count": 41, "location": "\u6d77\u5916 \u82f1\u56fd", "is_pop": 0, "stuff_status": "\u5168\u65b0", "img_url": "http://img04.taobaocdn.com/bao/uploaded/i4/1407149/T2B.WqXe4aXXXXXXXX_!!1407149.jpg_310x310.jpg", "price": "425.00", "desc": "\u751c\u7f8e\u788e\u82b1\u7530\u56ed\u98ce\u8fde\u8863\u88d9\u3002\u788e\u82b1\uff0c\u5230\u5e95\u662f\u4e0d\u662f\u4eca\u5e74\u6625\u5929\u7684\u5fc5\u6740\u6280\uff1f\u80cc\u540e\u7684\u5c0f\u8bbe\u8ba1\u5f88\u517b\u773c\u3002"}, {"pub_time": "2012-03-06 20:20:25", "title": "U*NI*QLO\u539f\u5355\u6b63\u54c1\u68c9\u9ebb\u534a\u5185\u886c\u4e24\u7c92\u6263\u5355\u5f00\u53c9\u8584\u578b\u4f11\u95f2\u897f\u88c5 \u7c73\u767d\u8272", "url": "http://item.taobao.com/item.htm?id=13344176945", "delist_time": "2012-03-06 21:00:00", "cat_id": 2, "liked_time": "2012-03-06 20:26:04", "num_iid": "13344176945", "card_id": 26686, "is_weight": 0, "height": "310.00", "share_url": "http://i.guoku.com/present/26686/", "width": "310.00", "liked_count": 62, "location": "\u6c5f\u82cf \u6dee\u5b89", "is_pop": 0, "stuff_status": "\u5168\u65b0", "img_url": "http://img04.taobaocdn.com/bao/uploaded/i4/T1EoyoXbdxXXbRDuw._081759.jpg_310x310.jpg", "price": "178.00", "desc": "\u51fa\u53e3\u65e5\u672c\u7684 UNIQLO \u4e24\u7c92\u6263\u8584\u578b\u4f11\u95f2\u897f\u88c5\uff0c\u7c73\u767d\u8272\u3002\u6
+E/populateItems(25535): position:0:26687
+E/populateItems(25535): position:0:26687
+E/decodeStream(25535): 310 310 1
+E/populateItems(25535): position:0:26687
+E/populateItems(25535): position:1:26688
+E/populateItems(25535): position:2:26757
+E/populateItems(25535): position:3:26686
+E/populateItems(25535): position:4:26158
+E/populateItems(25535): position:5:26633
+E/decodeStream(25535): 310 310 1
+E/populateItems(25535): position:6:26658
+E/decodeStream(25535): 310 310 1
+E/decodeStream(25535): 240 180 1
+E/MP-Decision(  394): UP Nw:2.700000 Tw:180 rq:8.815126 seq:216.000000
+E/decodeStream(25535): 215 215 1
+E/decodeStream(25535): 310 310 1
+E/decodeStream(25535): 310 310 1
+E/populateItems(25535): position:7:26660
+E/populateItems(25535): position:8:26675
+E/populateItems(25535): position:9:26676
+E/decodeStream(25535): 207 310 1
+E/decodeStream(25535): 276 310 1
+E/populateItems(25535): position:10:26678
+E/populateItems(25535): position:11:26680
+E/populateItems(25535): position:12:26681
+E/populateItems(25535): position:13:26674
+E/decodeStream(25535): 310 310 1
+E/decodeStream(25535): 310 310 1
+E/ThermalDaemon(  393): Maximum CPU[1] frequency 972000 KHz
+E/populateItems(25535): position:14:26605
+E/decodeStream(25535): 300 300 1
+E/decodeStream(25535): 207 310 1
+E/decodeStream(25535): 178 310 1
+E/decodeStream(25535): 310 310 1
+E/decodeStream(25535): 310 310 1
+E/populateItems(25535): position:0:26687
+E/populateItems(25535): position:0:26687
+E/MP-Decision(  394): DOWN Ns:2.100000 Ts:270 rq:1.732601 seq:273.000000
+E/populateItems(25535): position:15:26609
+E/populateItems(25535): position:16:26639
+E/populateItems(25535): position:17:26286
+E/decodeStream(25535): 310 310 1
+E/decodeStream(25535): 310 232 1
+E/decodeStream(25535): 310 232 1
+E/populateItems(25535): position:0:26687
+E/populateItems(25535): position:0:26687
+E/populateItems(25535): position:18:26296
+E/populateItems(25535): position:19:26309
+E/populateItems(25535): position:20:26311
+E/decodeStream(25535): 310 310 1
+E/MP-Decision(  394): UP Nw:2.700000 Tw:180 rq:3.314815 seq:209.000000
+E/decodeStream(25535): 310 310 1
+E/decodeStream(25535): 310 310 1
+E/populateItems(25535): position:0:26687
+E/populateItems(25535): position:0:26687
+E/decodeStream(25535): 310 310 1
+E/populateItems(25535): position:21:26312
+E/populateItems(25535): position:22:26250
+E/populateItems(25535): position:23:26251
+E/decodeStream(25535): 310 310 1
+E/decodeStream(25535): 258 294 1
+E/populateItems(25535): position:0:26687
+E/populateItems(25535): position:0:26687
+E/decodeStream(25535): 310 270 1
+E/populateItems(25535): position:0:26687
+E/populateItems(25535): position:0:26687
+E/ThermalDaemon(  393): Maximum CPU[1] frequency 972000 KHz
+E/populateItems(25535): position:24:26252
+E/populateItems(25535): position:25:26254
+E/populateItems(25535): position:26:26256
+E/decodeStream(25535): 226 310 1
+E/decodeStream(25535): 310 310 1
+E/decodeStream(25535): 310 310 1
+E/populateItems(25535): position:0:26687
+E/populateItems(25535): position:0:26687
+E/populateItems(25535): position:27:25839
+E/populateItems(25535): position:28:26054
+E/populateItems(25535): position:29:26055
+E/decodeStream(25535): 237 310 1
+E/decodeStream(25535): 300 300 1
+E/populateItems(25535): position:0:26687
+E/populateItems(25535): position:0:26687
+E/decodeStream(25535): 310 310 1
+E/populateItems(25535): position:0:26687
+E/populateItems(25535): position:0:26687
+E/MP-Decision(  394): DOWN Ns:2.100000 Ts:270 rq:1.250000 seq:299.000000
+E/populateItems(25535): position:0:26687
+E/populateItems(25535): position:0:26687
+E/MP-Decision(  394): UP Nw:2.700000 Tw:180 rq:4.486239 seq:207.000000
+E/ThermalDaemon(  393): Maximum CPU[1] frequency 972000 KHz
+E/MP-Decision(  394): DOWN Ns:2.100000 Ts:270 rq:1.794118 seq:340.000000
+W/System.err(25535): java.net.SocketTimeoutException
+W/System.err(25535): at org.apache.harmony.luni.net.PlainSocketImpl.read(PlainSocketImpl.java:461)
+W/System.err(25535): at org.apache.harmony.luni.net.SocketInputStream.read(SocketInputStream.java:85)
+W/System.err(25535): at org.apache.http.impl.io.AbstractSessionInputBuffer.fillBuffer(AbstractSessionInputBuffer.java:103)
+W/System.err(25535): at org.apache.http.impl.io.AbstractSessionInputBuffer.readLine(AbstractSessionInputBuffer.java:191)
+W/System.err(25535): at org.apache.http.impl.conn.DefaultResponseParser.parseHead(DefaultResponseParser.java:82)
+W/System.err(25535): at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:174)
+W/System.err(25535): at org.apache.http.impl.AbstractHttpClientConnection.receiveResponseHeader(AbstractHttpClientConnection.java:179)
+W/System.err(25535): at org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:235)
+W/System.err(25535): at org.apache.http.impl.conn.AbstractClientConnAdapter.receiveResponseHeader(AbstractClientConnAdapter.java:259)
+W/System.err(25535): at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:279)
+W/System.err(25535): at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:121)
+W/System.err(25535): at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:421)
+W/System.err(25535): at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:555)
+W/System.err(25535): at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:487)
+W/System.err(25535): at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:465)
+W/System.err(25535): at com.guoku.service.GuokuService.getLikedCards(GuokuService.java:732)
+W/System.err(25535): at com.guoku.activity.Favour.getCards(Favour.java:162)
+W/System.err(25535): at com.guoku.activity.Favour.access$4(Favour.java:161)
+W/System.err(25535): at com.guoku.activity.Favour$ShowMoreDataTask.doInBackground(Favour.java:72)
+W/System.err(25535): at com.guoku.activity.Favour$ShowMoreDataTask.doInBackground(Favour.java:1)
+W/System.err(25535): at android.os.AsyncTask$2.call(AsyncTask.java:185)
+W/System.err(25535): at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:306)
+W/System.err(25535): at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+W/System.err(25535): at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1088)
+W/System.err(25535): at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:581)
+W/System.err(25535): at java.lang.Thread.run(Thread.java:1019)
+W/dalvikvm(25535): threadid=1: thread exiting with uncaught exception (group=0x40015568)
+E/AndroidRuntime(25535): FATAL EXCEPTION: main
+E/AndroidRuntime(25535): java.lang.NullPointerException
+E/AndroidRuntime(25535): at com.guoku.activity.Favour$ShowMoreDataTask.onPostExecute(Favour.java:82)
+E/AndroidRuntime(25535): at com.guoku.activity.Favour$ShowMoreDataTask.onPostExecute(Favour.java:1)
+E/AndroidRuntime(25535): at android.os.AsyncTask.finish(AsyncTask.java:417)
+E/AndroidRuntime(25535): at android.os.AsyncTask.access$300(AsyncTask.java:127)
+E/AndroidRuntime(25535): at android.os.AsyncTask$InternalHandler.handleMessage(AsyncTask.java:429)
+E/AndroidRuntime(25535): at android.os.Handler.dispatchMessage(Handler.java:99)
+E/AndroidRuntime(25535): at android.os.Looper.loop(Looper.java:130)
+E/AndroidRuntime(25535): at android.app.ActivityThread.main(ActivityThread.java:3703)
+E/AndroidRuntime(25535): at java.lang.reflect.Method.invokeNative(Native Method)
+E/AndroidRuntime(25535): at java.lang.reflect.Method.invoke(Method.java:507)
+E/AndroidRuntime(25535): at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:866)
+E/AndroidRuntime(25535): at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:624)
+E/AndroidRuntime(25535): at dalvik.system.NativeStart.main(Native Method)
+W/ActivityManager(  207):   Force finishing activity com.guoku/.activity.GuokuActivity
+E/MP-Decision(  394): UP Nw:2.700000 Tw:180 rq:4.800000 seq:206.000000
+E/ThermalDaemon(  393): Maximum CPU[1] frequency 972000 KHz
+W/ActivityManager(  207): Activity pause timeout for HistoryRecord{40971208 com.guoku/.activity.GuokuActivity}
+E/MP-Decision(  394): DOWN Ns:2.100000 Ts:270 rq:1.561404 seq:285.000000
+E/InputDispatcher(  207): channel '40925738 com.guoku/com.guoku.activity.GuokuActivity (server)' ~ Consumer closed input channel or an error occurred.  events=0x8
+E/InputDispatcher(  207): channel '40925738 com.guoku/com.guoku.activity.GuokuActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+I/WindowManager(  207): WINDOW DIED Window{40925738 com.guoku/com.guoku.activity.GuokuActivity paused=false}
+I/ActivityManager(  207): Process com.guoku (pid 25535) has died.

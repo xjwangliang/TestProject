@@ -1,0 +1,921 @@
+{\rtf1\ansi\ansicpg936\cocoartf1138\cocoasubrtf470
+{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;\f1\fnil\fcharset0 Monaco;\f2\fnil\fcharset134 STHeitiSC-Light;
+\f3\froman\fcharset0 Times-Roman;\f4\fnil\fcharset0 LucidaGrande;\f5\fnil\fcharset0 Menlo-Regular;
+\f6\fmodern\fcharset0 Courier;\f7\fswiss\fcharset0 ArialMT;\f8\fnil\fcharset0 TrebuchetMS;
+}
+{\colortbl;\red255\green255\blue255;\red38\green38\blue38;\red127\green0\blue85;\red0\green0\blue192;
+\red63\green127\blue95;\red255\green255\blue0;\red100\green100\blue100;\red42\green0\blue255;\red234\green234\blue234;
+\red0\green0\blue123;\red31\green126\blue161;\red109\green0\blue0;\red109\green109\blue109;\red213\green233\blue255;
+\red4\green86\blue37;\red7\green141\blue0;\red0\green28\blue138;\red39\green140\blue33;\red132\green112\blue64;
+\red193\green195\blue197;\red246\green250\blue211;\red255\green39\blue18;\red239\green247\blue169;\red63\green95\blue191;
+\red63\green63\blue191;\red127\green159\blue191;\red127\green127\blue159;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww37900\viewh19200\viewkind0
+\deftab720
+\pard\pardeftab720
+
+\f0\fs24 \cf2 com.guoku.data.db.DBAdapter.addCards(DBAdapter.java:167)\
+\pard\pardeftab720
+
+\f1\fs26 \cf3 public\cf0  \cf3 void\cf0  addCards(Card[] cards) \{\
+		\cf4 dbHelper\cf0 .getWritableDatabase().beginTransaction();\
+		\cf3 for\cf0  (Card card : cards) \{\
+			addCard(card);\
+		\}\
+		\cf4 dbHelper\cf0 .getWritableDatabase().setTransactionSuccessful();\
+		\cf4 dbHelper\cf0 .getWritableDatabase().endTransaction();\
+	\}\
+\pard\pardeftab720
+
+\f2 \cf0 \'c3\'bb\'d3\'d0\'b9\'d8\'b1\'d5\'ca\'fd\'be\'dd\'bf\'e2
+\f1 \
+\
+\
+\pard\pardeftab720
+
+\f0\fs24 \cf2 no dialog with id 12 was ever shown via Activity#showDialog at
+\f1\fs26 \cf0 \
+
+\f0\fs24 \cf2 om.guoku.activity.dh.onPageFinished(Unknown Source) at
+\f1\fs26 \cf0 \
+\pard\pardeftab720
+\cf3 if\cf0 (!\cf4 dismissed\cf0 )\{\
+					dismissDialog(\cf4 DIALOG_TOKEN\cf0 );\
+					\cf4 dismissed\cf0  = \cf3 true\cf0  ;\
+				\}\
+\
+\pard\pardeftab720
+
+\f2 \cf0 \'d5\'e2\'b8\'f6\'d4\'f5\'c3\'b4\'bb\'d8\'ca\'c2\'a3\'ac\'c3\'f7\'c3\'f7\'d3\'d0\'c5\'d0\'b6\'cf\'b0\'a1
+\f1 \
+\
+\
+\pard\pardeftab720
+
+\f0\fs24 \cf2 ava.lang.SecurityException: Permission Denial: starting Intent \{ act=android.intent.action.MAIN cat=\
+ requires android.permission.REORDER_TASKS at android.os.Parcel.readException(Parcel.java:1247) at
+\f1\fs26 \cf0 \
+builder.setMessage(getString(R.string.\cf4 toast_comfirm_exit\cf0 ))\
+		           .setCancelable(\cf3 false\cf0 )\
+		           .setPositiveButton(getString(R.string.\cf4 yes\cf0 ), \cf3 new\cf0  DialogInterface.OnClickListener() \{\
+		               \cf3 public\cf0  \cf3 void\cf0  onClick(DialogInterface dialog, \cf3 int\cf0  id) \{\
+		            	   Intent intent = \cf3 new\cf0  Intent(Intent.\cf4 ACTION_MAIN\cf0 );\
+		            	   intent.addCategory(Intent.\cf4 CATEGORY_HOME\cf0 );\
+		            	   intent.setFlags(Intent.\cf4 FLAG_ACTIVITY_NEW_TASK\cf0 );\
+		            	   startActivity(intent); \cf5 //
+\f2 \'c1\'aa\'cf\'eb\'d0\'e8\'d2\'aa
+\f1 android.permission.REORDER_TASKS
+\f2 \'a3\'bf
+\f1 \cf0 \
+		               \}\
+		           \})\
+\
+\
+\
+\pard\pardeftab720
+
+\f3\fs24 \cf0 \cb6 android.permission.REORDER_TASKS
+\f1\fs26 \cb1 \
+\
+03-30 18:51:55.559: E/ImageLoader(1776): /mnt/sdcard/Guoku_Android/data/cache/images/5e47591160210f1584f128ac3611a105 (No such file or directory)\
+03-30 18:51:55.559: E/ImageLoader(1776): java.io.FileNotFoundException: /mnt/sdcard/Guoku_Android/data/cache/images/5e47591160210f1584f128ac3611a105 (No such file or directory)\
+\
+03-30 18:51:55.559: E/ImageLoader(1776): 	at com.nostra13.universalimageloader.core.ImageLoader$DisplayImageTask.saveImageOnDisc(ImageLoader.java:449)\
+03-30 18:51:55.559: E/ImageLoader(1776): 	at com.nostra13.universalimageloader.core.ImageLoader$DisplayImageTask.loadBitmap(ImageLoader.java:401)\
+03-30 18:51:55.559: E/ImageLoader(1776): 	at com.nostra13.universalimageloader.core.ImageLoader$DisplayImageTask.run(ImageLoader.java:365)\
+\
+\
+\
+\
+\pard\pardeftab720
+
+\f4\b\fs22 \cf0 int com.nostra13.universalimageloader.cache.disc.impl.{\field{\*\fldinst{HYPERLINK "eclipse-javadoc:%E2%98%82=guoku/src%3Ccom.nostra13.universalimageloader.cache.disc.impl%7BTotalSizeLimitedDiscCache.java%E2%98%83TotalSizeLimitedDiscCache"}}{\fldrslt TotalSizeLimitedDiscCache}}.getSize({\field{\*\fldinst{HYPERLINK "eclipse-javadoc:%E2%98%82=guoku/src%3Ccom.nostra13.universalimageloader.cache.disc.impl%7BTotalSizeLimitedDiscCache.java%E2%98%83TotalSizeLimitedDiscCache~getSize~QFile;%E2%98%82File"}}{\fldrslt File}} file
+\f1\b0\fs26 \
+\pard\pardeftab720
+\cf7 @Override\cf0 \
+	\cf3 protected\cf0  \cf3 int\cf0  getSize(File file) \{\
+		\cf5 //
+\f2 \'d5\'e2\'b8\'f6\'b5\'d8\'b7\'bd\'bb\'e1\'b3\'f6\'cf\'d6\'bf\'d5\'d6\'b8\'d5\'eb\'d2\'ec\'b3\'a3\'a3\'bf
+\f1 \cf0 \
+		\cf3 return\cf0  (\cf3 int\cf0 ) file.length();\
+	\}\
+\
+\
+\
+\pard\pardeftab720
+
+\f2 \cf0 \'d4\'f6\'bc\'d3\'c1\'cb
+\f1 getCacheDir
+\f2 \'c8\'a8\'cf\'de\'ba\'cd
+\f1 Configuration
+\f2 \'b5\'c4\'d2\'bb\'b8\'f6\'b7\'bd\'b7\'a8\'a1\'a3\
+\
+\
+\
+\
+\
+\pard\pardeftab720
+
+\f1 \cf0  \cf3 public\cf0  \cf3 final\cf0  \cf3 void\cf0  dismissDialog(\cf3 int\cf0  id) \{\
+        \cf3 if\cf0  (\cf4 mManagedDialogs\cf0  == \cf3 null\cf0 ) \{\
+            \cf3 throw\cf0  missingDialog(id);\
+\
+        \}\
+        \cf3 final\cf0  Dialog dialog = \cf4 mManagedDialogs\cf0 .get(id);\
+        \cf3 if\cf0  (dialog == \cf3 null\cf0 ) \{\
+            \cf3 throw\cf0  missingDialog(id);\
+        \}\
+        dialog.dismiss();\
+    \}
+\f2 \
+\
+\
+\
+
+\f1  \cf3 public\cf0  \cf3 final\cf0  \cf3 void\cf0  showDialog(\cf3 int\cf0  id) \{\
+        \cf3 if\cf0  (\cf4 mManagedDialogs\cf0  == \cf3 null\cf0 ) \{\
+            \cf4 mManagedDialogs\cf0  = \cf3 new\cf0  SparseArray<Dialog>();\
+        \}\
+        Dialog dialog = \cf4 mManagedDialogs\cf0 .get(id);\
+        \cf3 if\cf0  (dialog == \cf3 null\cf0 ) \{\
+            dialog = createDialog(id, \cf3 null\cf0 );\
+            \cf4 mManagedDialogs\cf0 .put(id, dialog);\
+        \}\
+        \
+        onPrepareDialog(id, dialog);\
+        dialog.show();\
+    \}\
+\pard\pardeftab720
+
+\f2 \cf0 \
+\
+\
+\pard\pardeftab720
+
+\f1 \cf0  \cf3 private\cf0  Dialog createDialog(Integer dialogId, Bundle state) \{\
+        \cf3 final\cf0  Dialog dialog = onCreateDialog(dialogId);\
+        \cf3 if\cf0  (dialog == \cf3 null\cf0 ) \{\
+            \cf3 throw\cf0  \cf3 new\cf0  IllegalArgumentException(\cf8 "Activity#onCreateDialog did "\cf0 \
+                    + \cf8 "not create a dialog for id "\cf0  + dialogId);\
+        \}\
+        dialog.dispatchOnCreate(state);\
+        \cf3 return\cf0  dialog;\
+    \}\
+\
+    \cf3 private\cf0  String savedDialogKeyFor(\cf3 int\cf0  key) \{\
+        \cf3 return\cf0  \cf4 SAVED_DIALOG_KEY_PREFIX\cf0  + key;\
+    \}\
+\
+\
+\
+\pard\pardeftab720
+
+\f0\fs24 \cf2 com.android.internal.os.ZygoteInit.main(ZygoteInit.java:626) at dalvik.system.NativeStart.main(Native Method) Caused by: java.lang.IndexOutOfBoundsException: Invalid index 80, size is 30 at java.util.ArrayList.throwIndexOutOfBoundsException(ArrayList.java:257) at java.util.ArrayList.get(ArrayList.java:311) at android.widget.ArrayAdapter.getItem(ArrayAdapter.java:298) at com.guoku.activity.CardShow$ChangeLikeStatus.onReceive(Unknown Source) at
+\f1\fs26 \cf0 \
+\pard\pardeftab720
+\cf3 if\cf0 (\cf4 adapter\cf0  !=\cf3 null\cf0 )\{\
+					\cf5 //
+\f2 \'bb\'e1\'d3\'d0\'d4\'bd\'bd\'e7\'b5\'c4\'b4\'ed\'ce\'f3
+\f1 \cf0 \
+					Card card = \cf4 adapter\cf0 .getItem(position);\
+					card.setLiked_time(liketime);\
+					\cf5 //
+\f2 \'d2\'f2\'ce\'aa\'b5\'f7\'d3\'c3\'b8\'c3\'b7\'bd\'b7\'a8\'b4\'fa\'b1\'ed\'cf\'b2\'bb\'b6\'b5\'c4\'d7\'b4\'cc\'ac\'bf\'cf\'b6\'a8\'b7\'a2\'c9\'fa\'c1\'cb\'b8\'c4\'b1\'e4
+\f1 .\cf0 \
+					\cf3 int\cf0  like_count = card.getLiked_count();\
+					\cf3 if\cf0 (liketime>0)\{\
+						card.setLiked_count(++like_count);\
+					\}\cf3 else\cf0 \{\
+						card.setLiked_count(--like_count);\
+					\}\
+\
+\
+\
+\pard\pardeftab720
+
+\f0\fs24 \cf2 java.lang.NullPointerException at com.guoku.activity.Popular$4.run(Popular.java:144)\
+\
+\pard\pardeftab720
+
+\f1\fs26 \cf3 new\cf0  Thread()\{\
+			\cf3 public\cf0  \cf3 void\cf0  run() \{\
+				JSONObject info = \cf3 new\cf0  JSONObject();\
+				\cf3 try\cf0  \{\
+					info.put(Statistic.Constants.\cf4 FIELD\cf0 , \cf8 "pop_data"\cf0 );\
+					info.put(Statistic.Constants.\cf4 DATALOADED\cf0 , \cf4 adapter\cf0 .getCount());\
+					Statistic.recordStaticInfo(Statistic.Constants.\cf4 PAGE\cf0 ,info);\
+				\} \cf3 catch\cf0  (JSONException e) \{\
+					Log.e(Popular.\cf3 class\cf0 .getName(), e.getMessage());\
+				\}\
+			\};\
+		\}.start();\
+		\
+\
+\
+activity
+\f2 \'a1\'a1
+\f1 finish
+\f2 \'d6\'ae\'ba\'f3
+\f1 pop window
+\f2 \'d4\'d9di's'sdissmiss	\'a3\'ac\'b3\'f6\'cf\'d604-09 14:27:52.537: E/AndroidRuntime(1583): java.lang.IllegalArgumentException: View not attached to window manager\
+\
+\
+\
+\pard\pardeftab720\sl360
+
+\f5\fs28 \cf0 \cb9 dialog.setOnCancelListener(\cf10 new\cf0  \cf11 OnCancelListener\cf0 () \{\
+\'a0 \'a0 \cf12 @Override\cf0 \
+\'a0 \'a0 \cf10 public\cf0  \cf10 void\cf0  onCancel(\cf11 DialogInterface\cf0  arg0) \{\
+\'a0 \'a0 \'a0 \'a0 task.cancel(\cf10 false\cf0 );\
+\'a0 \'a0 \}\
+\});\
+dialog.setOnCancelListener(\cf10 new\cf0  \cf11 OnCancelListener\cf0 () \{\
+\'a0 \'a0 \cf12 @Override\cf0 \
+\'a0 \'a0 \cf10 public\cf0  \cf10 void\cf0  onCancel(\cf11 DialogInterface\cf0  arg0) \{\
+\'a0 \'a0 \'a0 \'a0 task.cancel(\cf10 false\cf0 );\
+\'a0 \'a0 \}\
+\});\
+\
+\
+\
+\
+05-04 11:46:27.002: E/DBGuokuDao(222): android.database.sqlite.SQLiteException: Can't upgrade read-only database from version 0 to 3: /data/data/com.guoku/databases/guoku.db\
+\
+\
+fail to set synchronous mode   database is locked//?????????\
+Edittext
+\f2 \'b5\'c4
+\f5 gettext
+\f2 \'ba\'cd
+\f5 getEditabletext
+\f2 \'b7\'bd\'b7\'a8\'d3\'d0\'ca\'b2\'c3\'b4\'c7\'f8\'b1\'f0
+\f5 ???\
+\
+\
+\
+java.lang.NullPointerException\
+\pard\pardeftab720
+
+\f1\fs26 \cf7 \cb1 @Override\cf0 \
+	\cf3 protected\cf0  \cf3 void\cf0  onPause() \{\
+		\cf3 super\cf0 .onPause();\
+		\cf3 new\cf0  Thread()\{\
+			\cf3 public\cf0  \cf3 void\cf0  run() \{\
+				JSONObject info = \cf3 new\cf0  JSONObject();\
+				\cf3 try\cf0  \{\
+					info.put(Statistic.Constants.\cf4 FIELD\cf0 , \cf8 "pop_data"\cf0 );\
+					info.put(Statistic.Constants.\cf4 DATALOADED\cf0 , \cf4 adapter\cf0 .getCount());\cf5 //
+\f2 \'bf\'d5\'d6\'b8\'d5\'eb\'d2\'ec\'b3\'a3
+\f1 \cf0 \
+					Statistic.recordStaticInfo(Statistic.Constants.\cf4 PAGE\cf0 ,info);\
+				\} \cf3 catch\cf0  (Exception e) \{\
+					Log.e(Popular.\cf3 class\cf0 .getName(), e.getMessage());\cf5 //java.lang.NullPointerException: \ul \ulc5 println\ulnone  needs a message\cf0 \
+\
+				\}\
+			\};\
+		\}.start();\
+		\
+		\
+	\}\
+		\
+		\
+	\}
+\f5\fs28 \cb9 \
+\pard\pardeftab720
+
+\f2\fs26 \cf0 \cb1 \
+\
+05-01 11:43:33.430: I/System.out(23289): getLikedUsers content:\{"res_msg": "success", "data": \{"liked_user": [\{"avatar_small": "null", "uid": 58638, "liked_time": "2012-05-10 16:15:00"\}, \{"avatar_small": "http://tp2.sinaimg.cn/1841173097/50/5612874330/0", "uid": 13895, "liked_time": "2012-05-07 18:31:49"\}, \{"avatar_small": "null", "uid": 43205, "liked_time": "2012-05-06 23:57:09"\}, \{"avatar_small": "http://a.tbcdn.cn/app/sns/img/default/avatar-120.png", "uid": 26844, "liked_time": "2012-05-06 23:57:02"\}], "total": 4\}, "res_code": 0\}\
+05-01 11:43:34.010: E/CardDetailAdapter(23289): commentsSize:10\
+\
+\
+05-01 11:43:34.031: E/AndroidRuntime(23289): java.lang.IllegalStateException: The content of the adapter has changed but ListView did not receive a notification. Make sure the content of your adapter is not modified from a background thread, but only from the UI thread. [in ListView(2131230769, class android.widget.ListView) with Adapter(class com.guoku.adapter.CardDetailAdapter)]\
+\
+05-01 11:43:34.031: E/AndroidRuntime(23289): 	at android.widget.ListView.layoutChildren(ListView.java:1510)\
+05-01 11:43:34.031: E/AndroidRuntime(23289): 	at android.widget.AbsListView.onTouchEvent(AbsListView.java:2386)\
+05-01 11:43:34.031: E/AndroidRuntime(23289): 	at android.widget.ListView.onTouchEvent(ListView.java:3446)\
+05-01 11:43:34.031: E/AndroidRuntime(23289): 	at android.view.View.dispatchTouchEvent(View.java:3885)\
+05-01 11:43:34.031: E/AndroidRuntime(23289): 	at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:903)\
+05-01 11:43:34.031: E/AndroidRuntime(23289): 	at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:942)\
+05-01 11:43:34.031: E/AndroidRuntime(23289): 	at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:942)\
+05-01 11:43:34.031: E/AndroidRuntime(23289): 	at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:942)\
+05-01 11:43:34.031: E/AndroidRuntime(23289): 	at com.android.internal.policy.impl.PhoneWindow$DecorView.superDispatchTouchEvent(PhoneWindow.java:1691)\
+05-01 11:43:34.031: E/AndroidRuntime(23289): 	at com.android.internal.policy.impl.PhoneWindow.superDispatchTouchEvent(PhoneWindow.java:1125)\
+05-01 11:43:34.031: E/AndroidRuntime(23289): 	at android.app.Activity.dispatchTouchEvent(Activity.java:2096)\
+05-01 11:43:34.031: E/AndroidRuntime(23289): 	at com.android.internal.policy.impl.PhoneWindow$DecorView.dispatchTouchEvent(PhoneWindow.java:1675)\
+05-01 11:43:34.031: E/AndroidRuntime(23289): 	at android.view.ViewRoot.deliverPointerEvent(ViewRoot.java:2194)\
+05-01 11:43:34.031: E/AndroidRuntime(23289): 	at android.view.ViewRoot.handleMessage(ViewRoot.java:1878)\
+05-01 11:43:34.031: E/AndroidRuntime(23289): 	at android.os.Handler.dispatchMessage(Handler.java:99)\
+05-01 11:43:34.031: E/AndroidRuntime(23289): 	at android.os.Looper.loop(Looper.java:123)\
+05-01 11:43:34.031: E/AndroidRuntime(23289): 	at android.app.ActivityThread.main(ActivityThread.java:3683)\
+05-01 11:43:34.031: E/AndroidRuntime(23289): 	at java.lang.reflect.Method.invokeNative(Native Method)\
+05-01 11:43:34.031: E/AndroidRuntime(23289): 	at java.lang.reflect.Method.invoke(Method.java:507)\
+05-01 11:43:34.031: E/AndroidRuntime(23289): 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:839)\
+05-01 11:43:34.031: E/AndroidRuntime(23289): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:597)\
+05-01 11:43:34.031: E/AndroidRuntime(23289): 	at dalvik.system.NativeStart.main(Native Method)\
+\
+\
+\pard\pardeftab720\sl380
+
+\f6 \cf2 I have a fix for this. Just set the visibility of ur ListView to Gone during\
+update and back to visible after update. By doing so, u can avoid the\
+inconsistency of ur adapter and listView item count.\
+\
+\pard\pardeftab720\sl480\sa280
+
+\f4\fs28 \cf0 \kerning1\expnd-4\expndtw-20
+ListView
+\f2 \'d4\'da\'b8\'fc\'d0\'c2\'ca\'b1\'b1\'a8\'d2\'ec\'b3\'a3\'a3\'ba
+\f4 \uc0\u8232 ERROR/AndroidRuntime(15260): java.lang.IllegalStateException: The content of the adapter has changed but ListView did not receive a notification. Make sure the content of your adapter is not modified from a background thread, but only from the UI thread. [in ListView(2131099657, class android.widget.ListView) with Adapter(class com.pocketdigi.pptheater.ListAdapter)]\u8232 
+\f2 \'d3\'a6\'d3\'c3\'c7\'bf\'d6\'c6\'b9\'d8\'b1\'d5\'a1\'a3\'b1\'be\'c0\'b4\'d5\'e2\'b8\'f6\'d2\'ec\'b3\'a3\'d3\'a6\'b8\'c3\'ca\'c7\'d4\'da\'d0\'c2\'cf\'df\'b3\'cc\'d6\'d0\'b8\'fc\'d0\'c2
+\f4 ListView,
+\f2 \'c3\'bb\'d3\'d0\'b7\'a2\'cb\'cd
+\f4 notifyDataSetChanged()
+\f2 \'ca\'b1\'b2\'fa\'c9\'fa\'b5\'c4\'a3\'ac\'b5\'ab\'bc\'b4\'ca\'b9\'d3\'c3
+\f4 Handler
+\f2 \'b7\'a2\'c1\'cb\'a3\'ac\'bb\'b9\'ca\'c7\'bb\'e1\'ca\'b1\'b2\'bb\'ca\'b1\'c5\'d7\'d2\'ec\'b3\'a3\'a3\'ac\'d5\'e2\'d3\'a6\'b8\'c3\'ca\'c7\'b8\'f6
+\f4 BUG
+\f2 \'a1\'a3
+\f4 \uc0\u8232 
+\f2 \'ce\'d2\'c3\'c7\'bf\'c9\'d2\'d4\'d4\'da
+\f4 Handler
+\f2 \'c0\'ef\'d6\'b4\'d0\'d0
+\f4 notifyDataSetChanged()
+\f2 \'c7\'b0
+\f4 ,
+\f2 \'cf\'c8\'b0\'d1
+\f4 ListView
+\f2 \'d2\'fe\'b2\'d8\'a3\'ac\'d6\'b4\'d0\'d0\'cd\'ea
+\f4 notifyDataSetChanged()
+\f2 \'ba\'f3\'d4\'d9\'cf\'d4\'ca\'be
+\f4 ListView
+\f2 \'c0\'b4\'b4\'a6\'c0\'ed\'d5\'e2\'b8\'f6\'ce\'ca\'cc\'e2\'a3\'ba
+\f4 \
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clcbpat14 \clwWidth140\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt40 \clpadl80 \clpadb40 \clpadr80 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth5320\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt40 \clpadl80 \clpadb40 \clpadr80 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl300\qr
+
+\f6\fs24 \cf13 \kerning1\expnd0\expndtw0 1\
+2\
+3\cell 
+\pard\intbl\itap1\pardeftab720\sl300
+\cf0 listView1.\cf15 setVisibility\cf16 (\cf17 View\cf0 .\cf15 GONE\cf16 )\cf18 ;\cf0 \
+listAdapter.\cf15 notifyDataSetChanged\cf16 ()\cf18 ;\cf0 \
+listView1.\cf15 setVisibility\cf16 (\cf17 View\cf0 .\cf15 VISIBLE\cf16 )\cf18 ;\cf0 \cell \lastrow\row
+\pard\pardeftab720\sl480\sa280
+
+\f2\fs28 \cf0 \kerning1\expnd-4\expndtw-20
+\'b2\'bb\'c4\'dc\'d4\'da\'d0\'c2\'cf\'df\'b3\'cc\'c0\'ef\'b7\'d6\'c8\'fd\'b4\'ce\'b7\'a2\'cb\'cd
+\f4 Handler
+\f2 \'cf\'fb\'cf\'a2
+\f4 ,
+\f2 \'b1\'d8\'d0\'eb\'d2\'bb\'b4\'ce\'d6\'b4\'d0\'d0
+\f4 \uc0\u8232 
+\f2 \'d3\'c3\'c1\'cb\'c9\'cf\'c3\'e6\'b5\'c4\'b7\'bd\'b7\'a8\'a3\'ac\'bf\'c9\'c4\'dc\'bb\'b9\'bb\'e1\'c5\'d7\'d2\'ec\'b3\'a3\'a3\'ac\'c4\'c7\'be\'cd\'d4\'d9\'c9\'d4\'c9\'d4\'b8\'c4\'cf\'c2\'b4\'fa\'c2\'eb\'a3\'ac\'b0\'d1
+\f4 ListView
+\f2 \'b5\'c4\'cc\'ed\'bc\'d3\'a3\'ac\'c9\'be\'b3\'fd\'a3\'ac\'c7\'e5\'bf\'d5\'b5\'c8
+\f4 UI
+\f2 \'b2\'d9\'d7\'f7\'b6\'bc\'d3\'c3
+\f4 Handler
+\f2 \'c0\'b4\'b4\'a6\'c0\'ed\'a3\'ac\'b7\'bd\'b7\'a8\'b2\'ce\'bf\'bc
+\f4 \
+\pard\pardeftab720\sl380
+
+\f6\fs26 \cf2 \kerning1\expnd0\expndtw0 \
+\pard\pardeftab720\sl360
+
+\f7\b\fs28 \cf0 FINAL ANSWER:
+\b0  As it turned out, I was calling 
+\f5 \cb9 notifyDataSetChanged
+\f7 \cb1  every 5 insertions to avoid flickering and sudden list changes. It cannot be done such way, always notify adapter when base list changes. This bug it long gone for me now.
+\f2\fs26 \
+\pard\pardeftab720
+\cf0 \
+\'be\'cd\'ca\'c7\'cb\'b5\'a3\'ac\'b2\'bb\'c4\'dc\'cc\'ed\'bc\'d3\'d2\'bb\'c5\'fa\'d6\'ae\'ba\'f3\'d4\'d9\'b5\'f7\'d3\'c3
+\f5\fs28 \cb9 notifyDataSetChanged
+\f2 \'a3\'ac\'b6\'f8\'ca\'c7\'c1\'a2\'bc\'b4\'b5\'f7\'d3\'c3\
+\'c1\'ed\'cd\'e2\'d2\'bb\'b8\'f6\'b4\'f0\'b0\'b8\'a3\'ba\'a3\'a8\'d3\'d0\'d3\'c3\'c2\'f0\'a3\'bf\'a3\'a9\
+\pard\pardeftab720\sl360\sa280
+
+\f7 \cf0 \cb1 I had the same problem, but I fixed it using the method\
+\pard\pardeftab720\sl360
+
+\f5 \cf0 \cb9 requestLayout();\
+\pard\pardeftab720
+
+\f2\fs26 \cf0 \cb1 \
+\
+\pard\pardeftab720\sl500
+
+\f7\fs28 \cf19 \cb20 http://android.xa4h.com/a/kaifa/FAQ/2010/0828/438.html\
+\
+
+\f2 \'d3\'d0\'ca\'b1\'ba\'f2\'ce\'d2\'c3\'c7\'ca\'b9\'d3\'c3
+\f7 BaseAdapter
+\f2 \'ca\'b1\'bf\'c9\'c4\'dc\'bb\'e1\'b7\'a2\'cf\'d6\'a3\'ac\'be\'ad\'b3\'a3\'b3\'f6\'cf\'d6\'c0\'e0\'cb\'c6
+\f7 The content of the adapter has changed but ListView did not receive a notification. Make sure the content of your adapter is not modified from a background thread, but only from the UI thr\
+\pard\pardeftab720\sl500\sa200
+
+\f2 \cf19 \'d3\'d0\'ca\'b1\'ba\'f2\'ce\'d2\'c3\'c7\'ca\'b9\'d3\'c3
+\f7 BaseAdapter
+\f2 \'ca\'b1\'bf\'c9\'c4\'dc\'bb\'e1\'b7\'a2\'cf\'d6\'a3\'ac\'be\'ad\'b3\'a3\'b3\'f6\'cf\'d6\'c0\'e0\'cb\'c6
+\f7 The content of the adapter has changed but ListView did not receive a notification. Make sure the content of your adapter is not modified from a background thread, but only from the UI thread.
+\f2 \'bb\'f2\'d4\'da
+\f7 getView
+\f2 \'d6\'d0\'ca\'fd\'d7\'e9\'d4\'bd\'bd\'e7\'b5\'c8\'ce\'ca\'cc\'e2\'a3\'ac\'d4\'da\'b9\'fd\'c8\'a5
+\f7  The content of the adapter has changed
+\f2 \'bd\'e2\'be\'f6\'b7\'bd\'b7\'a8
+\f7 \'a0
+\f2 \'d5\'e2\'c6\'aa\'ce\'c4\'d5\'c2\'d6\'d0\'d3\'d0\'cc\'e1\'bc\'b0\'a3\'ac\'ce\'d2\'c3\'c7\'bf\'c9\'d2\'d4\'c3\'bf\'b8\'fc\'d0\'c2\'d2\'bb\'cc\'f5\'ca\'b9\'d3\'c3\'d2\'bb\'b4\'ce
+\f7 notifyDataSetChanged() 
+\f2 \'c7\'bf\'d6\'c6\'cb\'a2\'d0\'c2
+\f7 BaseAdapter
+\f2 \'b5\'c4\'bc\'c6\'ca\'fd\'c6\'f7\'a3\'ac
+\f7 notifyDataSetChanged() 
+\f2 \'b5\'c4\'d7\'f7\'d3\'c3\'be\'cd\'ca\'c7\'cd\'a8\'d6\'aa
+\f7 BaseAdapter
+\f2 \'c4\'da\'b2\'bf\'b5\'c4
+\f7 DataSetObservable
+\f2 \'b6\'d4\'cf\'f3\'d6\'b4\'d0\'d0
+\f7 notifyChanged()
+\f2 \'b7\'bd\'b7\'a8\'b4\'d3\'b6\'f8\'b4\'ef\'b5\'bd\'ca\'b5\'cf\'d6
+\f7 Adapter 
+\f2 \'bd\'d3\'bf\'da\'b5\'c4\'d2\'bb\'d0\'a9\'b7\'bd\'b7\'a8\'a3\'ac\'b1\'c8\'c8\'e7
+\f7 getCount
+\f2 \'bb\'f2
+\f7 getItem
+\f2 \'b5\'c4\'b8\'fc\'d0\'c2\'a1\'a3
+\f7 Android123
+\f2 \'cc\'e1\'ca\'be\'b4\'f3\'bc\'d2\'c4\'bf\'c7\'b0\'bb\'b9\'d3\'d0\'d2\'bb\'d6\'d6\'b1\'c8\'bd\'cf\'c7\'fa\'cf\'df\'b5\'c4\'b7\'bd\'b7\'a8\'be\'cd\'ca\'c7\'c9\'e8\'d6\'c3\'b0\'f3\'b6\'a8
+\f7  BaseAdapter
+\f2 \'b5\'c4
+\f7 View
+\f2 \'a3\'ac\'b1\'c8\'c8\'e7
+\f7 ListView
+\f2 \'bb\'f2
+\f7 GridView
+\f2 \'b5\'c4
+\f7  Visibility
+\f2 \'ca\'f4\'d0\'d4\'ce\'aa
+\f7 GONE
+\f2 \'a3\'ac\'b5\'b1
+\f7 Adapter
+\f2 \'cd\'a8\'d6\'aa\'b8\'fc\'d0\'c2\'ba\'f3\'d4\'d9\'c9\'e8\'d6\'c3\'ce\'aa
+\f7 VISIBLE
+\f2 \'a3\'ac\'d5\'e2\'d1\'f9\'bf\'c9\'d2\'d4\'d7\'e8\'d6\'b9\'d6\'d0\'bc\'e4
+\f7 ListView
+\f2 \'b5\'c4\'ca\'c2\'bc\'fe\'bc\'a4\'bb\'ee\'b6\'f8\'b3\'f6\'cf\'d6\'d5\'e2\'d0\'a9\'ce\'ca\'cc\'e2\'a3\'ac
+\f7  
+\f2 \'b5\'b1\'c8\'bb\'bb\'b9\'d3\'d0\'c6\'e4\'cb\'fb\'b8\'fc\'ba\'c3\'b5\'c4\'bd\'e2\'be\'f6\'b7\'bd\'b7\'a8\'a1\'a3
+\f7 \
+\pard\pardeftab720
+
+\f2\fs26 \cf0 \cb1 \
+\
+\
+\pard\pardeftab720
+
+\f1 \cf3 \cb21 public\cf0  \cf3 abstract\cf0  \cf3 class\cf0  \cf22 AdapterView\cf0 <T \cf3 extends\cf0  Adapter> \cf3 extends\cf0  ViewGroup
+\f2 \'c6\'e4\'d6\'d0\
+
+\f1 \cf3 class\cf0  AdapterDataSetObserver \cf3 extends\cf0  DataSetObserver \cb1 \{\
+\
+        \cf3 private\cf0  Parcelable \cf4 mInstanceState\cf0  = \cf3 null\cf0 ;\
+\
+        \cf7 @Override\cf0 \
+        \cf3 public\cf0  \cf3 void\cf0  onChanged() \{\
+            \cf4 mDataChanged\cf0  = \cf3 true\cf0 ;\
+            \cf4 mOldItemCount\cf0  = \cf4 mItemCount\cf0 ;\
+            \cf4 mItemCount\cf0  = getAdapter().getCount();\
+\
+            \cf5 // Detect the case where a cursor that was previously invalidated has\cf0 \
+            \cf5 // been repopulated with new data.\cf0 \
+            \cf3 if\cf0  (AdapterView.\cf3 this\cf0 .getAdapter().hasStableIds() && \cf4 mInstanceState\cf0  != \cf3 null\cf0 \
+                    && \cf4 mOldItemCount\cf0  == 0 && \cf4 mItemCount\cf0  > 0) \{\
+                AdapterView.\cf3 this\cf0 .onRestoreInstanceState(\cf4 mInstanceState\cf0 );\
+                \cf4 mInstanceState\cf0  = \cf3 null\cf0 ;\
+            \} \cf3 else\cf0  \{\
+                rememberSyncState();\
+            \}\
+            checkFocus();\
+            requestLayout();\
+        \}\
+\
+        \cf7 @Override\cf0 \
+        \cf3 public\cf0  \cf3 void\cf0  onInvalidated() \{\
+            \cf4 mDataChanged\cf0  = \cf3 true\cf0 ;\
+\
+            \cf3 if\cf0  (AdapterView.\cf3 this\cf0 .getAdapter().hasStableIds()) \{\
+                \cf5 // Remember the current state for the case where our hosting activity is being\cf0 \
+                \cf5 // stopped and later restarted\cf0 \
+                \cf4 mInstanceState\cf0  = AdapterView.\cf3 this\cf0 .onSaveInstanceState();\
+            \}\
+\
+            \cf5 // Data is invalid so we should reset our state\cf0 \
+            \cf4 mOldItemCount\cf0  = \cf4 mItemCount\cf0 ;\
+            \cf4 mItemCount\cf0  = 0;\
+            \cf4 mSelectedPosition\cf0  = \cf4 INVALID_POSITION\cf0 ;\
+            \cf4 mSelectedRowId\cf0  = \cf4 INVALID_ROW_ID\cf0 ;\
+            \cf4 mNextSelectedPosition\cf0  = \cf4 INVALID_POSITION\cf0 ;\
+            \cf4 mNextSelectedRowId\cf0  = \cf4 INVALID_ROW_ID\cf0 ;\
+            \cf4 mNeedSync\cf0  = \cf3 false\cf0 ;\
+            checkSelectionChanged();\
+\
+            checkFocus();\
+            requestLayout();\
+        \}\
+\
+        \cf3 public\cf0  \cf3 void\cf0  clearSavedState() \{\
+            \cf4 mInstanceState\cf0  = \cf3 null\cf0 ;\
+        \}\
+    \}\
+\
+    \cf3 private\cf0  \cf3 class\cf0  SelectionNotifier \cf3 extends\cf0  Handler \cf3 implements\cf0  Runnable \{\
+        \cf3 public\cf0  \cf3 void\cf0  run() \{\
+            \cf3 if\cf0  (\cf4 mDataChanged\cf0 ) \{\
+                \cf5 // Data has changed between when this SelectionNotifier\cf0 \
+                \cf5 // was posted and now. We need to wait until the AdapterView\cf0 \
+                \cf5 // has been synched to the new data.\cf0 \
+                post(\cf3 this\cf0 );\
+            \} \cf3 else\cf0  \{\
+                fireOnSelected();\
+            \}\
+        \}\
+    \}\
+\
+\
+\cf3 \cb23 public\cf0  \cf3 abstract\cf0  \cf3 class\cf0  \cf22 AbsListView\cf0  \cf3 extends\cf0  AdapterView<ListAdapter> \cf3 implements\cf0  TextWatcher,\
+        ViewTreeObserver.OnGlobalLayoutListener, Filter.FilterListener,\
+        ViewTreeObserver.OnTouchModeChangeListener\cb1 \
+\
+\pard\pardeftab720
+\cf24 /**\cf0 \
+\cf24  * An Adapter object acts as a bridge between an \cf25 \{@link AdapterView\}\cf24  and the\cf0 \
+\cf24  * underlying data for that view. The Adapter provides access to the data items.\cf0 \
+\cf24  * The Adapter is also responsible for making a \cf25 \{@link android.view.View\}\cf24  for\cf0 \
+\cf24  * each item in the data set.\cf0 \
+\cf24  * \cf0 \
+\cf24  * \cf26 @see\cf24  android.widget.ArrayAdapter\cf0 \
+\cf24  * \cf26 @see\cf24  android.widget.CursorAdapter\cf0 \
+\cf24  * \cf26 @see\cf24  android.widget.SimpleCursorAdapter\cf0 \
+\cf24  */\cf0 \
+\pard\pardeftab720
+\cf3 public\cf0  \cf3 interface\cf0  Adapter \{\
+    \cf24 /**\cf0 \
+\pard\pardeftab720
+\cf24      * Register an observer that is called when changes happen to the data used by this adapter.\cf0 \
+\cf24      *\cf0 \
+\cf24      * \cf26 @param\cf24  observer the object that gets notified when the data set changes.\cf0 \
+\cf24      */\cf0 \
+    \cf3 void\cf0  registerDataSetObserver(DataSetObserver observer);\
+\
+    \cf24 /**\cf0 \
+\cf24      * Unregister an observer that has previously been registered with this\cf0 \
+\cf24      * adapter via \cf25 \{@link #registerDataSetObserver\}\cf24 .\cf0 \
+\cf24      *\cf0 \
+\cf24      * \cf26 @param\cf24  observer the object to unregister.\cf0 \
+\cf24      */\cf0 \
+    \cf3 void\cf0  unregisterDataSetObserver(DataSetObserver observer);\
+\
+    \cf24 /**\cf0 \
+\cf24      * How many items are in the data set represented by this Adapter.\cf0 \
+\cf24      * \cf0 \
+\cf24      * \cf26 @return\cf24  Count of items.\cf0 \
+\cf24      */\cf0 \
+    \cf3 int\cf0  getCount();   \
+    \
+    \cf24 /**\cf0 \
+\cf24      * Get the data item associated with the specified position in the data set.\cf0 \
+\cf24      * \cf0 \
+\cf24      * \cf26 @param\cf24  position Position of the item whose data we want within the adapter's \cf0 \
+\cf24      * data set.\cf0 \
+\cf24      * \cf26 @return\cf24  The data at the specified position.\cf0 \
+\cf24      */\cf0 \
+    Object getItem(\cf3 int\cf0  position);\
+    \
+    \cf24 /**\cf0 \
+\cf24      * Get the row id associated with the specified position in the list.\cf0 \
+\cf24      * \cf0 \
+\cf24      * \cf26 @param\cf24  position The position of the item within the adapter's data set whose row id we want.\cf0 \
+\cf24      * \cf26 @return\cf24  The id of the item at the specified position.\cf0 \
+\cf24      */\cf0 \
+    \cf3 long\cf0  getItemId(\cf3 int\cf0  position);\
+    \
+    \cf24 /**\cf0 \
+\cf24      * Indicated whether the item ids are stable across changes to the\cf0 \
+\cf24      * underlying data.\cf0 \
+\cf24      * \cf0 \
+\cf24      * \cf26 @return\cf24  True if the same id always refers to the same object.\cf0 \
+\cf24      */\cf0 \
+    \cf3 boolean\cf0  hasStableIds();\
+    \
+    \cf24 /**\cf0 \
+\cf24      * Get a View that displays the data at the specified position in the data set. You can either\cf0 \
+\cf24      * create a View manually or inflate it from an XML layout file. When the View is inflated, the\cf0 \
+\cf24      * parent View (GridView, ListView...) will apply default layout parameters unless you use\cf0 \
+\cf24      * \cf25 \{@link android.view.LayoutInflater#inflate(int, android.view.ViewGroup, boolean)\}\cf0 \
+\cf24      * to specify a root view and to prevent attachment to the root.\cf0 \
+\cf24      * \cf0 \
+\cf24      * \cf26 @param\cf24  position The position of the item within the adapter's data set of the item whose view\cf0 \
+\cf24      *        we want.\cf0 \
+\cf24      * \cf26 @param\cf24  convertView The old view to reuse, if possible. Note: You should check that this view\cf0 \
+\cf24      *        is non\cf27 -\cf24 null and of an appropriate type before using. If it is not possible to convert\cf0 \
+\cf24      *        this view to display the correct data, this method can create a new view.\cf0 \
+\cf24      * \cf26 @param\cf24  parent The parent that this view will eventually be attached to\cf0 \
+\cf24      * \cf26 @return\cf24  A View corresponding to the data at the specified position.\cf0 \
+\cf24      */\cf0 \
+    View getView(\cf3 int\cf0  position, View convertView, ViewGroup parent);\
+\
+    \cf24 /**\cf0 \
+\cf24      * An item view type that causes the \cf25 \{@link AdapterView\}\cf24  to ignore the item\cf0 \
+\cf24      * view. For example, this can be used if the client does not want a\cf0 \
+\cf24      * particular view to be given for conversion in\cf0 \
+\cf24      * \cf25 \{@link #getView(int, View, ViewGroup)\}\cf24 .\cf0 \
+\cf24      * \cf0 \
+\cf24      * \cf26 @see\cf24  #getItemViewType(int)\cf0 \
+\cf24      * \cf26 @see\cf24  #getViewTypeCount()\cf0 \
+\cf24      */\cf0 \
+    \cf3 static\cf0  \cf3 final\cf0  \cf3 int\cf0  \cf4 IGNORE_ITEM_VIEW_TYPE\cf0  = AdapterView.\cf4 ITEM_VIEW_TYPE_IGNORE\cf0 ;\
+    \
+    \cf24 /**\cf0 \
+\cf24      * Get the type of View that will be created by \cf25 \{@link #getView\}\cf24  for the specified item.\cf0 \
+\cf24      * \cf0 \
+\cf24      * \cf26 @param\cf24  position The position of the item within the adapter's data set whose view type we\cf0 \
+\cf24      *        want.\cf0 \
+\cf24      * \cf26 @return\cf24  An integer representing the type of View. Two views should share the same type if one\cf0 \
+\cf24      *         can be converted to the other in \cf25 \{@link #getView\}\cf24 . Note: Integers must be in the\cf0 \
+\cf24      *         range 0 to \cf25 \{@link #getViewTypeCount\}\cf24  \cf27 -\cf24  1. \cf25 \{@link #IGNORE_ITEM_VIEW_TYPE\}\cf24  can\cf0 \
+\cf24      *         also be returned.\cf0 \
+\cf24      * \cf26 @see\cf24  #IGNORE_ITEM_VIEW_TYPE\cf0 \
+\cf24      */\cf0 \
+    \cf3 int\cf0  getItemViewType(\cf3 int\cf0  position);\
+    \
+    \cf24 /**\cf0 \
+\cf24      * \cf27 <p>\cf0 \
+\cf24      * Returns the number of types of Views that will be created by\cf0 \
+\cf24      * \cf25 \{@link #getView\}\cf24 . Each type represents a set of views that can be\cf0 \
+\cf24      * converted in \cf25 \{@link #getView\}\cf24 . If the adapter always returns the same\cf0 \
+\cf24      * type of View for all items, this method should return 1.\cf0 \
+\cf24      * \cf27 </p>\cf0 \
+\cf24      * \cf27 <p>\cf0 \
+\cf24      * This method will only be called when when the adapter is set on the\cf0 \
+\cf24      * the \cf25 \{@link AdapterView\}\cf24 .\cf0 \
+\cf24      * \cf27 </p>\cf0 \
+\cf24      * \cf0 \
+\cf24      * \cf26 @return\cf24  The number of types of Views that will be created by this adapter\cf0 \
+\cf24      */\cf0 \
+    \cf3 int\cf0  getViewTypeCount();\
+    \
+    \cf3 static\cf0  \cf3 final\cf0  \cf3 int\cf0  \cf4 NO_SELECTION\cf0  = Integer.\cf4 MIN_VALUE\cf0 ;\
+ \
+     \cf24 /**\cf0 \
+\cf24       * \cf26 @return\cf24  true if this adapter doesn't contain any data.  This is used to determine\cf0 \
+\cf24       * whether the empty view should be displayed.  A typical implementation will return\cf0 \
+\cf24       * getCount() == 0 but since getCount() includes the headers and footers, specialized\cf0 \
+\cf24       * adapters might want a different behavior.\cf0 \
+\cf24       */\cf0 \
+     \cf3 boolean\cf0  isEmpty();\
+\}\
+\
+\pard\pardeftab720
+\cf3 public\cf0  \cf3 interface\cf0  Adapter\
+	\cf3 public\cf0  \cf3 interface\cf0  ListAdapter \cf3 extends\cf0  Adapter\
+\cf3 		public\cf0  \cf3 abstract\cf0  \cf3 class\cf0  BaseAdapter \cf3 implements\cf0  ListAdapter, SpinnerAdapter\
+\
+\cf3 \cb21 public\cf0  \cf3 abstract\cf0  \cf3 class\cf0  \cf22 AdapterView\cf0 <T \cf3 extends\cf0  Adapter> \cf3 extends\cf0  ViewGroup\
+\cf3 \cb23 	public\cf0  \cf3 abstract\cf0  \cf3 class\cf0  \cf22 AbsListView\cf0  \cf3 extends\cf0  AdapterView<ListAdapter> \cf3 implements\cf0  TextWatcher,\
+       	 	ViewTreeObserver.OnGlobalLayoutListener, Filter.FilterListener,\
+       		 ViewTreeObserver.OnTouchModeChangeListener\
+\cf3 \cb1 					public\cf0  \cf3 class\cf0  \cf22 ListView\cf0  \cf3 extends\cf0  AbsListView\
+\pard\pardeftab720
+
+\f2 \cf0 \'c6\'e4\'d6\'d0
+\f1 ListView
+\f2 \'ba\'ac\'d3\'d0
+\f1 setAdapter
+\f2 \'b7\'bd\'b7\'a8\'a3\'ac
+\f1  ListView
+\f2 \'b5\'c4
+\f1 setAdapter
+\f2 \'b7\'bd\'b7\'a8\'a3\'ba
+\f1 \
+	\cf7 @Override\cf0 \
+    \cf3 public\cf0  \cf3 void\cf0  setAdapter(ListAdapter adapter) \{\
+        \cf3 if\cf0  (\cf3 null\cf0  != mAdapter) \{\
+            mAdapter.unregisterDataSetObserver(mDataSetObserver);\
+        \}\
+\
+        resetList();\
+        mRecycler.clear();\
+\
+        \cf3 if\cf0  (\cf4 mHeaderViewInfos\cf0 .size() > 0|| \cf4 mFooterViewInfos\cf0 .size() > 0) \{\
+            mAdapter = \cf3 new\cf0  HeaderViewListAdapter(\cf4 mHeaderViewInfos\cf0 , \cf4 mFooterViewInfos\cf0 , adapter);\
+        \} \cf3 else\cf0  \{\
+            mAdapter = adapter;\
+        \}\
+\
+        mOldSelectedPosition = \cf4 INVALID_POSITION\cf0 ;\
+        mOldSelectedRowId = \cf4 INVALID_ROW_ID\cf0 ;\
+        \cf3 if\cf0  (mAdapter != \cf3 null\cf0 ) \{\
+            \cf4 mAreAllItemsSelectable\cf0  = mAdapter.areAllItemsEnabled();\
+            mOldItemCount = mItemCount;\
+            mItemCount = mAdapter.getCount();\
+            checkFocus();\
+\
+            mDataSetObserver = \cf3 new\cf0  AdapterDataSetObserver();\
+            mAdapter.registerDataSetObserver(mDataSetObserver);\
+\
+            mRecycler.setViewTypeCount(mAdapter.getViewTypeCount());\
+\
+            \cf3 int\cf0  position;\
+            \cf3 if\cf0  (mStackFromBottom) \{\
+                position = lookForSelectablePosition(mItemCount - 1, \cf3 false\cf0 );\
+            \} \cf3 else\cf0  \{\
+                position = lookForSelectablePosition(0, \cf3 true\cf0 );\
+            \}\
+            setSelectedPositionInt(position);\
+            setNextSelectedPositionInt(position);\
+\
+            \cf3 if\cf0  (mItemCount == 0) \{\
+                \cf5 // Nothing selected\cf0 \
+                checkSelectionChanged();\
+            \}\
+\
+        \} \cf3 else\cf0  \{\
+            \cf4 mAreAllItemsSelectable\cf0  = \cf3 true\cf0 ;\
+            checkFocus();\
+            \cf5 // Nothing selected\cf0 \
+            checkSelectionChanged();\
+        \}\
+\
+        \cf3 if\cf0  (\cf4 mCheckStates\cf0  != \cf3 null\cf0 ) \{\
+            \cf4 mCheckStates\cf0 .clear();\
+        \}\
+\
+        requestLayout();\
+    \}
+\f2 \
+\pard\pardeftab720
+
+\f1 \cf22 \cb21 AdapterView
+\f2 \'ba\'ac\'d3\'d0\'b9\'db\'b2\'ec\'d5\'df\'b5\'c4\'b6\'a8\'d2\'e5\
+
+\f1 \cf3 class\cf0  AdapterDataSetObserver \cf3 extends\cf0  DataSetObserver \cb1 \{\
+\
+        \cf3 private\cf0  Parcelable \cf4 mInstanceState\cf0  = \cf3 null\cf0 ;\
+\
+        \cf7 @Override\cf0 \
+        \cf3 public\cf0  \cf3 void\cf0  onChanged() \{\
+            \cf4 mDataChanged\cf0  = \cf3 true\cf0 ;\
+            \cf4 mOldItemCount\cf0  = \cf4 mItemCount\cf0 ;\
+            \cf4 mItemCount\cf0  = getAdapter().getCount();\
+\
+            \cf5 // Detect the case where a cursor that was previously invalidated has\cf0 \
+            \cf5 // been repopulated with new data.\cf0 \
+            \cf3 if\cf0  (AdapterView.\cf3 this\cf0 .getAdapter().hasStableIds() && \cf4 mInstanceState\cf0  != \cf3 null\cf0 \
+                    && \cf4 mOldItemCount\cf0  == 0 && \cf4 mItemCount\cf0  > 0) \{\
+                AdapterView.\cf3 this\cf0 .onRestoreInstanceState(\cf4 mInstanceState\cf0 );\
+                \cf4 mInstanceState\cf0  = \cf3 null\cf0 ;\
+            \} \cf3 else\cf0  \{\
+                rememberSyncState();\
+            \}\
+            checkFocus();\
+            requestLayout();\
+        \}\
+\
+        \cf7 @Override\cf0 \
+        \cf3 public\cf0  \cf3 void\cf0  onInvalidated() \{\
+            \cf4 mDataChanged\cf0  = \cf3 true\cf0 ;\
+\
+            \cf3 if\cf0  (AdapterView.\cf3 this\cf0 .getAdapter().hasStableIds()) \{\
+                \cf5 // Remember the current state for the case where our hosting activity is being\cf0 \
+                \cf5 // stopped and later restarted\cf0 \
+                \cf4 mInstanceState\cf0  = AdapterView.\cf3 this\cf0 .onSaveInstanceState();\
+            \}\
+\
+            \cf5 // Data is invalid so we should reset our state\cf0 \
+            \cf4 mOldItemCount\cf0  = \cf4 mItemCount\cf0 ;\
+            \cf4 mItemCount\cf0  = 0;\
+            \cf4 mSelectedPosition\cf0  = \cf4 INVALID_POSITION\cf0 ;\
+            \cf4 mSelectedRowId\cf0  = \cf4 INVALID_ROW_ID\cf0 ;\
+            \cf4 mNextSelectedPosition\cf0  = \cf4 INVALID_POSITION\cf0 ;\
+            \cf4 mNextSelectedRowId\cf0  = \cf4 INVALID_ROW_ID\cf0 ;\
+            \cf4 mNeedSync\cf0  = \cf3 false\cf0 ;\
+            checkSelectionChanged();\
+\
+            checkFocus();\
+            requestLayout();\
+        \}\
+\
+        \cf3 public\cf0  \cf3 void\cf0  clearSavedState() \{\
+            \cf4 mInstanceState\cf0  = \cf3 null\cf0 ;\
+        \}\
+    \}\
+\pard\pardeftab720
+
+\f2 \cf0 \'b6\'f8\'d4\'da\'c6\'e4\'d7\'d3\'c0\'e0
+\f1 \cf22 \cb23 AbsListView
+\f2 \cf0 \cb1 \'d6\'d0\'a3\'ac\'d3\'d0\'d2\'bb\'b8\'f6\'b1\'e4\'c1\'bf
+\f1 AdapterDataSetObserver \cf4 mDataSetObserver
+\f2 \cf0 \'ba\'cd
+\f1 ListAdapter \cf4 mAdapter\cf0 ;\
+\
+05-21 12:11:51.428 W/WindowManager(18720): Exception when adding starting window\
+05-21 12:11:51.428 W/WindowManager(18720): java.lang.RuntimeException: Binary XML file line #25: You must supply a layout_height attribute.\
+05-21 12:11:51.428 W/WindowManager(18720): 	at android.content.res.TypedArray.getLayoutDimension(TypedArray.java:438)\
+05-21 12:11:51.428 W/WindowManager(18720): 	at android.view.ViewGroup$LayoutParams.setBaseAttributes(ViewGroup.java:3468)\
+05-21 12:11:51.428 W/WindowManager(18720): 	at android.view.ViewGroup$MarginLayoutParams.<init>(ViewGroup.java:3547)\
+05-21 12:11:51.428 W/WindowManager(18720): 	at android.widget.LinearLayout$LayoutParams.<init>(LinearLayout.java:1265)\
+05-21 12:11:51.428 W/WindowManager(18720): 	at android.widget.LinearLayout.generateLayoutParams(LinearLayout.java:1191)\
+05-21 12:11:51.428 W/WindowManager(18720): 	at android.widget.LinearLayout.generateLayoutParams(LinearLayout.java:45)\
+05-21 12:11:51.428 W/WindowManager(18720): 	at android.view.LayoutInflater.rInflate(LayoutInflater.java:620)\
+05-21 12:11:51.428 W/WindowManager(18720): 	at android.view.LayoutInflater.inflate(LayoutInflater.java:407)\
+05-21 12:11:51.428 W/WindowManager(18720): 	at android.view.LayoutInflater.inflate(LayoutInflater.java:320)\
+05-21 12:11:51.428 W/WindowManager(18720): 	at android.view.LayoutInflater.inflate(LayoutInflater.java:276)\
+05-21 12:11:51.428 W/WindowManager(18720): 	at com.android.internal.policy.impl.PhoneWindow.generateLayout(PhoneWindow.java:2159)\
+05-21 12:11:51.428 W/WindowManager(18720): 	at com.android.internal.policy.impl.PhoneWindow.installDecor(PhoneWindow.java:2213)\
+05-21 12:11:51.428 W/WindowManager(18720): 	at com.android.internal.policy.impl.PhoneWindow.getDecorView(PhoneWindow.java:1401)\
+05-21 12:11:51.428 W/WindowManager(18720): 	at com.android.internal.policy.impl.PhoneWindowManager.addStartingWindow(PhoneWindowManager.java:848)\
+05-21 12:11:51.428 W/WindowManager(18720): 	at com.android.server.WindowManagerService$H.handleMessage(WindowManagerService.java:8844)\
+05-21 12:11:51.428 W/WindowManager(18720): 	at android.os.Handler.dispatchMessage(Handler.java:99)\
+05-21 12:11:51.428 W/WindowManager(18720): 	at android.os.Looper.loop(Looper.java:123)\
+05-21 12:11:51.428 W/WindowManager(18720): 	at com.android.server.WindowManagerService$WMThread.run(WindowManagerService.java:536)\
+\pard\pardeftab720
+{\field{\*\fldinst{HYPERLINK "http://code.google.com/p/kltrafficcam/issues/detail?id=4"}}{\fldrslt \cf0 http://code.google.com/p/kltrafficcam/issues/detail?id=4}}\
+\pard\pardeftab720
+
+\f6\fs24 \cf0 maybe you have used some custom style without set the parent style, like this:\
+<style name="someStyle">\
+.....\
+</style>\
+you should set the parent to "@android:style/Theme" at least, like this:\
+<style name="base" parent="@android:style/Theme">\
+...\
+</style>\
+\
+it will solve the problem, you should try. Any question, you can contact me at: hkbarton@gmail.com\
+\pard\pardeftab720
+
+\f2\fs26 \cf0 \
+\
+/Users/wangliang/Documents/guoku/src/qinzhoukan\
+\
+\
+\'b4\'b4\'bd\'a8\'d4\'aa\'ca\'fd\'be\'dd\'ca\'a7\'b0\'dc\
+\
+06-04 15:21:08.064: I/Database(354): sqlite returned: error code = 8, msg = prepared statement aborts at 37: [CREATE TABLE IF NOT EXISTS android_metadata (locale TEXT)]\
+06-04 15:21:08.064: E/Database(354): CREATE TABLE android_metadata failed\
+06-04 15:21:08.084: E/Database(354): Failed to setLocale() when constructing, closing the database\
+06-04 15:21:08.084: E/Database(354): android.database.sqlite.SQLiteException: attempt to write a readonly database\
+06-04 15:21:08.084: E/Database(354): 	at android.database.sqlite.SQLiteDatabase.native_setLocale(Native Method)\
+06-04 15:21:08.084: E/Database(354): 	at android.database.sqlite.SQLiteDatabase.setLocale(SQLiteDatabase.java:1987)\
+06-04 15:21:08.084: E/Database(354): 	at android.database.sqlite.SQLiteDatabase.<init>(SQLiteDatabase.java:1855)\
+06-04 15:21:08.084: E/Database(354): 	at android.database.sqlite.SQLiteDatabase.openDatabase(SQLiteDatabase.java:820)\
+06-04 15:21:08.084: E/Database(354): 	at android.database.sqlite.SQLiteDatabase.openOrCreateDatabase(SQLiteDatabase.java:854)\
+06-04 15:21:08.084: E/Database(354): 	at android.database.sqlite.SQLiteDatabase.openOrCreateDatabase(SQLiteDatabase.java:847)\
+06-04 15:21:08.084: E/Database(354): 	at android.app.ContextImpl.openOrCreateDatabase(ContextImpl.java:544)\
+06-04 15:21:08.084: E/Database(354): 	at android.content.ContextWrapper.openOrCreateDatabase(ContextWrapper.java:203)\
+06-04 15:21:08.084: E/Database(354): 	at android.database.sqlite.SQLiteOpenHelper.getWritableDatabase(SQLiteOpenHelper.java:118)\
+\
+\
+06-04 15:35:08.143: E/Database(354): SELECT locale FROM android_metadata failed\
+06-04 15:35:08.183: E/Database(354): Failed to setLocale() when constructing, closing the database\
+06-04 15:35:08.183: E/Database(354): android.database.sqlite.SQLiteException: no such table: android_metadata\
+06-04 15:35:08.183: E/Database(354): 	at android.database.sqlite.SQLiteDatabase.native_setLocale(Native Method)\
+06-04 15:35:08.183: E/Database(354): 	at android.database.sqlite.SQLiteDatabase.setLocale(SQLiteDatabase.java:1987)\
+06-04 15:35:08.183: E/Database(354): 	at android.database.sqlite.SQLiteDatabase.<init>(SQLiteDatabase.java:1855)\
+06-04 15:35:08.183: E/Database(354): 	at android.database.sqlite.SQLiteDatabase.openDatabase(SQLiteDatabase.java:820)\
+06-04 15:35:08.183: E/Database(354): 	at android.database.sqlite.SQLiteOpenHelper.getReadableDatabase(SQLiteOpenHelper.java:197)\
+06-04 15:35:08.183: E/Database(354): 	at com.mixpanel.android.mpmetrics.MPDbAdapter.generateDataString(MPDbAdapter.java:174)\
+06-04 15:35:08.183: E/Database(354): 	at com.mixpanel.android.mpmetrics.MPMetrics$SubmitTask.run(MPMetrics.java:195)\
+\
+\
+\
+LinkedHashMap\'bf\'d5\'d6\'b8\'d5\'eb\'d2\'ec\'b3\'a3\
+\pard\pardeftab720
+
+\f1\fs24 \cf0 	\cf5 //java.lang.NullPointerException\cf0 \
+	\cf5 //at java.util.LinkedHashMap.postRemove(LinkedHashMap.java:291)\cf0 \
+	\cf5 //at java.util.HashMap.remove(HashMap.java:638)\cf0 \
+	\cf5 //at java.util.LinkedHashMap.addNewEntry(LinkedHashMap.java:186)\cf0 \
+	\cf5 //at java.util.HashMap.put(HashMap.java:412)\cf0 \
+	\cf5 //at com.guoku.img.ImageCache.cacheBitmapToMemory(ImageCache.java:87)\cf0 \
+	\cf5 //at com.guoku.img.ImageCache.get(ImageCache.java:58)\cf0 \
+	\cf5 //at com.guoku.img.ProductImage.getBitmap(ProductImage.java:36)\cf0 \
+	\cf5 //at com.guoku.img.ImageTask.run(ImageTask.java:48)
+\f2\fs26 \cf0 \
+\
+\
+\
+\pard\pardeftab720\sl580\sa140
+
+\b\fs46 \cf0 \'cf\'df\'b3\'cc\'b3\'d8
+\f8 \
+\pard\pardeftab720\sl580\sa140
+{\field{\*\fldinst{HYPERLINK "http://stackoverflow.com/questions/8216713/java-net-socketexception-invalid-argument-connect"}}{\fldrslt \cf0 java.net.SocketException: Invalid argument: connect}}\
+\pard\pardeftab720
+
+\f2\b0\fs26 \cf0 \
+\
+}

@@ -1,0 +1,10 @@
+110.75.14.242  s.m.taobao.com
+121.0.25.1  a.m.taobao.com
+110.75.25.200  b.m.taobao.com
+110.75.40.60  Cart.m.taobao.com
+110.75.14.253  shop.m.taobao.com
+121.0.25.79  My.m.taobao.com
+121.0.25.79  u.m.taobao.com
+121.0.25.79  ogin.m.taobao.com
+110.75.14.96  Wtm.m.taobao.com
+121.0.25.88  Im.m.taobao.com
