@@ -1,0 +1,602 @@
+
+
+Last login: Sat Jan 14 20:59:54 on ttys001
+wangmatoiMac:Workspace wangliang$ cd ./
+.DS_Store       Catpower/       Catpower 2.zip  Catpower.zip    Coldplay/       Coldplay 2.zip  Coldplay.zip    adele/          
+wangmatoiMac:Workspace wangliang$ rm -fr ./Coldplay
+wangmatoiMac:Workspace wangliang$ ll
+total 311816
+drwxr-xr-x   8 wangliang  staff       272  1 14 21:02 .
+drwxr-xr-x+ 34 wangliang  staff      1156  1 14 16:26 ..
+-rw-r--r--@  1 wangliang  staff     15364  1 13 16:10 .DS_Store
+-rw-r--r--   1 wangliang  staff  37702270  1  7 19:09 Catpower 2.zip
+-rw-r--r--   1 wangliang  staff  36587755 12 24 16:14 Catpower.zip
+-rw-r--r--   1 wangliang  staff  42947625  1  7 19:10 Coldplay 2.zip
+-rw-r--r--   1 wangliang  staff  42388319 12 24 16:20 Coldplay.zip
+drwxr-xr-x  12 wangliang  staff       408 12 21 16:11 adele
+wangmatoiMac:Workspace wangliang$ git clone http://repos.dev.guoku.com/coldplay.git ./Coldplay
+Cloning into ./Coldplay...
+wangmatoiMac:Workspace wangliang$ 
+
+
+Last login: Sat Jan 14 20:59:54 on ttys001
+wangmatoiMac:Workspace wangliang$ cd ./
+.DS_Store       Catpower/       Catpower 2.zip  Catpower.zip    Coldplay/       Coldplay 2.zip  Coldplay.zip    adele/          
+wangmatoiMac:Workspace wangliang$ rm -fr ./Coldplay
+wangmatoiMac:Workspace wangliang$ ll
+total 311816
+drwxr-xr-x   8 wangliang  staff       272  1 14 21:02 .
+drwxr-xr-x+ 34 wangliang  staff      1156  1 14 16:26 ..
+-rw-r--r--@  1 wangliang  staff     15364  1 13 16:10 .DS_Store
+-rw-r--r--   1 wangliang  staff  37702270  1  7 19:09 Catpower 2.zip
+-rw-r--r--   1 wangliang  staff  36587755 12 24 16:14 Catpower.zip
+-rw-r--r--   1 wangliang  staff  42947625  1  7 19:10 Coldplay 2.zip
+-rw-r--r--   1 wangliang  staff  42388319 12 24 16:20 Coldplay.zip
+drwxr-xr-x  12 wangliang  staff       408 12 21 16:11 adele
+wangmatoiMac:Workspace wangliang$ git clone http://repos.dev.guoku.com/coldplay.git ./Coldplay
+wangmatoiMac:Workspace wangliang$ git clone http://repos.dev.guoku.com/adele.git ./adele
+Cloning into ./Coldplay...
+wangmatoiMac:Workspace wangliang$ 
+
+
+Last login: Sat Jan 14 21:01:02 on ttys000
+You have new mail.
+wangmatoiMac:Workspace wangliang$ cd ..
+wangmatoiMac:~ wangliang$ ll
+total 152
+drwxr-xr-x+ 34 wangliang  staff   1156  1 14 16:26 .
+drwxr-xr-x   5 root       admin    170 12 20 11:05 ..
+-rw-------   1 wangliang  staff      5 12 20 11:05 .CFUserTextEncoding
+-rw-r--r--@  1 wangliang  staff  24580  1 13 19:22 .DS_Store
+drwx------  65 wangliang  staff   2210  1 14 20:26 .Trash
+drwxr-xr-x  11 wangliang  staff    374 12 22 10:40 .android
+-rw-------   1 wangliang  staff   7657  1 14 17:02 .bash_history
+-rw-r--r--   1 root       staff     52  1  5 18:54 .bash_profile
+drwxr-xr-x   5 wangliang  staff    170  1 10 16:23 .cron.daily
+-rw-r--r--   1 wangliang  staff    115  1 10 16:28 .crontab
+-rw-r--r--   1 wangliang  staff    110 12 21 11:48 .eclipse_keyring
+drwxr-xr-x   3 wangliang  staff    102  1 10 15:10 .emacs.d
+-rw-------   1 wangliang  staff      0  1 14 20:59 .gdb_history
+-rw-r--r--   1 wangliang  staff     19  1  3 17:35 .gitconfig
+drwxr-xr-x   3 wangliang  staff    102  1  3 17:34 .repoconfig
+-rw-r--r--   1 wangliang  staff     29  1  3 17:36 .repopickle_.gitconfig
+-rw-------   1 wangliang  staff     78  1  5 19:05 .sqlite_history
+drwx------   3 wangliang  staff    102  1 14 16:26 .ssh
+-rw-------   1 root       staff    993  1  5 18:54 .viminfo
+drwx------+ 15 wangliang  staff    510  1 14 20:37 Desktop
+drwx------+ 10 wangliang  staff    340  1 10 19:37 Documents
+drwx------+ 78 wangliang  staff   2652  1 13 19:15 Downloads
+drwx------@ 42 wangliang  staff   1428 12 27 11:03 Library
+drwx------+  3 wangliang  staff    102 12 20 11:05 Movies
+drwx------+  5 wangliang  staff    170 12 21 15:59 Music
+drwx------+  5 wangliang  staff    170 12 22 17:00 Pictures
+drwxr-xr-x+  6 wangliang  staff    204 12 23 20:01 Public
+drwxr-xr-x   4 wangliang  staff    136  1 13 11:37 WORKING_DIRECTORY
+drwxr-xr-x  10 wangliang  staff    340  1 14 21:03 Workspace
+drwxr-xr-x   4 wangliang  staff    136 12 22 10:31 apktool
+drwxr-xr-x   3 wangliang  staff    102  1  3 17:33 bin
+-rw-r--r--   1 wangliang  staff    752  1  5 11:56 feedback.9.png
+-rw-r--r--   1 wangliang  staff    723  1  4 20:16 my.9.png
+-rw-r--r--   1 wangliang  staff    696  1  4 20:32 test.9.png
+wangmatoiMac:~ wangliang$ ll ./S
+ls: ./S: No such file or directory
+wangmatoiMac:~ wangliang$ 
+wangmatoiMac:~ wangliang$ 
+wangmatoiMac:~ wangliang$ 
+wangmatoiMac:~ wangliang$ mkdir ./Sites
+wangmatoiMac:~ wangliang$ ll
+total 152
+drwxr-xr-x+ 35 wangliang  staff   1190  1 14 21:03 .
+drwxr-xr-x   5 root       admin    170 12 20 11:05 ..
+-rw-------   1 wangliang  staff      5 12 20 11:05 .CFUserTextEncoding
+-rw-r--r--@  1 wangliang  staff  24580  1 13 19:22 .DS_Store
+drwx------  65 wangliang  staff   2210  1 14 20:26 .Trash
+drwxr-xr-x  11 wangliang  staff    374 12 22 10:40 .android
+-rw-------   1 wangliang  staff   7657  1 14 17:02 .bash_history
+-rw-r--r--   1 root       staff     52  1  5 18:54 .bash_profile
+drwxr-xr-x   5 wangliang  staff    170  1 10 16:23 .cron.daily
+-rw-r--r--   1 wangliang  staff    115  1 10 16:28 .crontab
+-rw-r--r--   1 wangliang  staff    110 12 21 11:48 .eclipse_keyring
+drwxr-xr-x   3 wangliang  staff    102  1 10 15:10 .emacs.d
+-rw-------   1 wangliang  staff      0  1 14 20:59 .gdb_history
+-rw-r--r--   1 wangliang  staff     19  1  3 17:35 .gitconfig
+drwxr-xr-x   3 wangliang  staff    102  1  3 17:34 .repoconfig
+-rw-r--r--   1 wangliang  staff     29  1  3 17:36 .repopickle_.gitconfig
+-rw-------   1 wangliang  staff     78  1  5 19:05 .sqlite_history
+drwx------   3 wangliang  staff    102  1 14 16:26 .ssh
+-rw-------   1 root       staff    993  1  5 18:54 .viminfo
+drwx------+ 15 wangliang  staff    510  1 14 20:37 Desktop
+drwx------+ 10 wangliang  staff    340  1 10 19:37 Documents
+drwx------+ 78 wangliang  staff   2652  1 13 19:15 Downloads
+drwx------@ 42 wangliang  staff   1428 12 27 11:03 Library
+drwx------+  3 wangliang  staff    102 12 20 11:05 Movies
+drwx------+  5 wangliang  staff    170 12 21 15:59 Music
+drwx------+  5 wangliang  staff    170 12 22 17:00 Pictures
+drwxr-xr-x+  6 wangliang  staff    204 12 23 20:01 Public
+drwxr-xr-x   2 wangliang  staff     68  1 14 21:03 Sites
+drwxr-xr-x   4 wangliang  staff    136  1 13 11:37 WORKING_DIRECTORY
+drwxr-xr-x  10 wangliang  staff    340  1 14 21:03 Workspace
+drwxr-xr-x   4 wangliang  staff    136 12 22 10:31 apktool
+drwxr-xr-x   3 wangliang  staff    102  1  3 17:33 bin
+-rw-r--r--   1 wangliang  staff    752  1  5 11:56 feedback.9.png
+-rw-r--r--   1 wangliang  staff    723  1  4 20:16 my.9.png
+-rw-r--r--   1 wangliang  staff    696  1  4 20:32 test.9.png
+wangmatoiMac:~ wangliang$ cd ./Sites/
+wangmatoiMac:Sites wangliang$ git clone http://repos.dev.guoku.com/website.git ./iguoku
+Cloning into ./iguoku...
+wangmatoiMac:Sites wangliang$ 
+
+
+
+ssh root@10.0.1.200
+密码：guoku1@#
+db00-001:~# /opt/mysql5/bin/mysql
+use qinzhoukan
+select * from qin_userprofile order by id desc limit 15;
++-------+---------+--------------------+----------+--------------------------------------------------------------+--------+------------+--------+----------+----------+------------+------------+-------------+
+| id    | user_id | nickname           | location | avatar                                                       | gender | birth_date | city   | followed | follower | username   | weibotoken | taobaotoken |
++-------+---------+--------------------+----------+--------------------------------------------------------------+--------+------------+--------+----------+----------+------------+------------+-------------+
+| 16215 |   17884 | dtt_lly            | 未知     | http://a.tbcdn.cn/app/sns/img/default/avatar-120.png         | F      | NULL       | 未知   |        0 |        0 | t818477009 | NULL       | NULL        |
+| 16214 |   17883 | 还是趴趴小熊         | 北京     | http://tp2.sinaimg.cn/1841173097/50/5612874330/0             | F      | NULL       | NULL   |        0 |        0 | 1841173097 | NULL       | NULL        |
+| 16208 |   17885 | 月巴人子            | 其他     | http://tp3.sinaimg.cn/1285695762/50/1269142893/1             | M      | NULL       | NULL   |        0 |        0 | 1285695762 | NULL       | NULL        |
+| 16206 |   17875 | westxju            | 未知     | http://img.taobaocdn.com/sns_logo/i1/T1_mmHXjJkXXb1upjX.jpg  | F      | NULL       | 未知   |        0 |        0 | t409643045 | NULL       | NULL        |
+| 16201 |   17867 | virginsuicides     | 广东     | http://img.taobaocdn.com/sns_logo/i8/T1WiXwXXFDXXaH.X6X.JPEG | F      | NULL       | 广州   |        0 |        0 | t271275461 | NULL       | NULL        |
++-------+---------+--------------------+----------+--------------------------------------------------------------+--------+------------+--------+----------+----------+------------+------------+-------------+
+5 rows in set (0.00 sec)
+
+show tables;
++----------------------------+
+| Tables_in_qinzhoukan       |
++----------------------------+
+| auth_group                 |
+| auth_group_permissions     |
+| auth_message               |
+| auth_permission            |
+| auth_user                  |
+| auth_user_groups           |
+| auth_user_user_permissions |
+| category_mapping           |
+| celery_taskmeta            |
+| celery_tasksetmeta         |
+| django_admin_log           |
+| django_content_type        |
+| django_session             |
+| django_site                |
+| djcelery_crontabschedule   |
+| djcelery_intervalschedule  |
+| djcelery_periodictask      |
+| djcelery_periodictasks     |
+| djcelery_taskstate         |
+| djcelery_workerstate       |
+| follow_user_follower       |
+| messages_message           |
+| mobiledata_adsapps         |
+| mobiledata_app_version     |
+| mobiledata_comment         |
+| mobiledata_iphone          |
+| qin_cardcomment            |
+| qin_cardlike               |
+| qin_cards                  |
+| qin_category               |
+| qin_categorymapping        |
+| qin_folder                 |
+| qin_folder_card            |
+| qin_folder_follower        |
+| qin_folder_user            |
+| qin_item                   |
+| qin_useinvite              |
+| qin_userprofile            |
++----------------------------+
+38 rows in set (0.00 sec)
+
+
+mysql> select * from qin_userprofile order by id desc limit 10;
++-------+---------+--------------------+------------------+--------------------------------------------------------------+--------+------------+--------+----------+----------+------------+------------+-------------+
+| id    | user_id | nickname           | location         | avatar                                                       | gender | birth_date | city   | followed | follower | username   | weibotoken | taobaotoken |
++-------+---------+--------------------+------------------+--------------------------------------------------------------+--------+------------+--------+----------+----------+------------+------------+-------------+
+| 16218 |   17886 | shigushuyuan       | 北京 海淀区      | http://tp4.sinaimg.cn/2547670631/50/0/1                      | M      | NULL       | NULL   |        0 |        0 | 2547670631 | NULL       | NULL        |
+
+mysql> select * from auth_user  order by id desc limit 10;
++-------+------------+------------+-----------+-----------------------+-----------------------------------------------------+----------+-----------+--------------+---------------------+---------------------+
+| id    | username   | first_name | last_name | email                 | password                                            | is_staff | is_active | is_superuser | last_login          | date_joined         |
++-------+------------+------------+-----------+-----------------------+-----------------------------------------------------+----------+-----------+--------------+---------------------+---------------------+
+| 17886 | 2547670631 |            |           | mytest@sina.com       | sha1$79fde$38498174208ff2b20e02c4f08028b6b4f3dda9d8 |        0 |         1 |            0 | 2012-01-14 18:06:47 | 2012-01-14 18:06:47 |
+
+用户id：   shigushuyuan ：2547670631
+
+
+
+mysql> select * from qin_userprofile where nickname='shigushuyuan';
++-------+---------+--------------+------------------+------------------------------------------------------+--------+------------+--------+----------+----------+------------+------+---------+------------+-------------+-------+-------+--------+------+----------------+
+| id    | user_id | nickname     | location         | avatar                                               | gender | birth_date | city   | followed | follower | username   | bio  | website | weibotoken | taobaotoken | cover | width | height | top  | email_verified |
++-------+---------+--------------+------------------+------------------------------------------------------+--------+------------+--------+----------+----------+------------+------+---------+------------+-------------+-------+-------+--------+------+----------------+
+| 14167 |   21037 | nicknmae='' | 北京 海淀区      | http://tp4.sinaimg.cn/2547670631/50/0/1              | M      | NULL       | NULL   |        0 |        0 | 2547670631 | NULL | NULL    | NULL       | NULL        | NULL  |  0.00 |   0.00 | 0.00 |              0 |
+| 19305 |   21061 | shigushuyuan | 未知             | http://a.tbcdn.cn/app/sns/img/default/avatar-120.png | F      | NULL       | 未知   |        0 |        0 | t825130058 | NULL | NULL    | NULL       | NULL        | NULL  |  0.00 |   0.00 | 0.00 |              0 |
++-------+---------+--------------+------------------+------------------------------------------------------+--------+------------+--------+----------+----------+------------+------+---------+------------+-------------+-------+-------+--------+------+----------------+
+
+
+
+mysql> select * from qin_userprofile where nickname='westxju';
++-------+---------+----------+----------+-------------------------------------------------------------+--------+------------+--------+----------+----------+------------+------+---------+------------+-------------+-------+-------+--------+------+----------------+
+| id    | user_id | nickname | location | avatar                                                      | gender | birth_date | city   | followed | follower | username   | bio  | website | weibotoken | taobaotoken | cover | width | height | top  | email_verified |
++-------+---------+----------+----------+-------------------------------------------------------------+--------+------------+--------+----------+----------+------------+------+---------+------------+-------------+-------+-------+--------+------+----------------+
+| 19591 |   21344 | westxju  | 未知     | http://img.taobaocdn.com/sns_logo/i1/T1_mmHXjJkXXb1upjX.jpg | F      | NULL       | 未知   |        0 |        0 | t409643045 | NULL | NULL    | NULL       | NULL        | NULL  |  0.00 |   0.00 | 0.00 |              0 |
++-------+---------+----------+----------+-------------------------------------------------------------+--------+------------+--------+----------+----------+------------+------+---------+------------+-------------+-------+-------+--------+------+----------------+
+select * from auth_user where id = 21344;
+
+mysql> select * from auth_user where id = 21344;
++-------+------------+------------+-----------+--------------------+-----------------------------------------------------+----------+-----------+--------------+---------------------+---------------------+
+| id    | username   | first_name | last_name | email              | password                                            | is_staff | is_active | is_superuser | last_login          | date_joined         |
++-------+------------+------------+-----------+--------------------+-----------------------------------------------------+----------+-----------+--------------+---------------------+---------------------+
+| 21344 | t409643045 |            |           | wangliang@sina.com | sha1$e4f14$7dfccd16f75266a73eb0b8e82d72a6740c94ca64 |        0 |         1 |            0 | 2012-07-10 10:57:27 | 2012-01-31 11:40:25 |
++-------+------------+------------+-----------+--------------------+-----------------------------------------------------+----------+-----------+--------------+---------------------+---------------------+
+
+
+select * from qin_userprofile where nickname='wlbuyandsell';
+
+mysql> select * from qin_userprofile where nickname='wlbuyandsell';
++-------+---------+--------------+----------+------------------------------------------------------+--------+------------+------+----------+----------+----------+------+---------+------------+-------------+-------+-------+--------+------+----------------+
+| id    | user_id | nickname     | location | avatar                                               | gender | birth_date | city | followed | follower | username | bio  | website | weibotoken | taobaotoken | cover | width | height | top  | email_verified |
++-------+---------+--------------+----------+------------------------------------------------------+--------+------------+------+----------+----------+----------+------+---------+------------+-------------+-------+-------+--------+------+----------------+
+| 25627 |   27288 | wlbuyandsell | 未知     | http://a.tbcdn.cn/app/sns/img/default/avatar-120.png | F      | NULL       | NULL |        0 |        0 | NULL     | NULL | NULL    | NULL       | NULL        | NULL  |  0.00 |   0.00 | 0.00 |              0 |
++-------+---------+--------------+----------+------------------------------------------------------+--------+------------+------+----------+----------+----------+------+---------+------------+-------------+-------+-------+--------+------+----------------+
+
+select * from auth_user where id = 27288;
+
+mysql> select * from auth_user where id = 27288;
++-------+------------+------------+-----------+--------------+-----------------------------------------------------+----------+-----------+--------------+---------------------+---------------------+
+| id    | username   | first_name | last_name | email        | password                                            | is_staff | is_active | is_superuser | last_login          | date_joined         |
++-------+------------+------------+-----------+--------------+-----------------------------------------------------+----------+-----------+--------------+---------------------+---------------------+
+| 27288 | t828059414 |            |           | wang@sina.cn | sha1$44394$c3ed6953dcb0acbe56de900bfa09ab19e33a2101 |        0 |         1 |            0 | 2012-04-20 11:10:50 | 2012-02-28 14:30:44 |
++-------+------------+------------+-----------+--------------+-----------------------------------------------------+----------+-----------+--------------+---------------------+---------------------+
+
+delete from auth_user where id= 27288;
+delete from qin_userprofile where 27288= 27288;
+
+
+//====================================================================================================================================
+先有userprofile,此时没有user_id
+
+mysql> select * from qin_userprofile order by id desc limit 10;
++-------+---------+--------------------+------------------+--------------------------------------------------------------+--------+------------+--------+----------+----------+------------+------------+-------------+
+| id    | user_id | nickname           | location         | avatar                                                       | gender | birth_date | city   | followed | follower | username   | weibotoken | taobaotoken |
++-------+---------+--------------------+------------------+--------------------------------------------------------------+--------+------------+--------+----------+----------+------------+------------+-------------+
+| 16219 |    NULL | shigushuyuan       | 北京 海淀区      | http://tp4.sinaimg.cn/2547670631/50/0/1                      | M      | NULL       | NULL   |        0 |        0 | 2547670631 | NULL       | NULL        |
+
+select * from qin_userprofile where nickname ='shigushuyuan';
+然后有了
+mysql> select * from auth_user order by id desc limit 10;
++-------+------------+------------+-----------+-----------------------+-----------------------------------------------------+----------+-----------+--------------+---------------------+---------------------+
+| id    | username   | first_name | last_name | emailde                 | password                                            | is_staff | is_active | is_superuser | last_login          | date_joined         |
++-------+------------+------------+-----------+-----------------------+-----------------------------------------------------+----------+-----------+--------------+---------------------+---------------------+
+| 17887 | 2547670631 |            |           | mytest@sina.com       | sha1$ff4e4$83af443f81bd5f9e8863084fb642c4d8307800a4 |        0 |         1 |            0 | 2012-01-14 18:21:17 | 2012-01-14 18:21:16 |
+
+此时qin_userprofile表也更新了，加上了user_id字段(根据update qin_userprofile set qin_userprofile.user_id = myid where qin_userprofile.username=myname)
+mysql> select * from qin_userprofile order by id desc limit 10;
++-------+---------+--------------------+------------------+--------------------------------------------------------------+--------+------------+--------+----------+----------+------------+------------+-------------+
+| id    | user_id | nickname           | location         | avatar                                                       | gender | birth_date | city   | followed | follower | username   | weibotoken | taobaotoken |
++-------+---------+--------------------+------------------+--------------------------------------------------------------+--------+------------+--------+----------+----------+------------+------------+-------------+
+| 16219 |   17887 | shigushuyuan       | 北京 海淀区      | http://tp4.sinaimg.cn/2547670631/50/0/1                      | M      | NULL       | NULL   |        0 |        0 | 2547670631 | NULL       | NULL        |
+
+
+只是绑定不会发送数据的
+
+
+ qin_userprofile | CREATE TABLE `qin_userprofile` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_id` int(11) DEFAULT NULL,
+  `nickname` varchar(30) NOT NULL,
+  `location` varchar(200) DEFAULT NULL,
+  `avatar` varchar(200) NOT NULL,
+  `gender` varchar(2) NOT NULL,
+  `birth_date` date DEFAULT NULL,
+  `city` varchar(50) DEFAULT NULL,
+  `followed` int(11) NOT NULL,
+  `follower` int(11) NOT NULL,
+  `username` char(30) DEFAULT NULL,
+  `weibotoken` varchar(100) DEFAULT NULL,
+  `taobaotoken` varchar(100) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `username` (`username`),
+  KEY `qin_userprofile_user_id` (`user_id`),
+  KEY `weibotoken` (`weibotoken`),
+  CONSTRAINT `user_id_refs_id_7cd1886a` FOREIGN KEY (`user_id`) REFERENCES `auth_user` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=16221 DEFAULT CHARSET=utf8 |
+
+
+| auth_user | CREATE TABLE `auth_user` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(30) NOT NULL,
+  `first_name` varchar(30) NOT NULL,
+  `last_name` varchar(30) NOT NULL,
+  `email` varchar(75) NOT NULL,
+  `password` varchar(128) NOT NULL,
+  `is_staff` tinyint(1) NOT NULL,
+  `is_active` tinyint(1) NOT NULL,
+  `is_superuser` tinyint(1) NOT NULL,
+  `last_login` datetime NOT NULL,
+  `date_joined` datetime NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `username` (`username`)
+) ENGINE=InnoDB AUTO_INCREMENT=17889 DEFAULT CHARSET=utf8 |
+
+
+select * from qin_cardlike where user_id in(19534,21303);
+select * from qin_cardcomment where user_id=21303;
+
+
+
+
+//==========================================
+
+
+>>>>>>>>>>>>>>>>  auth_user 
+
+CREATE TABLE `auth_user` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(30) NOT NULL,
+  `first_name` varchar(30) NOT NULL,
+  `last_name` varchar(30) NOT NULL,
+  `email` varchar(75) NOT NULL,
+  `password` varchar(128) NOT NULL,
+  `is_staff` tinyint(1) NOT NULL,
+  `is_active` tinyint(1) NOT NULL,
+  `is_superuser` tinyint(1) NOT NULL,
+  `last_login` datetime NOT NULL,
+  `date_joined` datetime NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `username` (`username`)
+) ENGINE=InnoDB AUTO_INCREMENT=79253 DEFAULT CHARSET=utf8 |
+
+api_session_key
+
+CREATE TABLE `api_session_key` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_id` int(11) NOT NULL,
+  `app_id` int(11) NOT NULL,
+  `session_key` varchar(64) NOT NULL,
+  `create_time` datetime NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `api_session_key_fbfc09f1` (`user_id`),
+  KEY `api_session_key_269da59a` (`app_id`),
+  CONSTRAINT `app_id_refs_id_8cfc5090` FOREIGN KEY (`app_id`) REFERENCES `api_apps` (`id`),
+  CONSTRAINT `user_id_refs_id_b9e90e5e` FOREIGN KEY (`user_id`) REFERENCES `auth_user` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8 |
+
+>>>>>>>>>>>>>>>> qin_userprofile 
+
+CREATE TABLE `qin_userprofile` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_id` int(11) DEFAULT NULL,
+  `nickname` varchar(30) NOT NULL,
+  `location` varchar(200) DEFAULT NULL,
+  `avatar` varchar(200) DEFAULT NULL,
+  `gender` varchar(2) NOT NULL,
+  `birth_date` date DEFAULT NULL,
+  `city` varchar(50) DEFAULT NULL,
+  `followed` int(11) DEFAULT '0',
+  `follower` int(11) DEFAULT '0',
+  `username` char(30) DEFAULT NULL,
+  `bio` varchar(140) DEFAULT NULL,
+  `website` varchar(255) DEFAULT NULL,
+  `weibotoken` varchar(255) DEFAULT NULL,
+  `taobaotoken` varchar(255) DEFAULT NULL,
+  `cover` varchar(255) DEFAULT NULL,
+  `width` decimal(10,2) DEFAULT '0.00',
+  `height` decimal(10,2) DEFAULT '0.00',
+  `top` decimal(10,2) DEFAULT '0.00',
+  `email_verified` int(4) DEFAULT '0',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `username` (`username`),
+  KEY `qin_userprofile_user_id` (`user_id`),
+  CONSTRAINT `user_id_refs_id_7cd1886a` FOREIGN KEY (`user_id`) REFERENCES `auth_user` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=73076 DEFAULT CHARSET=utf8 |
+
+
+>>>>>>>>>>>>>>>> qin_taobaotoken 
+
+CREATE TABLE `qin_taobaotoken` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_id` int(11) NOT NULL,
+  `taobao_user_id` varchar(64) DEFAULT NULL,
+  `access_token` varchar(255) DEFAULT NULL,
+  `refresh_token` varchar(255) DEFAULT NULL,
+  `create_time` datetime NOT NULL,
+  `nickname` varchar(64) DEFAULT NULL,
+  `expires_in` int(10) unsigned DEFAULT NULL,
+  `re_expires_in` int(10) unsigned DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `user_id` (`user_id`),
+  KEY `qin_taobaotoken_2e77357d` (`taobao_user_id`),
+  KEY `qin_taobaotoken_19b8add5` (`access_token`),
+  KEY `qin_taobaotoken_f57b66d` (`refresh_token`),
+  CONSTRAINT `user_id_refs_id_5441da4f` FOREIGN KEY (`user_id`) REFERENCES `auth_user` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=22848 DEFAULT CHARSET=utf8 |
+
+>>>>>>>>>>>>>>>> qin_setpassword 
+
+ CREATE TABLE `qin_setpassword` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_id` int(11) NOT NULL,
+  `is_set` tinyint(1) NOT NULL,
+  `set_time` datetime NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `user_id` (`user_id`),
+  CONSTRAINT `user_id_refs_id_5b7d8b35` FOREIGN KEY (`user_id`) REFERENCES `auth_user` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=57 DEFAULT CHARSET=utf8 |
+
+ select * from auth_user where email like 'wsl906';
+ select * from auth_user where email like 'shigushuyuan';
+ select * from auth_user where email like 'wsl';
+ 
+>>>>>>>>>>>>>>>>  qin_avatar 
+
+ CREATE TABLE `qin_avatar` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_id` int(11) NOT NULL,
+  `avatar` varchar(1024) DEFAULT NULL,
+  `avatar_big` varchar(1024) DEFAULT NULL,
+  `avatar_small` varchar(1024) DEFAULT NULL,
+  `upload_time` date NOT NULL,
+  `origin` varchar(1024) DEFAULT NULL,
+  `width` decimal(8,2) DEFAULT '0.00',
+  `height` decimal(8,2) DEFAULT '0.00',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `user_id` (`user_id`),
+  CONSTRAINT `user_id_refs_id_ef6d17ba` FOREIGN KEY (`user_id`) REFERENCES `auth_user` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=46166 DEFAULT CHARSET=utf8 |
+
+
+| qin_sinatoken | CREATE TABLE `qin_sinatoken` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_id` int(11) NOT NULL,
+  `sina_id` varchar(64) DEFAULT NULL,
+  `access_token` varchar(255) DEFAULT NULL,
+  `access_secret` varchar(255) DEFAULT NULL,
+  `create_time` datetime NOT NULL,
+  `screen_name` varchar(64) DEFAULT NULL,
+  `expires_in` int(10) unsigned DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `user_id` (`user_id`),
+  KEY `qin_sinatoken_19b8add5` (`access_token`),
+  KEY `qin_sinatoken_d5208c1b` (`access_secret`),
+  CONSTRAINT `user_id_refs_id_7d89ee2a` FOREIGN KEY (`user_id`) REFERENCES `auth_user` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=55 DEFAULT CHARSET=utf8 |
+
+删除淘宝爱用户
+delete from api_session_key where user_id = (select id from auth_user where email='wlbuyandsell@sina.com');
+delete from qin_userprofile where user_id = (select id from auth_user where email='wlbuyandsell@sina.com');
+delete from qin_taobaotoken where user_id = (select id from auth_user where email='wlbuyandsell@sina.com');
+delete from qin_setpassword where user_id = (select id from auth_user where email='wlbuyandsell@sina.com');
+delete from auth_user where email= 'wlbuyandsell@sina.com';
+
+
+删除新浪用户
+
+delete from auth_user where email ='mytest2@sina.com';
+delete from api_session_key where user_id = (select id from auth_user where email='mytest2@sina.com');
+delete from qin_avatar where user_id = (select id from auth_user where email='mytest2@sina.com');
+delete from qin_cardcomment where user_id = (select id from auth_user where email='mytest2@sina.com');
+delete from qin_setpassword where user_id = (select id from auth_user where email='mytest2@sina.com');
+delete from qin_userprofile where user_id = (select id from auth_user where email='mytest2@sina.com');
+
+
+总之：
+
+
+delete from api_session_key where user_id = (select id from auth_user where email='mytest2@sina.com');
+delete from qin_avatar where user_id = (select id from auth_user where email='mytest2@sina.com');
+delete from qin_cardcomment where user_id = (select id from auth_user where email='mytest2@sina.com');
+delete from qin_setpassword where user_id = (select id from auth_user where email='mytest2@sina.com');
+delete from qin_userprofile where user_id = (select id from auth_user where email='mytest2@sina.com');
+delete from qin_taobaotoken where user_id = (select id from auth_user where email='mytest2@sina.com');
+delete from qin_sinatoken where user_id = (select id from auth_user where email='mytest2@sina.com');
+
+delete from auth_user where email ='mytest2@sina.com';
+
+delete from api_session_key where user_id = (select id from auth_user where email='shigushuyuan@gmial.com');
+delete from qin_avatar where user_id = (select id from auth_user where email='shigushuyuan@gmial.com');
+delete from qin_cardcomment where user_id = (select id from auth_user where email='shigushuyuan@gmial.com');
+delete from qin_setpassword where user_id = (select id from auth_user where email='shigushuyuan@gmial.com');
+delete from qin_userprofile where user_id = (select id from auth_user where email='shigushuyuan@gmial.com');
+delete from qin_taobaotoken where user_id = (select id from auth_user where email='shigushuyuan@gmial.com');
+delete from qin_sinatoken where user_id = (select id from auth_user where email='shigushuyuan@gmial.com');
+
+delete from auth_user where email ='shigushuyuan@gmial.com';
+
+delete from api_session_key where user_id = (select id from auth_user where email='mytest@sina.com');
+delete from qin_avatar where user_id = (select id from auth_user where email='mytest@sina.com');
+delete from qin_cardcomment where user_id = (select id from auth_user where email='mytest@sina.com');
+delete from qin_setpassword where user_id = (select id from auth_user where email='mytest@sina.com');
+delete from qin_userprofile where user_id = (select id from auth_user where email='mytest@sina.com');
+delete from qin_taobaotoken where user_id = (select id from auth_user where email='mytest@sina.com');
+delete from qin_sinatoken where user_id = (select id from auth_user where email='mytest@sina.com');
+
+delete from auth_user where email ='mytest@sina.com';
+
+delete from api_session_key where user_id = (select id from auth_user where email='wangliang@sina.com');
+delete from qin_avatar where user_id = (select id from auth_user where email='wangliang@sina.com');
+delete from qin_cardcomment where user_id = (select id from auth_user where email='wangliang@sina.com');
+delete from qin_setpassword where user_id = (select id from auth_user where email='wangliang@sina.com');
+delete from qin_userprofile where user_id = (select id from auth_user where email='wangliang@sina.com');
+delete from qin_taobaotoken where user_id = (select id from auth_user where email='wangliang@sina.com');
+delete from qin_sinatoken where user_id = (select id from auth_user where email='wangliang@sina.com');
+
+delete from auth_user where email ='wangliang@sina.com';
+
+
+delete from api_session_key where user_id = (select id from auth_user where email='wang@sina.cn');
+delete from qin_avatar where user_id = (select id from auth_user where email='wang@sina.cn');
+delete from qin_cardcomment where user_id = (select id from auth_user where email='wang@sina.cn');
+delete from qin_setpassword where user_id = (select id from auth_user where email='wang@sina.cn');
+delete from qin_userprofile where user_id = (select id from auth_user where email='wang@sina.cn');
+delete from qin_taobaotoken where user_id = (select id from auth_user where email='wang@sina.cn');
+delete from qin_sinatoken where user_id = (select id from auth_user where email='wang@sina.cn');
+
+delete from auth_user where email ='wang@sina.cn';
+
+
+
+
+delete from api_session_key where user_id = (select id from auth_user where email='wang@sina.cn');
+delete from qin_userprofile where user_id = (select id from auth_user where email='wang@sina.cn');
+delete from qin_taobaotoken where user_id = (select id from auth_user where email='wang@sina.cn');
+delete from auth_user where email= 'wang@sina.cn';
+
+
+(1)	select * from qin_userprofile where nickname='wlbuyandsell';
+
++-------+---------+--------------+----------+------------------------------------------------------+--------+------------+------+----------+----------+----------+------+---------+------------+-------------+-------+-------+--------+------+----------------+
+| id    | user_id | nickname     | location | avatar                                               | gender | birth_date | city | followed | follower | username | bio  | website | weibotoken | taobaotoken | cover | width | height | top  | email_verified |
++-------+---------+--------------+----------+------------------------------------------------------+--------+------------+------+----------+----------+----------+------+---------+------------+-------------+-------+-------+--------+------+----------------+
+| 25627 |   27288 | wlbuyandsell | 未知     | http://a.tbcdn.cn/app/sns/img/default/avatar-120.png | F      | NULL       | NULL |        0 |        0 | NULL     | NULL | NULL    | NULL       | NULL        | NULL  |  0.00 |   0.00 | 0.00 |              0 |
++-------+---------+--------------+----------+------------------------------------------------------+--------+------------+------+----------+----------+----------+------+---------+------------+-------------+-------+-------+--------+------+----------------+
+
+(2)	select * from auth_user where id = 27288;
+
++-------+------------+------------+-----------+--------------+-----------------------------------------------------+----------+-----------+--------------+---------------------+---------------------+
+| id    | username   | first_name | last_name | email        | password                                            | is_staff | is_active | is_superuser | last_login          | date_joined         |
++-------+------------+------------+-----------+--------------+-----------------------------------------------------+----------+-----------+--------------+---------------------+---------------------+
+| 27288 | t828059414 |            |           | wang@sina.cn | sha1$44394$c3ed6953dcb0acbe56de900bfa09ab19e33a2101 |        0 |         1 |            0 | 2012-04-20 11:10:50 | 2012-02-28 14:30:44 |
++-------+------------+------------+-----------+--------------+-----------------------------------------------------+----------+-----------+--------------+---------------------+---------------------+
+
+
+
+
+delete from qin_userprofile where user_id = (select id from auth_user   where email='mytest@sina.com');
+delete from qin_cardcomment where user_id = (select id from auth_user   where email='mytest@sina.com');
+delete from qin_sinatoken where user_id = (select id from auth_user   where email='mytest@sina.com');
+delete from se where user_id = (select id from auth_user   where email='mytest@sina.com');
+delete from qin_avatar where user_id = (select id from auth_user where   email='mytest@sina.com');
+delete from auth_user where email='mytest@sina.com';
+
+delete from api_session_key where user_id = (select id from auth_user where email='mytest@sina.com');
+
+
+
+
+mysql> select * from auth_user where email= 'wlbuyandsell@sina.com';
++-------+------------+------------+-----------+-----------------------+-----------------------------------------------------+----------+-----------+--------------+---------------------+---------------------+
+| id    | username   | first_name | last_name | email                 | password                                            | is_staff | is_active | is_superuser | last_login          | date_joined         |
++-------+------------+------------+-----------+-----------------------+-----------------------------------------------------+----------+-----------+--------------+---------------------+---------------------+
+| 79254 | t828059414 |            |           | wlbuyandsell@sina.com | sha1$b2fa2$21629b5ef48fdfa63d3739447e6cbcf343dcbf09 |        0 |         1 |            0 | 2012-07-23 15:29:56 | 2012-07-23 15:29:56 |
++-------+------------+------------+-----------+-----------------------+-----------------------------------------------------+----------+-----------+--------------+---------------------+---------------------+
+
+
+mysql> select * from qin_userprofile where nickname='wlbuyandsell';
++-------+---------+--------------+----------+--------+--------+------------+------+----------+----------+------------+------+---------+------------+-------------+-------+-------+--------+------+----------------+
+| id    | user_id | nickname     | location | avatar | gender | birth_date | city | followed | follower | username   | bio  | website | weibotoken | taobaotoken | cover | width | height | top  | email_verified |
++-------+---------+--------------+----------+--------+--------+------------+------+----------+----------+------------+------+---------+------------+-------------+-------+-------+--------+------+----------------+
+| 73077 |   79254 | wlbuyandsell | null     |        |        | NULL       | NULL |        0 |        0 | t828059414 | NULL | NULL    | NULL       | NULL        | NULL  |  0.00 |   0.00 | 0.00 |              0 |
++-------+---------+--------------+----------+--------+--------+------------+------+----------+----------+------------+------+---------+------------+-------------+-------+-------+--------+------+----------------+
+
+
+select * from auth_user where id = (select user_id from qin_userprofile where nickname='wlbuyandsell');
+
+
+
+
+
+select * from auth_user where email='mytest2@sina.com';
+select id ,email from auth_user where email in('wsl906@sina.cn' ,'mytest@sina.com','wang@sina.cn','wlbuyandsell@sina.com','mytest2@sina.com'); 
+
