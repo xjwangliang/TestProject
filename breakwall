@@ -1,0 +1,21 @@
+http://maolihui.com/goagent-mac.html
+http://maolihui.com/goagent-detailed-version-of-the-tutorial.html
+
+在http://appengine.google.com创建Google App Engine账号（需要手机验证，然后创建应用）
+登录https://accounts.google.com创建二次验证（创建专用密码）
+下载goagent客户端
+在local目录下打开proxy.ini文件，填入appid（第一步应用的identifier），要上传多个id,请用 | 隔开)(注意修改时不要删除空格)
+cd 进入server目录，运行python uploader.zip（windows直接upload.bat）
+依次输入刚才申请的appid,Gmail邮箱和第二步的专用密码
+cd local 回车，输入python proxy.py 回车即可（windows直接local文件夹下的goagent.exe）
+设置代理(位置在:应用程序-系统偏好设置-网络-高级-代理)，ip地址是：127.0.0.1端口为8087(web代理和安全web代理都要勾选,并且都要填写ip地址和端口!)（windows：
+路由器上网的朋友在代理设置中输入ip地址127.0.0.1和端口8087）
+
+chrom：高级选项-更改代理设置-连接-局域网设置-为LAN设置…
+
+直接拨号上网的：Internet属性--连接--设置--代理服务器
+
+
+
+
+
